@@ -1,6 +1,6 @@
 {
-    "name": "sampleproject",
-    "short_name": "sampleproject",
+    "name": "splitwise",
+    "short_name": "splitwise",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

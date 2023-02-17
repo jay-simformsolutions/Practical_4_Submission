@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "sampleproject" "\0"
+            VALUE "CompanyName", "com.splitwisesimform" "\0"
+            VALUE "FileDescription", "splitwise" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "sampleproject" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "sampleproject.exe" "\0"
-            VALUE "ProductName", "sampleproject" "\0"
+            VALUE "InternalName", "splitwise" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2023 com.splitwisesimform. All rights reserved." "\0"
+            VALUE "OriginalFilename", "splitwise.exe" "\0"
+            VALUE "ProductName", "splitwise" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

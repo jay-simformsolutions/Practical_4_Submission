@@ -1,6 +1,4 @@
-# sampleproject
-
-Flutter Version: 3.7
+# splitwise
 
 A new Flutter project.
 
