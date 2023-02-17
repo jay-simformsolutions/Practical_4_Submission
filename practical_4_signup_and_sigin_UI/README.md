@@ -1,8 +1,14 @@
-# sampleproject
+# practical_4_signup_and_sigin_ui
 
-Flutter Version: 3.7
+#Flutter Version
+Flutter Version 3.7
 
-A new Flutter project.
+# Brief Description of Project
+Implemented Signup and SignIn UI
+
+# Screen UI for References 
+![UI References](https://mir-s3-cdn-cf.behance.net/project_modules/1400/83718f159718673.63a42fe13e3d1.jpg)
+
 
 ## Getting Started
 
@@ -16,3 +22,4 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+# Signup-UI-PR4-

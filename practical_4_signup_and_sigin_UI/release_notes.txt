@@ -1,0 +1,10 @@
+Release Version: 1.0.0+4
+
+16/02/2023
+
+Signup and SignIN UI:
+
+    1. Change return data type of alert dialogue box function
+    2. Use text theme from theme data
+
+
