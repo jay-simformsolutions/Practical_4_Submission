@@ -38,7 +38,7 @@ ThemeData themeData = ThemeData(
       fontFamily: 'NotoSerif',
       fontSize: 15,
       fontWeight: FontWeight.w500,
-      color: CommonColors.lightGreyColor,
+      color: CommonColors.blackColor,
     ),
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(

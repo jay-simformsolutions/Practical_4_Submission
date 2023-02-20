@@ -89,6 +89,11 @@ class CommonStrings {
   static const logout = 'Log out';
   static const preferences = 'Preferences';
   static const feedback = 'Feedback';
+  static const email = 'akbarijay1@gmail.com';
+  static const name = 'jay akbari';
+  static const copyright = 'Copyright 2023 Slitwise, Inc';
+  static const ps = 'P.S.';
+  static const bunnies = 'Bunnies!';
 
   static const addExpense = 'Add expense';
 
