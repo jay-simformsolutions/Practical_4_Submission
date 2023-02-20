@@ -47,11 +47,9 @@ class CommonStrings {
   static const String loginToAccountString = 'Login Your Account';
   static const String rememberMeString = 'Remember me';
   static const String forgotPasswordString = 'Forgot Password';
-
-  static const String landingPageImageString = 'assets/landing_page.jpeg';
-  static const String landingPageLoginImageString =
-      'assets/landing_page_image.jpeg';
   static String temp = '0';
+
+  //Assets Common Strings
 
   static const splitwise = 'SplitWise';
   static const groupBottomTitle = 'Group';
@@ -63,6 +61,8 @@ class CommonStrings {
   static const groupNotification = 'Splitwise groups you create or are';
   static const groupWillShowHere = 'added to will show here';
   static const makenewGroup = 'Start a new group';
+  static const showGroupInfo = 'Show Group Info';
+  static const youAllAreSet = 'You are all settle up!';
 
   //Friends Page Common Strings
   static const welcomeGroup = 'Welcome to Splitwise, Jay!';
@@ -91,5 +91,7 @@ class CommonStrings {
   static const feedback = 'Feedback';
 
   static const addExpense = 'Add expense';
-  static const groupAsset = 'assets/images/group_page.png';
+
+  //Load Json File
+  static const loadGroupJson = 'assets/json/group_page.json';
 }

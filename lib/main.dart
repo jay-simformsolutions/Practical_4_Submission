@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:splitwise/Screens/bottom_navigation.dart';
+import 'package:splitwise/Temp_Data_List/group_page.dart';
 
 import '../CommonMethodClass/theme_data.dart';
 import '../Routes/routes.dart';
@@ -26,6 +27,7 @@ class HomePage extends StatelessWidget {
         Routes.loginPage: (_) => const LoginPage(),
         Routes.signupPage: (_) => const SignUp(),
         Routes.forgotPassword: (_) => const ForgotPassword(),
+        Routes.groupInfoPage: (_) => const GroupPageInfo(),
       },
     );
   }
