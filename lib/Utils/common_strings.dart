@@ -52,4 +52,44 @@ class CommonStrings {
   static const String landingPageLoginImageString =
       'assets/landing_page_image.jpeg';
   static String temp = '0';
+
+  static const splitwise = 'SplitWise';
+  static const groupBottomTitle = 'Group';
+  static const friendBottomTitle = 'Friends';
+  static const activityBottomTitle = 'Activity';
+  static const profileBottomTitle = 'Account';
+
+  //Group Page Common Strings
+  static const groupNotification = 'Splitwise groups you create or are';
+  static const groupWillShowHere = 'added to will show here';
+  static const makenewGroup = 'Start a new group';
+
+  //Friends Page Common Strings
+  static const welcomeGroup = 'Welcome to Splitwise, Jay!';
+  static const friendNotification = 'As you use Splitwise, friends and group';
+  static const matesWillShow = 'mates will show here.';
+  static const addmoreFriends = 'Add more friends';
+
+  //Activity Page Common Strings
+  static const activityHeadline = 'Activity';
+  static const startingLine = 'There is no activity in your account yet';
+  static const tryAddExpence = 'Try adding an expense';
+
+  //Account Page Common Strings
+  static const accountHead = 'Account';
+
+  //Profile Page Common Strings
+  static const scanCode = 'Scan Code';
+  static const splitWisePro = 'Splitwise Pro';
+  static const emailSetting = 'Email Settings';
+  static const deviceAndPush = 'Device and Push notification settings';
+  static const passcode = 'Passcode';
+  static const rateSplitwise = 'Rate Splitwise';
+  static const contact = 'Contact Splitwisre Support';
+  static const logout = 'Log out';
+  static const preferences = 'Preferences';
+  static const feedback = 'Feedback';
+
+  static const addExpense = 'Add expense';
+  static const groupAsset = 'assets/images/group_page.png';
 }

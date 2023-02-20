@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:splitwise/Screens/bottom_navigation.dart';
 
 import '../CommonMethodClass/theme_data.dart';
 import '../Routes/routes.dart';
@@ -18,8 +19,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: themeData,
-      initialRoute: Routes.homePage,
+      initialRoute: Routes.bottomNavigationPage,
       routes: {
+        Routes.bottomNavigationPage: (_) => const BottomNavigationBarWidget(),
         Routes.homePage: (_) => const LandingPage(),
         Routes.loginPage: (_) => const LoginPage(),
         Routes.signupPage: (_) => const SignUp(),

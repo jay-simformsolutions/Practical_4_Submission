@@ -104,7 +104,9 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 CommonStrings.forgotPasswordString,
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
-              SizedBox(height: 20,),
+              const SizedBox(
+                height: 20,
+              ),
               Center(
                 child: Form(
                   key: _formKey,
