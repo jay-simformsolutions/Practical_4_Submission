@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:splitwise/Utils/assets.dart';
 
 import '../Routes/navigation_functions.dart';
 import '../Routes/routes.dart';
@@ -18,7 +19,7 @@ class LandingPage extends StatelessWidget {
             height: double.infinity,
             width: double.infinity,
             child: Image(
-              image: AssetImage(CommonStrings.landingPageImageString),
+              image: AssetImage(AssetString.landingPageImageString),
               fit: BoxFit.cover,
             ),
           ),

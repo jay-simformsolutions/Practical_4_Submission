@@ -1,14 +1,15 @@
 class Routes {
   // Routes for SignUP and SignIN UI
-  static String homePage = '/homepage';
-  static String signupPage = '/signup';
-  static String loginPage = '/login';
-  static String forgotPassword = './forgotPassword';
+  static const homePage = '/homepage';
+  static const signupPage = '/signup';
+  static const loginPage = '/login';
+  static const forgotPassword = './forgotPassword';
 
   // Routes for the Splitwise App
   static const bottomNavigationPage = '/bottomNavigationPage';
-  static String groupPage = '/groupPage';
-  static String friendsPAge = '/friendsPage';
-  static String activityPage = '/activityPage';
-  static String profilePage = '/profilePage';
+  static const groupPage = '/groupPage';
+  static const friendsPAge = '/friendsPage';
+  static const activityPage = '/activityPage';
+  static const profilePage = '/profilePage';
+  static const groupInfoPage = '/groupInfoPage';
 }

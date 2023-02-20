@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:splitwise/Utils/assets.dart';
 
 import '../CommonMethodClass/clip_react.dart';
 import '../CommonMethodClass/sized_box_widget.dart';
@@ -57,8 +58,8 @@ class _LoginPageState extends State<LoginPage> {
                       height: 250,
                       width: MediaQuery.of(context).size.width,
                       child: const Image(
-                        image: AssetImage(
-                            CommonStrings.landingPageLoginImageString),
+                        image:
+                            AssetImage(AssetString.landingPageLoginImageString),
                         fit: BoxFit.cover,
                       ),
                     ),

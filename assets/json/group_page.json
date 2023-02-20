@@ -1,0 +1,191 @@
+{
+  "groups": [
+    {
+      "id": 0,
+      "name": "Non-group expenses",
+      "group_image": "https://images.unsplash.com/photo-1666408738188-212c470d08b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fEdyb3VwJTIwSW1hZ2UlMjB3aXRoJTIwQ2FydG9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "created_at": "2023-02-14T05:28:26Z",
+      "updated_at": "2023-02-17T06:22:25Z",
+      "members": [
+        {
+          "id": 64776079,
+          "first_name": "tijoc51351",
+          "last_name": null,
+          "picture": {
+            "small": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-50px.png",
+            "medium": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-100px.png",
+            "large": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-200px.png"
+          },
+          "custom_picture": false,
+          "email": "tijoc51351@aosod.com",
+          "registration_status": "confirmed",
+          "balance": [
+            {
+              "amount": "25.0",
+              "currency_code": "USD"
+            }
+          ]
+        }
+      ],
+      "simplify_by_default": false,
+      "original_debts": [
+        {
+          "from": 11063129,
+          "to": 64776079,
+          "amount": "25.0",
+          "currency_code": "USD"
+        }
+      ],
+      "simplified_debts": [
+        {
+          "from": 11063129,
+          "to": 64776079,
+          "amount": "25.0",
+          "currency_code": "USD"
+        }
+      ],
+      "avatar": {
+        "small": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-50px.png",
+        "medium": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-100px.png",
+        "large": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-200px.png",
+        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-500px.png",
+        "xxlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-1000px.png",
+        "original": null
+      },
+      "tall_avatar": {
+        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_tall_avatars/avatar-nongroup-288px.png",
+        "large": "https://s3.amazonaws.com/splitwise/uploads/group/default_tall_avatars/avatar-nongroup-192px.png"
+      },
+      "custom_avatar": false,
+      "cover_photo": {
+        "xxlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-1000px.png",
+        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-500px.png"
+      }
+    },
+    {
+      "id": 0,
+      "name": "Flutter Group",
+      "group_image": "https://images.unsplash.com/photo-1634832802370-164cf82ec82a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fEdyb3VwJTIwSW1hZ2UlMjB3aXRoJTIwQ2FydG9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "created_at": "2023-02-14T05:28:26Z",
+      "updated_at": "2023-02-17T06:22:25Z",
+      "members": [
+        {
+          "id": 64776079,
+          "first_name": "tijoc51351",
+          "last_name": null,
+          "picture": {
+            "small": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-50px.png",
+            "medium": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-100px.png",
+            "large": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-200px.png"
+          },
+          "custom_picture": false,
+          "email": "tijoc51351@aosod.com",
+          "registration_status": "confirmed",
+          "balance": [
+            {
+              "amount": "25.0",
+              "currency_code": "USD"
+            }
+          ]
+        }
+      ],
+      "simplify_by_default": false,
+      "original_debts": [
+        {
+          "from": 11063129,
+          "to": 64776079,
+          "amount": "25.0",
+          "currency_code": "USD"
+        }
+      ],
+      "simplified_debts": [
+        {
+          "from": 11063129,
+          "to": 64776079,
+          "amount": "25.0",
+          "currency_code": "USD"
+        }
+      ],
+      "avatar": {
+        "small": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-50px.png",
+        "medium": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-100px.png",
+        "large": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-200px.png",
+        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-500px.png",
+        "xxlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-1000px.png",
+        "original": null
+      },
+      "tall_avatar": {
+        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_tall_avatars/avatar-nongroup-288px.png",
+        "large": "https://s3.amazonaws.com/splitwise/uploads/group/default_tall_avatars/avatar-nongroup-192px.png"
+      },
+      "custom_avatar": false,
+      "cover_photo": {
+        "xxlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-1000px.png",
+        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-500px.png"
+      }
+    },
+
+    {
+      "id": 0,
+      "name": "School Friends",
+      "group_image": "https://images.unsplash.com/photo-1659787050050-d5aa2b1ec0dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fEdyb3VwJTIwSW1hZ2UlMjB3aXRoJTIwQ2FydG9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "created_at": "2023-02-14T05:28:26Z",
+      "updated_at": "2023-02-17T06:22:25Z",
+      "members": [
+        {
+          "id": 64776079,
+          "first_name": "tijoc51351",
+          "last_name": null,
+          "picture": {
+            "small": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-50px.png",
+            "medium": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-100px.png",
+            "large": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-200px.png"
+          },
+          "custom_picture": false,
+          "email": "tijoc51351@aosod.com",
+          "registration_status": "confirmed",
+          "balance": [
+            {
+              "amount": "25.0",
+              "currency_code": "USD"
+            }
+          ]
+        }
+      ],
+      "simplify_by_default": false,
+      "original_debts": [
+        {
+          "from": 11063129,
+          "to": 64776079,
+          "amount": "25.0",
+          "currency_code": "USD"
+        }
+      ],
+      "simplified_debts": [
+        {
+          "from": 11063129,
+          "to": 64776079,
+          "amount": "25.0",
+          "currency_code": "USD"
+        }
+      ],
+      "avatar": {
+        "small": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-50px.png",
+        "medium": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-100px.png",
+        "large": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-200px.png",
+        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-500px.png",
+        "xxlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-1000px.png",
+        "original": null
+      },
+      "tall_avatar": {
+        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_tall_avatars/avatar-nongroup-288px.png",
+        "large": "https://s3.amazonaws.com/splitwise/uploads/group/default_tall_avatars/avatar-nongroup-192px.png"
+      },
+      "custom_avatar": false,
+      "cover_photo": {
+        "xxlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-1000px.png",
+        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-500px.png"
+      }
+    }
+  ]
+}
