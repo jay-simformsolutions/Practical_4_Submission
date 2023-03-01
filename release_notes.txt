@@ -1,10 +1,11 @@
 Release Version: 1.0.0+4
 
-20/02/2023
+01/03/2023
 
 Splitwise App:
 
-    1. Create Bottom Navigation Bar
-    2. Create Group page UI
+    1. Create Friends Landing Page
+    2. Add Common Methods for Button
+    3. Create Pages for Add New Group and Friends
 
 

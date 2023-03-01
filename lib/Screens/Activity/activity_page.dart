@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../Utils/common_strings.dart';
+import '../../Utils/common_strings.dart';
 
 class ActivityPage extends StatelessWidget {
   const ActivityPage({Key? key}) : super(key: key);

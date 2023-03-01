@@ -5,7 +5,7 @@ extension PushFunction on BuildContext {
 }
 
 extension PopFunction on BuildContext {
-  void popFunction(screen) => Navigator.of(this).pop();
+  void popFunction() => Navigator.of(this).pop();
 }
 
 extension PopAndRemove on BuildContext {

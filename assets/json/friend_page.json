@@ -1,0 +1,106 @@
+{
+  "friend":[
+    {
+      "id": 0,
+      "first_name": "Ada",
+      "last_name": "Lovelace",
+      "email": "ada@example.com",
+      "registration_status": "confirmed",
+      "picture": {
+        "small": "string",
+        "medium": "string",
+        "large": "string"
+      }
+    },
+    {
+      "id": 1,
+      "first_name": "Sahil",
+      "last_name": "Totala",
+      "email": "sahil.t@simformsolutions.com",
+      "registration_status": "confirmed",
+      "picture": {
+        "small": "string",
+        "medium": "string",
+        "large": "string"
+      }
+    },
+    {
+      "id": 2,
+      "first_name": "Parth",
+      "last_name": "Vora",
+      "email": "parth.vora@example.com",
+      "registration_status": "confirmed",
+      "picture": {
+        "small": "string",
+        "medium": "string",
+        "large": "string"
+      }
+    },
+    {
+      "id": 3,
+      "first_name": "Saif",
+      "last_name": "Ali Khan",
+      "email": "saif.alikhan@example.com",
+      "registration_status": "pending",
+      "picture": {
+        "small": "string",
+        "medium": "string",
+        "large": "string"
+      }
+    },
+    {
+      "id": 4,
+      "first_name": "Apurava",
+      "last_name": "Kanthraviya",
+      "email": "apurva.k@example.com",
+      "registration_status": "confirmed",
+      "picture": {
+        "small": "string",
+        "medium": "string",
+        "large": "string"
+      }
+    },
+    {
+      "id": 5,
+      "first_name": "Colomba",
+      "last_name": "Lucchese",
+      "email": "ColombaLucchese@armyspy.com",
+      "registration_status": "confirmed",
+      "picture": {
+        "small": "string",
+        "medium": "string",
+        "large": "string"
+      }
+    },
+    {
+      "id": 6,
+      "first_name": "Steven J.",
+      "last_name": "Carter",
+      "email": "StevenJCarter@rhyta.com",
+      "registration_status": "confirmed",
+      "picture": {
+        "small": "string",
+        "medium": "string",
+        "large": "string"
+      }
+    }
+    ],
+    "groups": [
+      {
+        "group_id": 571,
+        "balance": [
+          {
+            "currency_code": "USD",
+            "amount": "414.5"
+          }
+        ]
+      }
+    ],
+    "balance": [
+      {
+        "currency_code": "USD",
+        "amount": "414.5"
+      }
+    ],
+    "updated_at": "2019-08-24T14:15:22Z"
+}
