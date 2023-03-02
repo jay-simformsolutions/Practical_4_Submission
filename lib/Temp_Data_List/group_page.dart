@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:splitwise/Routes/navigation_functions.dart';
 import 'package:splitwise/Utils/common_strings.dart';
 
 import '../CommonMethodClass/theme_data.dart';
@@ -57,9 +58,7 @@ class _GroupPageInfoState extends State<GroupPageInfo> {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios_new_outlined),
           color: CommonColors.blackColor,
-          onPressed: () {
-            Navigator.pop(context);
-          },
+          onPressed: () => context.popFunction(),
         ),
       ),
       body: Padding(

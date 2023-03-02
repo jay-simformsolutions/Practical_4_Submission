@@ -39,13 +39,13 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                       CommonColors.lightGreyColor,
                     ),
                   ),
-              onPressed: () => context.popFunction(this),
+              onPressed: () => context.popFunction(),
               child: const Text(
                 CommonStrings.okString,
               ),
             ),
             ElevatedButton(
-              onPressed: () => context.popFunction(this),
+              onPressed: () => context.popFunction(),
               child: const Text(
                 CommonStrings.cancelString,
               ),
@@ -84,7 +84,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 top: 100,
                 left: 25,
                 child: FloatingActionButton.small(
-                  onPressed: () => context.popFunction(this),
+                  onPressed: () => context.popFunction(),
                   backgroundColor: CommonColors.whiteColor,
                   child: const Icon(
                     Icons.arrow_back_ios_new,

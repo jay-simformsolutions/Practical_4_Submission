@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../Utils/colors.dart';
 import '../Utils/common_strings.dart';
-import 'activity_page.dart';
-import 'friends_page.dart';
-import 'group_page.dart';
-import 'profile_page.dart';
+import 'Activity/activity_page.dart';
+import 'Friends/friends_page.dart';
+import 'Group/group_page.dart';
+import 'Profile/profile_page.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
   const BottomNavigationBarWidget({Key? key}) : super(key: key);

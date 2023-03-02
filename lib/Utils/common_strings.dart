@@ -63,17 +63,20 @@ class CommonStrings {
   static const makenewGroup = 'Start a new group';
   static const showGroupInfo = 'Show Group Info';
   static const youAllAreSet = 'You are all settle up!';
+  static const createNewGroup = 'Create New Group';
+  static const groupInformation = 'Group Info';
 
   //Friends Page Common Strings
   static const welcomeGroup = 'Welcome to Splitwise, Jay!';
   static const friendNotification = 'As you use Splitwise, friends and group';
   static const matesWillShow = 'mates will show here.';
-  static const addmoreFriends = 'Add more friends';
+  static const addMoreFriends = 'Add more friends';
+  static const showFriendInfo = 'Show Friends Info';
 
   //Activity Page Common Strings
   static const activityHeadline = 'Activity';
   static const startingLine = 'There is no activity in your account yet';
-  static const tryAddExpence = 'Try adding an expense';
+  static const tryAddExpense = 'Try adding an expense';
 
   //Account Page Common Strings
   static const accountHead = 'Account';

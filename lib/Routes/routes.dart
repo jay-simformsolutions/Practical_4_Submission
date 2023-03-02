@@ -5,11 +5,20 @@ class Routes {
   static const loginPage = '/login';
   static const forgotPassword = './forgotPassword';
 
-  // Routes for the Splitwise App
-  static const bottomNavigationPage = '/bottomNavigationPage';
-  static const groupPage = '/groupPage';
-  static const friendsPAge = '/friendsPage';
-  static const activityPage = '/activityPage';
-  static const profilePage = '/profilePage';
-  static const groupInfoPage = '/groupInfoPage';
+  //App Routes
+  static String bottomNavigationPage = '/bottomNavigationPage';
+  static String groupPage = '/groupPage';
+  static String friendsPAge = '/friendsPage';
+  static String activityPage = '/activityPage';
+  static String profilePage = '/profilePage';
+
+  // Group Module Route
+  static String createGroup = '/createGroup';
+  static String groupExpense = '/groupExpense';
+  static String groupInfo = '/groupInfo';
+
+  //Friend Module Route
+  static String addFriend = '/addFriend';
+  static String addNewContact = '/addNewContact';
+  static String friendInfo = '/friendInfo';
 }
