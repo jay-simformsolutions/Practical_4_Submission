@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../CommonMethodClass/add_expense_button.dart';
 import '../../CommonMethodClass/elevated_button_onboard.dart';
 import '../../CommonMethodClass/theme_data.dart';
-import '../../Routes/navigation_functions.dart';
+import '../../Routes/navigator_service.dart';
 import '../../Routes/routes.dart';
 import '../../Utils/assets.dart';
 import '../../Utils/colors.dart';
@@ -15,11 +15,13 @@ class FriendsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: CommonColors.whiteColor,
       appBar: AppBar(
         backgroundColor: CommonColors.whiteColor,
         actions: [
           IconButton(
-            onPressed: () => context.pushFunction(Routes.addFriend),
+            onPressed: () =>
+                NavigationService().navigateToScreen(Routes.addFriend),
             icon: const Icon(
               Icons.person_add_alt,
               color: CommonColors.blackColor,
@@ -34,6 +36,9 @@ class FriendsPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
+                const SizedBox(
+                  height: 5,
+                ),
                 Align(
                   alignment: Alignment.topCenter,
                   child: Text(
@@ -77,7 +82,8 @@ class FriendsPage extends StatelessWidget {
                     color: CommonColors.tealColor,
                   ),
                   buttonName: CommonStrings.addMoreFriends,
-                  onPress: () => context.pushFunction(Routes.addFriend),
+                  onPress: () =>
+                      NavigationService().navigateToScreen(Routes.addFriend),
                 ),
                 const SizedBox(
                   height: 20,
@@ -88,7 +94,8 @@ class FriendsPage extends StatelessWidget {
                     color: CommonColors.tealColor,
                   ),
                   buttonName: CommonStrings.showFriendInfo,
-                  onPress: () => context.pushFunction(Routes.friendInfo),
+                  onPress: () =>
+                      NavigationService().navigateToScreen(Routes.friendInfo),
                 ),
                 const SizedBox(
                   height: 30,
