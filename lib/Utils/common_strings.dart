@@ -22,31 +22,32 @@ class CommonStrings {
   static const confirmedPasswordNotMatched = 'Password is not Matched';
   static const confirmEmailString = 'Check Your Email and Reset your password';
   static const okString = 'Ok';
+  static const errorString = 'Error';
   static const cancelString = 'Cancel';
   static const sendEmail = 'Send E-mail';
   static const alertDialogTitle = 'Check Your E-mail';
 
-  static const String welcomeString = 'The Best Apps';
+  static const welcomeString = 'The Best Apps';
   static const welcomeSecondLine = 'For Your';
   static const welcomeThirdLine = 'Plants';
-  static const String signupString = 'Sign Up';
-  static const String loginString = 'Login';
-  static const String registerString = 'Register';
-  static const String createAccountString = 'Create Your Account';
-  static const String fullNameString = 'Enter Your Full Name';
-  static const String emailString = 'Enter Your Email';
-  static const String passwordString = 'Enter Your Password';
-  static const String confirmPasswordString = 'Enter Same Password';
-  static const String agreePolicyString = 'By signing you agree to our';
-  static const String teamOfUseString = ' Team of use';
-  static const String andString = 'and';
-  static const String privacyNoticeString = ' privacy notice';
-  static const String doHaveAccountString = 'Do you have account? ';
-  static const String doNotHaveAccountString = 'Don\'t You Have an account? ';
-  static const String welcomeBackString = 'Welcome Back';
-  static const String loginToAccountString = 'Login Your Account';
-  static const String rememberMeString = 'Remember me';
-  static const String forgotPasswordString = 'Forgot Password';
+  static const signupString = 'Sign Up';
+  static const loginString = 'Login';
+  static const registerString = 'Register';
+  static const createAccountString = 'Create Your Account';
+  static const fullNameString = 'Enter Your Full Name';
+  static const emailString = 'Enter Your Email';
+  static const passwordString = 'Enter Your Password';
+  static const confirmPasswordString = 'Enter Same Password';
+  static const agreePolicyString = 'By signing you agree to our';
+  static const teamOfUseString = ' Team of use';
+  static const andString = 'and';
+  static const privacyNoticeString = ' privacy notice';
+  static const doHaveAccountString = 'Do you have account? ';
+  static const doNotHaveAccountString = 'Don\'t You Have an account? ';
+  static const welcomeBackString = 'Welcome Back';
+  static const loginToAccountString = 'Login Your Account';
+  static const rememberMeString = 'Remember me';
+  static const forgotPasswordString = 'Forgot Password';
   static String temp = '0';
 
   //Assets Common Strings
@@ -65,6 +66,10 @@ class CommonStrings {
   static const youAllAreSet = 'You are all settle up!';
   static const createNewGroup = 'Create New Group';
   static const groupInformation = 'Group Info';
+  static const typeString = 'Type';
+  static const groupName = 'Group Name';
+  static const enterGroupNameAlertDialog =
+      'You Haven\'t entered a name for your group yet!';
 
   //Friends Page Common Strings
   static const welcomeGroup = 'Welcome to Splitwise, Jay!';
@@ -72,6 +77,7 @@ class CommonStrings {
   static const matesWillShow = 'mates will show here.';
   static const addMoreFriends = 'Add more friends';
   static const showFriendInfo = 'Show Friends Info';
+  static const textFieldToAddNewFriend = 'Enter name, email, or phone #';
 
   //Activity Page Common Strings
   static const activityHeadline = 'Activity';
@@ -99,6 +105,7 @@ class CommonStrings {
   static const bunnies = 'Bunnies!';
 
   static const addExpense = 'Add expense';
+  static const pageNotFound = 'Page Not Found';
 
   //Load Json File
   static const loadGroupJson = 'assets/json/group_page.json';

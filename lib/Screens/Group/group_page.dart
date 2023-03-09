@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../CommonMethodClass/add_expense_button.dart';
 import '../../CommonMethodClass/elevated_button_onboard.dart';
 import '../../CommonMethodClass/theme_data.dart';
-import '../../Routes/navigation_functions.dart';
 import '../../Routes/routes.dart';
 import '../../Utils/assets.dart';
 import '../../Utils/colors.dart';
@@ -15,17 +14,18 @@ class GroupPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: CommonColors.whiteColor,
       appBar: AppBar(
         actions: [
           IconButton(
-            onPressed: () => context.pushFunction(Routes.createGroup),
+            onPressed: () => Navigator.pushNamed(context, Routes.createGroup),
             icon: const Icon(
               Icons.group_add_outlined,
               color: CommonColors.blackColor,
             ),
           ),
         ],
-        elevation: 0,
+        elevation: 1,
         backgroundColor: CommonColors.whiteColor,
       ),
       body: Stack(
@@ -34,8 +34,8 @@ class GroupPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                const Divider(
-                  thickness: 1,
+                const SizedBox(
+                  height: 5,
                 ),
                 Text(
                   CommonStrings.welcomeGroup,
@@ -77,7 +77,8 @@ class GroupPage extends StatelessWidget {
                     color: CommonColors.tealColor,
                   ),
                   buttonName: CommonStrings.makenewGroup,
-                  onPress: () => context.pushFunction(Routes.createGroup),
+                  onPress: () =>
+                      Navigator.pushNamed(context, Routes.createGroup),
                 ),
                 const SizedBox(
                   height: 20,
@@ -88,7 +89,7 @@ class GroupPage extends StatelessWidget {
                     color: CommonColors.tealColor,
                   ),
                   buttonName: CommonStrings.showGroupInfo,
-                  onPress: () => context.pushFunction(Routes.groupInfo),
+                  onPress: () => Navigator.pushNamed(context, Routes.groupInfo),
                 ),
                 const SizedBox(
                   height: 30,

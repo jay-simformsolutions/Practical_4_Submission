@@ -2,14 +2,16 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:splitwise/Routes/navigation_functions.dart';
-import 'package:splitwise/Utils/common_strings.dart';
 
 import '../CommonMethodClass/theme_data.dart';
+import '../Routes/navigation_functions.dart';
+import '../Routes/routes.dart';
 import '../Utils/colors.dart';
+import '../Utils/common_strings.dart';
 
 class GroupPageInfo extends StatefulWidget {
-  const GroupPageInfo({Key? key}) : super(key: key);
+  final String? groupName;
+  const GroupPageInfo({Key? key, this.groupName}) : super(key: key);
 
   @override
   State<GroupPageInfo> createState() => _GroupPageInfoState();
@@ -49,7 +51,7 @@ class _GroupPageInfoState extends State<GroupPageInfo> {
             color: CommonColors.blackColor,
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () => Navigator.pushNamed(context, Routes.createGroup),
             icon: const Icon(Icons.group_add_outlined),
             color: CommonColors.blackColor,
           ),
