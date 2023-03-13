@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:splitwise/Routes/routes.dart';
+import 'package:splitwise/Screens/Group/group_expense.dart';
 
 import '../Screens/Activity/activity_page.dart';
 import '../Screens/Friends/add_new_friend.dart';
 import '../Screens/Friends/friends_info.dart';
 import '../Screens/Friends/friends_page.dart';
 import '../Screens/Group/create_new_group.dart';
+import '../Screens/Group/group_info.dart';
 import '../Screens/Group/group_page.dart';
 import '../Screens/Profile/profile_page.dart';
 import '../Screens/bottom_navigation.dart';
-import '../Temp_Data_List/group_page.dart';
 import '../Utils/common_strings.dart';
 
 class RouteGenerator {
@@ -20,35 +22,39 @@ class RouteGenerator {
         return MaterialPageRoute(
           builder: (_) => const BottomNavigationBarWidget(),
         );
-      case '/groupPage':
+      case Routes.groupPage:
         return MaterialPageRoute(
           builder: (_) => const GroupPage(),
         );
-      case '/friendsPage':
+      case Routes.friendsPage:
         return MaterialPageRoute(
           builder: (_) => const FriendsPage(),
         );
-      case '/activityPage':
+      case Routes.activityPage:
         return MaterialPageRoute(
           builder: (_) => const ActivityPage(),
         );
-      case '/profilePage':
+      case Routes.profilePage:
         return MaterialPageRoute(
           builder: (_) => const ProfilePage(),
         );
-      case '/createGroup':
+      case Routes.createGroup:
         return MaterialPageRoute(
           builder: (_) => const CreateGroup(),
         );
-      case '/groupInfo':
+      case Routes.groupInfo:
         return MaterialPageRoute(
           builder: (_) => const GroupPageInfo(),
         );
-      case '/addFriend':
+      case Routes.groupExpense:
+        return MaterialPageRoute(
+          builder: (_) => GroupExpenseWidget(groupInfo: args as Map),
+        );
+      case Routes.addFriend:
         return MaterialPageRoute(
           builder: (_) => const AddNewFriend(),
         );
-      case '/friendInfo':
+      case Routes.friendInfo:
         return MaterialPageRoute(
           builder: (_) => const FriendInformation(),
         );

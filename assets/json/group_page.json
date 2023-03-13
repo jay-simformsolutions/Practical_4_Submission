@@ -3,7 +3,9 @@
     {
       "id": 0,
       "name": "Non-group expenses",
-      "group_image": "https://images.unsplash.com/photo-1666408738188-212c470d08b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fEdyb3VwJTIwSW1hZ2UlMjB3aXRoJTIwQ2FydG9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+
+      "group_image": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/avatar-ruby2-house-200px.png",
+      "coverphoto": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-ruby-1000px.png",
       "created_at": "2023-02-14T05:28:26Z",
       "updated_at": "2023-02-17T06:22:25Z",
       "members": [
@@ -65,7 +67,8 @@
     {
       "id": 0,
       "name": "Flutter Group",
-      "group_image": "https://images.unsplash.com/photo-1634832802370-164cf82ec82a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fEdyb3VwJTIwSW1hZ2UlMjB3aXRoJTIwQ2FydG9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "coverphoto": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-1000px.png",
+      "group_image": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-50px.png",
       "created_at": "2023-02-14T05:28:26Z",
       "updated_at": "2023-02-17T06:22:25Z",
       "members": [
@@ -128,7 +131,8 @@
     {
       "id": 0,
       "name": "School Friends",
-      "group_image": "https://images.unsplash.com/photo-1659787050050-d5aa2b1ec0dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fEdyb3VwJTIwSW1hZ2UlMjB3aXRoJTIwQ2FydG9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "coverphoto": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-1000px.png",
+      "group_image": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-50px.png",
       "created_at": "2023-02-14T05:28:26Z",
       "updated_at": "2023-02-17T06:22:25Z",
       "members": [

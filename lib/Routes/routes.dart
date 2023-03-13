@@ -6,19 +6,22 @@ class Routes {
   static const forgotPassword = './forgotPassword';
 
   //App Routes
-  static String bottomNavigationPage = '/bottomNavigationPage';
-  static String groupPage = '/groupPage';
-  static String friendsPAge = '/friendsPage';
-  static String activityPage = '/activityPage';
-  static String profilePage = '/profilePage';
+  static const bottomNavigationPage = '/bottomNavigationPage';
+  static const groupPage = '/groupPage';
+  static const friendsPage = '/friendsPage';
+  static const activityPage = '/activityPage';
+  static const profilePage = '/profilePage';
 
   // Group Module Route
-  static String createGroup = '/createGroup';
-  static String groupExpense = '/groupExpense';
-  static String groupInfo = '/groupInfo';
+  static const createGroup = '/createGroup';
+  static const groupExpense = '/groupExpense';
+  static const groupInfo = '/groupInfo';
+  static const groupSettleUp = '/groupSettleUp';
+  static const groupBalances = '/groupBalances';
+  static const groupTotalBalance = 'groupTotalBalance';
 
   //Friend Module Route
-  static String addFriend = '/addFriend';
-  static String addNewContact = '/addNewContact';
-  static String friendInfo = '/friendInfo';
+  static const addFriend = '/addFriend';
+  static const addNewContact = '/addNewContact';
+  static const friendInfo = '/friendInfo';
 }
