@@ -13,5 +13,6 @@ class CommonColors {
   static const tealColor = Colors.teal;
   static const greyColor = Colors.grey;
   static const buttonBorderColor = Color(0xff08a080);
-  static final darkgrey = Colors.blueGrey.shade900;
+  static final darkGrey = Colors.blueGrey.shade900;
+  static const lightGrey = Color(0xffC4c4c4);
 }

@@ -24,6 +24,8 @@ class CommonStrings {
   static const okString = 'Ok';
   static const errorString = 'Error';
   static const cancelString = 'Cancel';
+  static const whoopsString = 'Whoops!';
+  static const settingString = 'Settings';
   static const sendEmail = 'Send E-mail';
   static const alertDialogTitle = 'Check Your E-mail';
 
@@ -92,6 +94,23 @@ class CommonStrings {
   static const addMoreFriends = 'Add more friends';
   static const showFriendInfo = 'Show Friends Info';
   static const textFieldToAddNewFriend = 'Enter name, email, or phone #';
+  static const showWarning =
+      'Adding friends from your contacts require permission. '
+      'we DO NOT upload your address book. Please visit Setting and give '
+      'permission for access your Contact Address Book';
+
+  // Add New Friend Page Common String
+  static const addNewContacts = 'Add a new contact to Splitwise';
+  static const addNewContactFromList = 'Add New Contact from Your Contact List';
+  static const atLeastOnePersonRequire = 'At least one person is require';
+  static const noAnyContacts = "There is no contacts in your contact list";
+
+  // Add New Contact Page Common String
+  static const nothingSend =
+      'Don\'t worry, nothing send just yet. you will have';
+  static const anotherChance = 'another chance to review before sending';
+  static const username = 'Name';
+  static const phoneOrEmail = 'Phone Number or Email Address';
 
   //Activity Page Common Strings
   static const activityHeadline = 'Activity';
@@ -119,6 +138,18 @@ class CommonStrings {
   static const bunnies = 'Bunnies!';
 
   static const addExpense = 'Add expense';
+  static const groupNameWithYou = 'With you and: ';
+  static const textFormFieldOfAddNameEmail = 'Enter name, emails, or phone #s';
+  static const labelOfDescription = 'Enter a description';
+  static const labelOfAmount = 'Enter Amount for Bill Split';
+  static const paidBy = 'Paid by';
+  static const you = 'You';
+  static const split = 'and Split';
+  static const equally = 'equally';
+  static const canNotSaveExpense = 'Cannot save expense';
+  static const warningDescription = 'You must enter a description';
+  static const warningAmount = 'You must enter an amount';
+
   static const pageNotFound = 'Page Not Found';
 
   //Load Json File
