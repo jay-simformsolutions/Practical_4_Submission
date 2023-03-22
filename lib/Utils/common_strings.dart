@@ -70,6 +70,20 @@ class CommonStrings {
   static const groupName = 'Group Name';
   static const enterGroupNameAlertDialog =
       'You Haven\'t entered a name for your group yet!';
+  static const lent = 'you lent';
+  static const borrowed = 'you borrowed';
+
+  // Group_Expense Page Common Strings
+  static const allSettleUp = 'You all are settled up in this group';
+
+  //group settle up Page
+  static const groupSettleUp = 'Group Settle Up';
+
+  //group balance page
+  static const groupBalances = 'GroupBalance';
+
+  //group total balance page
+  static const groupTotalBalances = 'TotalGroupExpense';
 
   //Friends Page Common Strings
   static const welcomeGroup = 'Welcome to Splitwise, Jay!';
@@ -109,4 +123,5 @@ class CommonStrings {
 
   //Load Json File
   static const loadGroupJson = 'assets/json/group_page.json';
+  static const loadGroupExpenseJson = 'assets/json/group_expense.json';
 }

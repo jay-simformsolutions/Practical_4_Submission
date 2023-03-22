@@ -1,11 +1,11 @@
 Release Version: 1.0.0+4
 
-03/03/2023
+20/03/2023
 
 Splitwise App:
 
-    1. Add validation in Create Group page
-    2. Add Navigation in App using Navigation key and onGenerate Route
-    3. Show Group Info like Name and Icon
+    1. Add Group Expense Page
+    2. Shows expense of group with date and description
+
 
 
