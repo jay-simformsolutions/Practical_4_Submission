@@ -22,6 +22,9 @@ class Routes {
 
   //Friend Module Route
   static const addFriend = '/addFriend';
+  static const addNewFriend = '/addNewFriend';
   static const addNewContact = '/addNewContact';
   static const friendInfo = '/friendInfo';
+
+  static const addExpense = '/addExpense';
 }

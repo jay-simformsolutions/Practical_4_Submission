@@ -97,9 +97,12 @@ class GroupPage extends StatelessWidget {
               ],
             ),
           ),
-          const Align(
+          Align(
             alignment: Alignment.bottomRight,
-            child: BottomButton(),
+            child: GestureDetector(
+              onTap: () => Navigator.pushNamed(context, Routes.addExpense),
+              child: const BottomButton(),
+            ),
           ),
         ],
       ),

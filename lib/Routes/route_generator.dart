@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:splitwise/Routes/routes.dart';
+import 'package:splitwise/Screens/Friends/add_new_contact.dart';
+import 'package:splitwise/Screens/Group/Add_Expense/add_expense.dart';
 import 'package:splitwise/Screens/Group/group_expense.dart';
 
 import '../Screens/Activity/activity_page.dart';
@@ -54,9 +56,17 @@ class RouteGenerator {
         return MaterialPageRoute(
           builder: (_) => const AddNewFriend(),
         );
+      case Routes.addNewContact:
+        return MaterialPageRoute(
+          builder: (_) => const AddNewContactPage(),
+        );
       case Routes.friendInfo:
         return MaterialPageRoute(
           builder: (_) => const FriendInformation(),
+        );
+      case Routes.addExpense:
+        return MaterialPageRoute(
+          builder: (_) => const AddExpense(),
         );
 
       default:
