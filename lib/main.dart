@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../CommonMethodClass/theme_data.dart';
-import 'Routes/navigator_service.dart';
-import 'Routes/route_generator.dart';
+import 'common_methods/theme_data.dart';
+import 'routes/navigator_service.dart';
+import 'routes/route_generator.dart';
 
 void main() => runApp(
       const HomePage(),
