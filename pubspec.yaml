@@ -22,6 +22,8 @@ dependencies:
 
   #For Format the Date
   intl: ^0.18.0
+  #For Authentication
+  local_auth: ^2.1.6
 
 
 dev_dependencies:

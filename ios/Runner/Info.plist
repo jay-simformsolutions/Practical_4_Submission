@@ -4,6 +4,8 @@
 <dict>
     <key>NSContactsUsageDescription</key>
     <string> The Application needs permission for Contact so user can access the contacts and find in there contact list to use Splitwise App </string>
+	<key>NSFaceIDUsageDescription</key>
+    <string> User need to authenticate there self for validate the user to use Splitwise App</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
