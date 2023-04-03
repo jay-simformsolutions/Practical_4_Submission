@@ -17,6 +17,7 @@ class AddNewFriend extends StatefulWidget {
 }
 
 class _AddNewFriendState extends State<AddNewFriend> {
+  List<Contact> selectedName = [];
   List<Contact> contacts = [];
   bool isLoading = true;
 
@@ -24,8 +25,8 @@ class _AddNewFriendState extends State<AddNewFriend> {
     NavigationService().goBack();
   }
 
-  void navigateToScreen(String screen) {
-    NavigationService().navigateToScreen(screen);
+  void navigateToScreen(String screen, {arguments}) {
+    NavigationService().navigateToScreen(screen, arguments: arguments);
   }
 
   @override
@@ -104,19 +105,50 @@ class _AddNewFriendState extends State<AddNewFriend> {
     });
   }
 
+  void addToFriendList(int index) {
+    setState(() {
+      selectedName.contains(contacts[index])
+          ? selectedName.remove(contacts[index])
+          : selectedName.add(contacts[index]);
+    });
+  }
+
+  void removeFromFriendList(int index) {
+    setState(() {
+      selectedName.remove(contacts[index]);
+    });
+  }
+
+  void showSnackBar() {
+    SnackBar snackBar = SnackBar(
+      behavior: SnackBarBehavior.floating,
+      backgroundColor: CommonColors.whiteColor,
+      content: Text(
+        CommonStrings.atLeastOnePersonRequire,
+        style: themeData.textTheme.bodySmall!.copyWith(
+          color: CommonColors.whiteColor,
+          fontWeight: FontWeight.w300,
+        ),
+        textAlign: TextAlign.center,
+      ),
+      duration: const Duration(seconds: 2),
+    );
+    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.white,
+      backgroundColor: CommonColors.darkGrey,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: CommonColors.darkGrey,
         title: TextFormField(
           decoration: InputDecoration(
             border: InputBorder.none,
             hintText: CommonStrings.textFormFieldOfAddNameEmail,
             hintStyle: themeData.textTheme.bodySmall!.copyWith(
-              color: CommonColors.blackColor,
+              color: CommonColors.whiteColor,
               fontSize: 18,
               fontWeight: FontWeight.w300,
             ),
@@ -126,7 +158,7 @@ class _AddNewFriendState extends State<AddNewFriend> {
         leading: IconButton(
           icon: const Icon(
             Icons.arrow_back,
-            color: CommonColors.blackColor,
+            color: CommonColors.whiteColor,
           ),
           onPressed: popScreen,
         ),
@@ -137,6 +169,47 @@ class _AddNewFriendState extends State<AddNewFriend> {
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            if (selectedName.isNotEmpty)
+              SizedBox(
+                height: 80,
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    shrinkWrap: true,
+                    itemCount: selectedName.length,
+                    itemBuilder: (context, index) {
+                      return SizedBox(
+                        height: 70,
+                        width: 70,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 15, top: 10),
+                          child: Stack(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: CommonColors.tealColor,
+                                child:
+                                    Text(selectedName[index].displayName![0]),
+                              ),
+                              Positioned(
+                                left: 25,
+                                child: GestureDetector(
+                                  onTap: () => removeFromFriendList(index),
+                                  child: const Icon(
+                                    Icons.cancel,
+                                    size: 18,
+                                    color: CommonColors.whiteColor,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ),
             InkWell(
               onTap: () => navigateToScreen(Routes.addNewContact),
               child: Row(
@@ -160,7 +233,7 @@ class _AddNewFriendState extends State<AddNewFriend> {
                     child: Text(
                       CommonStrings.addNewContacts,
                       style: themeData.textTheme.bodySmall!.copyWith(
-                        color: CommonColors.blackColor,
+                        color: CommonColors.whiteColor,
                         fontWeight: FontWeight.w500,
                         fontSize: 14,
                       ),
@@ -175,11 +248,11 @@ class _AddNewFriendState extends State<AddNewFriend> {
             Text(
               CommonStrings.addNewContactFromList,
               style: themeData.textTheme.bodySmall!.copyWith(
-                color: CommonColors.blackColor,
+                color: CommonColors.whiteColor,
               ),
             ),
             SizedBox(
-              height: 698,
+              height: MediaQuery.of(context).size.width,
               child: isLoading
                   ? const Center(
                       child: CircularProgressIndicator(),
@@ -189,7 +262,7 @@ class _AddNewFriendState extends State<AddNewFriend> {
                           child: Text(
                             CommonStrings.noAnyContacts,
                             style: themeData.textTheme.titleMedium!.copyWith(
-                              color: CommonColors.blackColor,
+                              color: CommonColors.whiteColor,
                               fontWeight: FontWeight.w500,
                             ),
                           ),
@@ -199,27 +272,36 @@ class _AddNewFriendState extends State<AddNewFriend> {
                           physics: const AlwaysScrollableScrollPhysics(),
                           itemCount: contacts.length,
                           itemBuilder: (context, index) {
-                            return ListTile(
-                              leading: const CircleAvatar(
-                                radius: 18,
-                                child: Icon(Icons.phone),
-                              ),
-                              title: Text(
-                                contacts[index].givenName!,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style:
-                                    themeData.textTheme.titleMedium!.copyWith(
-                                  color: CommonColors.darkGrey,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16,
+                            return GestureDetector(
+                              onTap: () => addToFriendList(index),
+                              child: ListTile(
+                                leading: const CircleAvatar(
+                                  radius: 18,
+                                  child: Icon(Icons.phone),
                                 ),
-                              ),
-                              subtitle: Text(
-                                contacts[index].phones![0].value!,
-                                style: themeData.textTheme.bodySmall!.copyWith(
-                                  color: CommonColors.lightGreyColor,
+                                title: Text(
+                                  contacts[index].givenName!,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style:
+                                      themeData.textTheme.titleMedium!.copyWith(
+                                    color: CommonColors.tealColor,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 16,
+                                  ),
                                 ),
+                                subtitle: Text(
+                                  contacts[index].phones![0].value!,
+                                  style:
+                                      themeData.textTheme.bodySmall!.copyWith(
+                                    color: CommonColors.lightGreyColor,
+                                  ),
+                                ),
+                                trailing: selectedName.contains(
+                                  contacts[index],
+                                )
+                                    ? const Icon(Icons.done)
+                                    : null,
                               ),
                             );
                           },
@@ -229,22 +311,12 @@ class _AddNewFriendState extends State<AddNewFriend> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          SnackBar snackBar = SnackBar(
-            behavior: SnackBarBehavior.floating,
-            backgroundColor: CommonColors.whiteColor,
-            content: Text(
-              CommonStrings.atLeastOnePersonRequire,
-              style: themeData.textTheme.bodySmall!.copyWith(
-                color: CommonColors.blackColor,
-                fontWeight: FontWeight.w300,
+        onPressed: () => selectedName.isEmpty
+            ? showSnackBar()
+            : navigateToScreen(
+                Routes.verifyFriendsInfo,
+                arguments: selectedName,
               ),
-              textAlign: TextAlign.center,
-            ),
-            duration: const Duration(seconds: 2),
-          );
-          ScaffoldMessenger.of(context).showSnackBar(snackBar);
-        },
         backgroundColor: Colors.deepOrangeAccent,
         child: const Icon(
           Icons.arrow_forward,

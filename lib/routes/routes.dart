@@ -26,6 +26,7 @@ class Routes {
   static const addNewFriend = '/addNewFriend';
   static const addNewContact = '/addNewContact';
   static const friendInfo = '/friendInfo';
+  static const verifyFriendsInfo = '/verifyFriendsInfo';
 
   static const addExpense = '/addExpense';
 }

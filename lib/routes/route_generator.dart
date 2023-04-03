@@ -1,8 +1,6 @@
+import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
 import 'package:splitwise/routes/routes.dart';
-import 'package:splitwise/screens/group/Group_Expense_Pages/group_balances.dart';
-import 'package:splitwise/screens/group/Group_Expense_Pages/group_settleup.dart';
-import 'package:splitwise/screens/group/Group_Expense_Pages/group_total_balance.dart';
 
 import '../screens/activity/activity_page.dart';
 import '../screens/bottom_navigation.dart';
@@ -10,6 +8,10 @@ import '../screens/friends/add_new_contact.dart';
 import '../screens/friends/add_new_friend.dart';
 import '../screens/friends/friends_info.dart';
 import '../screens/friends/friends_page.dart';
+import '../screens/friends/verify_friends_info.dart';
+import '../screens/group/Group_Expense_Pages/group_balances.dart';
+import '../screens/group/Group_Expense_Pages/group_settleup.dart';
+import '../screens/group/Group_Expense_Pages/group_total_balance.dart';
 import '../screens/group/add_expense/add_expense.dart';
 import '../screens/group/add_expense/categories.dart';
 import '../screens/group/create_new_group.dart';
@@ -79,6 +81,11 @@ class RouteGenerator {
       case Routes.addNewContact:
         return MaterialPageRoute(
           builder: (_) => const AddNewContactPage(),
+        );
+      case Routes.verifyFriendsInfo:
+        return MaterialPageRoute(
+          builder: (_) =>
+              VerifyFriendsInfo(selectedName: args as List<Contact>),
         );
       case Routes.friendInfo:
         return MaterialPageRoute(

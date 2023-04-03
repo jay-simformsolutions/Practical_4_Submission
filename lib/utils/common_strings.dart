@@ -24,6 +24,7 @@ class CommonStrings {
   static const okString = 'Ok';
   static const errorString = 'Error';
   static const cancelString = 'Cancel';
+  static const finishString = 'Finish';
   static const whoopsString = 'Whoops!';
   static const settingString = 'Settings';
   static const sendEmail = 'Send E-mail';
@@ -112,6 +113,12 @@ class CommonStrings {
   static const addNewContactFromList = 'Add New Contact from Your Contact List';
   static const atLeastOnePersonRequire = 'At least one person is require';
   static const noAnyContacts = "There is no contacts in your contact list";
+
+  // Verify Contacts Common Strings
+  static const verifyContacts = 'Verify Contact Info';
+  static const letThemKnow = 'Send a text message to let them know';
+  static const friendsAdded = 'Your friend has been added';
+  static const sendTextMessage = 'Send text message';
 
   // Add New Contact Page Common String
   static const nothingSend =

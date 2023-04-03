@@ -27,7 +27,6 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
   void initState() {
     // TODO: implement initState
     _checkBiometric();
-    // _getAvailableBiometrics();
     _authenticate();
     super.initState();
   }
@@ -37,12 +36,12 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
   late List<BiometricType> _availableBiometric;
   String authorized = 'Not authorized';
 
-  void showSnackbar(Widget content) {
+  void showSnackBar(Widget content) {
     SnackBar snackBar = SnackBar(content: content);
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
-  ///checking bimetrics
+  ///checking biometrics
   ///this function will check the sensors and will tell us
   /// if we can use them or not
   Future<bool> _checkBiometric() async {
@@ -64,7 +63,7 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
             stickyAuth: false,
           ));
     } on PlatformException catch (e) {
-      showSnackbar(Text("Not Eligible for Bio-Metrics"));
+      showSnackBar(const Text("Not Eligible for Bio-Metrics"));
     }
     if (!mounted) return;
 
@@ -126,13 +125,12 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
                 _checkBiometric();
                 _authenticate();
               },
-              //return true when click on "Yes"
               child: const Text(CommonStrings.unlockPlease),
             ),
           ),
         ],
       ),
-    ); //if showDialouge had returned null, then return false
+    );
   }
 
   @override
