@@ -25,7 +25,6 @@ dependencies:
   #For Authentication
   local_auth: ^2.1.6
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter

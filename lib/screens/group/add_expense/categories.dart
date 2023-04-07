@@ -49,7 +49,7 @@ class _CategoryListState extends State<CategoryList> {
               ),
               ListView.builder(
                 itemBuilder: (context, index) {
-                  return GestureDetector(
+                  return InkWell(
                     onTap: () => Navigator.of(context)
                         .pop(EntertainmentList.entertainmentList[index]),
                     child: ListOfCategory(
@@ -105,7 +105,7 @@ class _CategoryListState extends State<CategoryList> {
               ),
               ListView.builder(
                 itemBuilder: (context, index) {
-                  return GestureDetector(
+                  return InkWell(
                     onTap: () =>
                         Navigator.of(context).pop(HomeList.homeList[index]),
                     child: ListOfCategory(
@@ -130,7 +130,7 @@ class _CategoryListState extends State<CategoryList> {
               ),
               ListView.builder(
                 itemBuilder: (context, index) {
-                  return GestureDetector(
+                  return InkWell(
                     onTap: () =>
                         Navigator.of(context).pop(LifeList.lifeList[index]),
                     child: ListOfCategory(
@@ -155,7 +155,7 @@ class _CategoryListState extends State<CategoryList> {
               ),
               ListView.builder(
                 itemBuilder: (context, index) {
-                  return GestureDetector(
+                  return InkWell(
                     onTap: () => Navigator.of(context)
                         .pop(UncategorizedList.uncategorizedList[index]),
                     child: ListOfCategory(
@@ -183,7 +183,7 @@ class _CategoryListState extends State<CategoryList> {
               ),
               ListView.builder(
                 itemBuilder: (context, index) {
-                  return GestureDetector(
+                  return InkWell(
                     onTap: () => Navigator.of(context)
                         .pop(UtilitiesList.utilitiesList[index]),
                     child: ListOfCategory(

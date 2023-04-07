@@ -11,8 +11,8 @@ class NavigationService {
     return navigationKey.currentState!.pop(popValue);
   }
 
-  Future<dynamic>? navigateToScreen(String page) =>
-      navigationKey.currentState?.pushNamed(page);
+  Future<dynamic>? navigateToScreen(String page, {arguments}) =>
+      navigationKey.currentState?.pushNamed(page, arguments: arguments);
 
   Future<dynamic> replaceScreen(Widget page, {arguments}) async =>
       navigationKey.currentState!.pushReplacement(

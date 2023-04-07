@@ -33,6 +33,13 @@ migrate_working_dir/
 /build/
 pubspec.lock
 
+# iOS Related
+Podfile
+Podfile.lock
+
+
+
+
 # Symbolication related
 app.*.symbols
 

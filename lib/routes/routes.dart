@@ -1,31 +1,32 @@
 class Routes {
   // Routes for SignUP and SignIN UI
-  static const homePage = '/homepage';
-  static const signupPage = '/signup';
-  static const loginPage = '/login';
-  static const forgotPassword = './forgotPassword';
+  static const homePage = 'homepage';
+  static const signupPage = 'signup';
+  static const loginPage = 'login';
+  static const forgotPassword = 'forgotPassword';
 
   //App Routes
-  static const bottomNavigationPage = '/bottomNavigationPage';
-  static const groupPage = '/groupPage';
-  static const friendsPage = '/friendsPage';
-  static const activityPage = '/activityPage';
-  static const profilePage = '/profilePage';
+  static const bottomNavigationPage = 'bottomNavigationPage';
+  static const groupPage = 'groupPage';
+  static const friendsPage = 'friendsPage';
+  static const activityPage = 'activityPage';
+  static const profilePage = 'profilePage';
 
   // Group Module Route
-  static const createGroup = '/createGroup';
-  static const groupExpense = '/groupExpense';
-  static const groupInfo = '/groupInfo';
-  static const groupSettleUp = '/groupSettleUp';
-  static const groupBalances = '/groupBalances';
+  static const createGroup = 'createGroup';
+  static const groupExpense = 'groupExpense';
+  static const groupInfo = 'groupInfo';
+  static const groupSettleUp = 'groupSettleUp';
+  static const groupBalances = 'groupBalances';
   static const groupTotalBalance = 'groupTotalBalance';
-  static const categories = '/categories';
+  static const categories = 'categories';
 
   //Friend Module Route
-  static const addFriend = '/addFriend';
-  static const addNewFriend = '/addNewFriend';
-  static const addNewContact = '/addNewContact';
-  static const friendInfo = '/friendInfo';
+  static const addFriend = 'addFriend';
+  static const addNewFriend = 'addNewFriend';
+  static const addNewContact = 'addNewContact';
+  static const friendInfo = 'friendInfo';
+  static const verifyFriendsInfo = 'verifyFriendsInfo';
 
-  static const addExpense = '/addExpense';
+  static const addExpense = 'addExpense';
 }

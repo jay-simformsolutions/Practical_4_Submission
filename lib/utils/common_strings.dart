@@ -22,6 +22,8 @@ class CommonStrings {
   static const confirmedPasswordNotMatched = 'Password is not Matched';
   static const confirmEmailString = 'Check Your Email and Reset your password';
   static const okString = 'Ok';
+  static const noString = 'No';
+  static const yesString = 'Yes';
   static const errorString = 'Error';
   static const cancelString = 'Cancel';
   static const whoopsString = 'Whoops!';
@@ -52,8 +54,10 @@ class CommonStrings {
   static const forgotPasswordString = 'Forgot Password';
   static String temp = '0';
 
-  //Assets Common Strings
+  //Exit Dialog Common Strings
+  static const exitAppTitle = 'Are You Sure You Want Exit App';
 
+  //Assets Common Strings
   static const splitwise = 'SplitWise';
   static const groupBottomTitle = 'Group';
   static const friendBottomTitle = 'Friends';
@@ -119,6 +123,13 @@ class CommonStrings {
   static const anotherChance = 'another chance to review before sending';
   static const username = 'Name';
   static const phoneOrEmail = 'Phone Number or Email Address';
+
+  // Verify Contacts page Common Strings
+  static const verifyContacts = 'Verify Contact Info';
+  static const letThemKnow = 'Send a text message to let them know';
+  static const friendsAdded = 'Your friend has been added';
+  static const sendTextMessage = 'Send text message';
+  static const finishString = 'Finish';
 
   //Activity Page Common Strings
   static const activityHeadline = 'Activity';

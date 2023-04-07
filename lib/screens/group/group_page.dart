@@ -32,7 +32,7 @@ class GroupPage extends StatelessWidget {
         children: [
           SingleChildScrollView(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const SizedBox(
                   height: 5,
