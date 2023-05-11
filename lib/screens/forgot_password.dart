@@ -1,69 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:splitwise/Utils/assets.dart';
+import 'package:splitwise/extensions/extensions.dart';
+import 'package:splitwise/utils/theme_data.dart';
 
+import '../Utils/assets.dart';
 import '../common_methods/clip_react.dart';
 import '../common_methods/text_formfield_widget.dart';
-import '../routes/navigation_functions.dart';
+import '../routes/navigator_service.dart';
+import '../store/authentication_store/forgot_password_store.dart';
 import '../utils/colors.dart';
 import '../utils/common_strings.dart';
 
-class ForgotPassword extends StatefulWidget {
+class ForgotPassword extends StatelessWidget {
   const ForgotPassword({Key? key}) : super(key: key);
 
   @override
-  State<ForgotPassword> createState() => _ForgotPasswordState();
-}
-
-class _ForgotPasswordState extends State<ForgotPassword> {
-  final _formKey = GlobalKey<FormState>();
-
-  Future<dynamic> showAlertDialog() async {
-    return showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: Text(
-            CommonStrings.alertDialogTitle,
-            style: Theme.of(context).textTheme.titleMedium,
-          ),
-          content: Text(
-            CommonStrings.confirmEmailString,
-            style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                  fontSize: 15,
-                ),
-          ),
-          actions: [
-            ElevatedButton(
-              style: Theme.of(context).elevatedButtonTheme.style!.copyWith(
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                      CommonColors.lightGreyColor,
-                    ),
-                  ),
-              onPressed: () => context.popFunction(),
-              child: const Text(
-                CommonStrings.okString,
-              ),
-            ),
-            ElevatedButton(
-              onPressed: () => context.popFunction(),
-              child: const Text(
-                CommonStrings.cancelString,
-              ),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void conditionToShowAlertDialog() {
-    if (_formKey.currentState!.validate()) {
-      showAlertDialog();
-    }
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final readForgotPasswordStore = context.readProvider<ForgotPasswordStore>();
+
+    final size = MediaQuery.of(context).size;
+
     return Scaffold(
       body: Column(
         children: [
@@ -73,7 +28,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 clipper: ClipClipper(),
                 child: SizedBox(
                   height: 250,
-                  width: MediaQuery.of(context).size.width,
+                  width: size.width,
                   child: const Image(
                     image: AssetImage(AssetString.landingPageLoginImageString),
                     fit: BoxFit.cover,
@@ -84,7 +39,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 top: 100,
                 left: 25,
                 child: FloatingActionButton.small(
-                  onPressed: () => context.popFunction(),
+                  onPressed: NavigationService().goBack,
                   backgroundColor: CommonColors.whiteColor,
                   child: const Icon(
                     Icons.arrow_back_ios_new,
@@ -95,21 +50,21 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             ],
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height / 8,
+            height: size.height / 8,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 CommonStrings.forgotPasswordString,
-                style: Theme.of(context).textTheme.bodyMedium,
+                style: themeData.textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 20,
               ),
               Center(
                 child: Form(
-                  key: _formKey,
+                  key: readForgotPasswordStore.formKey,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -122,15 +77,13 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                         height: 15,
                       ),
                       ElevatedButton(
-                        onPressed: conditionToShowAlertDialog,
-                        style: Theme.of(context)
-                            .elevatedButtonTheme
-                            .style!
-                            .copyWith(
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                CommonColors.lightGreenColor,
-                              ),
-                            ),
+                        onPressed:
+                            readForgotPasswordStore.conditionToShowAlertDialog,
+                        style: themeData.elevatedButtonTheme.style?.copyWith(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                            CommonColors.lightGreenColor,
+                          ),
+                        ),
                         child: const Text(CommonStrings.sendEmail),
                       ),
                     ],

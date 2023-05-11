@@ -1,52 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:splitwise/Utils/assets.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:splitwise/extensions/extensions.dart';
+import 'package:splitwise/store/authentication_store/sign_in_store.dart';
+import 'package:splitwise/utils/theme_data.dart';
 
+import '../Utils/assets.dart';
 import '../common_methods/clip_react.dart';
 import '../common_methods/sized_box_widget.dart';
 import '../common_methods/text_formfield_widget.dart';
-import '../routes/navigation_functions.dart';
+import '../routes/navigator_service.dart';
 import '../routes/routes.dart';
 import '../utils/colors.dart';
 import '../utils/common_strings.dart';
 
-class LoginPage extends StatefulWidget {
+class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
-}
-
-class _LoginPageState extends State<LoginPage> {
-  bool changeState = false;
-  String value = 'jay';
-
-  final _formKey = GlobalKey<FormState>();
-
-  pushAndRemoveSignUp() {
-    Navigator.of(context).pushNamedAndRemoveUntil(
-      Routes.signupPage,
-      (routes) => false,
-    );
-  }
-
-  void _clickForSignIn() {
-    if (_formKey.currentState!.validate()) {
-      Navigator.pop(context);
-      Navigator.pushNamed(context, Routes.loginPage);
-    }
-  }
-
-  void _changedValue(bool? value) {
-    setState(() {
-      changeState = !changeState;
-    });
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final readStore = context.readProvider<SignInStore>();
+
+    final size = MediaQuery.of(context).size;
+
     return Scaffold(
       body: Form(
-        key: _formKey,
+        key: readStore.formKey,
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -56,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
                     clipper: ClipClipper(),
                     child: SizedBox(
                       height: 250,
-                      width: MediaQuery.of(context).size.width,
+                      width: size.width,
                       child: const Image(
                         image:
                             AssetImage(AssetString.landingPageLoginImageString),
@@ -68,7 +46,8 @@ class _LoginPageState extends State<LoginPage> {
                     top: 100,
                     left: 25,
                     child: FloatingActionButton.small(
-                      onPressed: () => context.pushAndRemove(Routes.signupPage),
+                      onPressed: () => NavigationService()
+                          .navigateToScreen(Routes.signupPage),
                       backgroundColor: CommonColors.whiteColor,
                       child: const Icon(
                         Icons.arrow_back_ios_new,
@@ -80,11 +59,11 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Text(
                 CommonStrings.welcomeBackString,
-                style: Theme.of(context).textTheme.bodyMedium,
+                style: themeData.textTheme.bodyMedium,
               ),
               Text(
                 CommonStrings.loginToAccountString,
-                style: Theme.of(context).textTheme.titleSmall,
+                style: themeData.textTheme.titleSmall,
               ),
               const SizedBox(
                 height: 30,
@@ -109,29 +88,32 @@ class _LoginPageState extends State<LoginPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Checkbox(
-                      shape: const CircleBorder(),
-                      checkColor: Colors.black,
-                      activeColor: Colors.grey,
-                      value: changeState,
-                      onChanged: _changedValue,
-                    ),
+                    Observer(builder: (context) {
+                      return Checkbox(
+                        shape: const CircleBorder(),
+                        checkColor: Colors.black,
+                        activeColor: Colors.grey,
+                        value: readStore.changeState,
+                        onChanged: readStore.changedValue,
+                      );
+                    }),
                     const SizedBox(
                       width: 3,
                     ),
                     Text(
                       CommonStrings.rememberMeString,
-                      style: Theme.of(context).textTheme.bodySmall,
+                      style: themeData.textTheme.bodySmall,
                     ),
                     const Spacer(),
                     GestureDetector(
-                      onTap: () => context.pushFunction(Routes.forgotPassword),
+                      onTap: () => NavigationService()
+                          .navigateToScreen(Routes.forgotPassword),
                       child: Text(
                         CommonStrings.forgotPasswordString,
-                        style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                              color: CommonColors.lightGreenColor,
-                              fontSize: 12,
-                            ),
+                        style: themeData.textTheme.bodySmall?.copyWith(
+                          color: CommonColors.lightGreenColor,
+                          fontSize: 12,
+                        ),
                       ),
                     ),
                   ],
@@ -141,17 +123,15 @@ class _LoginPageState extends State<LoginPage> {
                 height: 80,
               ),
               ElevatedButton(
-                onPressed: _clickForSignIn,
-                style: Theme.of(context).elevatedButtonTheme.style!.copyWith(
-                      backgroundColor: MaterialStateProperty.all<Color>(
-                          CommonColors.lightGreenColor),
-                    ),
+                onPressed: readStore.clickForSignIn,
+                style: themeData.elevatedButtonTheme.style?.copyWith(
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                      CommonColors.lightGreyColor),
+                ),
                 child: Text(
                   CommonStrings.loginString,
-                  style: Theme.of(context)
-                      .textTheme
-                      .titleMedium!
-                      .copyWith(color: CommonColors.whiteColor),
+                  style: themeData.textTheme.titleMedium
+                      ?.copyWith(color: CommonColors.whiteColor),
                 ),
               ),
               const SizedBox(
@@ -162,15 +142,15 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   Text(
                     CommonStrings.doNotHaveAccountString,
-                    style: Theme.of(context).textTheme.bodySmall,
+                    style: themeData.textTheme.bodySmall,
                   ),
                   GestureDetector(
-                    onTap: () => pushAndRemoveSignUp(),
+                    onTap: readStore.pushAndRemoveSignUp,
                     child: Text(
                       CommonStrings.signupString,
-                      style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                            color: CommonColors.lightGreenColor,
-                          ),
+                      style: themeData.textTheme.bodySmall?.copyWith(
+                        color: CommonColors.lightGreenColor,
+                      ),
                     ),
                   ),
                 ],

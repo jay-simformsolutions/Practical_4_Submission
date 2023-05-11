@@ -5,16 +5,20 @@ class NavigationService {
   NavigationService._internal();
   factory NavigationService() => _instance;
 
+  late final NavigatorState currentState = navigationKey.currentState!;
+
   final GlobalKey<NavigatorState> navigationKey = GlobalKey<NavigatorState>();
 
   dynamic goBack([dynamic popValue]) {
     return navigationKey.currentState!.pop(popValue);
   }
 
-  Future<dynamic>? navigateToScreen(String page) =>
-      navigationKey.currentState?.pushNamed(page);
+  BuildContext get context => currentState.context;
 
-  Future<dynamic> replaceScreen(Widget page, {arguments}) async =>
+  void navigateToScreen(String page, {arguments}) =>
+      navigationKey.currentState?.pushNamed(page, arguments: arguments);
+
+  void replaceScreen(Widget page, {arguments}) async =>
       navigationKey.currentState!.pushReplacement(
         MaterialPageRoute(
           builder: (_) => page,
