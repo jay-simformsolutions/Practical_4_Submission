@@ -1,19 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:splitwise/routes/navigator_service.dart';
 
 import '../../../common_methods/commonmethod_category_list.dart';
-import '../../../common_methods/theme_data.dart';
 import '../../../constant/category_list.dart';
 import '../../../utils/colors.dart';
 import '../../../utils/common_strings.dart';
+import '../../../utils/theme_data.dart';
 
-class CategoryList extends StatefulWidget {
+class CategoryList extends StatelessWidget {
   const CategoryList({Key? key}) : super(key: key);
 
-  @override
-  State<CategoryList> createState() => _CategoryListState();
-}
-
-class _CategoryListState extends State<CategoryList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,10 +44,10 @@ class _CategoryListState extends State<CategoryList> {
                 height: 10,
               ),
               ListView.builder(
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () => Navigator.of(context)
-                        .pop(EntertainmentList.entertainmentList[index]),
+                itemBuilder: (_, index) {
+                  return InkWell(
+                    onTap: () => NavigationService()
+                        .goBack(EntertainmentList.entertainmentList[index]),
                     child: ListOfCategory(
                       color: CommonColors.entertainmentListColor,
                       iconName: EntertainmentList
@@ -76,10 +72,10 @@ class _CategoryListState extends State<CategoryList> {
                 height: 10,
               ),
               ListView.builder(
-                itemBuilder: (context, index) {
+                itemBuilder: (_, index) {
                   return InkWell(
-                    onTap: () => Navigator.of(context)
-                        .pop(FoodAndDrinkList.foodAndDrinkList[index]),
+                    onTap: () => NavigationService()
+                        .goBack(FoodAndDrinkList.foodAndDrinkList[index]),
                     child: ListOfCategory(
                       color: CommonColors.foodAndDrinkListColor,
                       iconName: FoodAndDrinkList
@@ -104,10 +100,10 @@ class _CategoryListState extends State<CategoryList> {
                 height: 10,
               ),
               ListView.builder(
-                itemBuilder: (context, index) {
-                  return GestureDetector(
+                itemBuilder: (_, index) {
+                  return InkWell(
                     onTap: () =>
-                        Navigator.of(context).pop(HomeList.homeList[index]),
+                        NavigationService().goBack(HomeList.homeList[index]),
                     child: ListOfCategory(
                       color: CommonColors.homeListColor,
                       iconName: HomeList.homeList[index].iconName.toString(),
@@ -129,10 +125,10 @@ class _CategoryListState extends State<CategoryList> {
                 height: 10,
               ),
               ListView.builder(
-                itemBuilder: (context, index) {
-                  return GestureDetector(
+                itemBuilder: (_, index) {
+                  return InkWell(
                     onTap: () =>
-                        Navigator.of(context).pop(LifeList.lifeList[index]),
+                        NavigationService().goBack(LifeList.lifeList[index]),
                     child: ListOfCategory(
                       color: CommonColors.lifeListColor,
                       iconName: LifeList.lifeList[index].iconName.toString(),
@@ -154,10 +150,10 @@ class _CategoryListState extends State<CategoryList> {
                 height: 10,
               ),
               ListView.builder(
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () => Navigator.of(context)
-                        .pop(UncategorizedList.uncategorizedList[index]),
+                itemBuilder: (_, index) {
+                  return InkWell(
+                    onTap: () => NavigationService()
+                        .goBack(UncategorizedList.uncategorizedList[index]),
                     child: ListOfCategory(
                       color: CommonColors.lightGreyColor,
                       iconName: UncategorizedList
@@ -182,10 +178,10 @@ class _CategoryListState extends State<CategoryList> {
                 height: 10,
               ),
               ListView.builder(
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () => Navigator.of(context)
-                        .pop(UtilitiesList.utilitiesList[index]),
+                itemBuilder: (_, index) {
+                  return InkWell(
+                    onTap: () => NavigationService()
+                        .goBack(UtilitiesList.utilitiesList[index]),
                     child: ListOfCategory(
                       color: CommonColors.utilitiesListColor,
                       iconName: UtilitiesList.utilitiesList[index].iconName

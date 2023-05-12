@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:splitwise/routes/navigator_service.dart';
 
 import '../../common_methods/add_expense_button.dart';
 import '../../common_methods/elevated_button_onboard.dart';
-import '../../common_methods/theme_data.dart';
 import '../../routes/routes.dart';
 import '../../utils/assets.dart';
 import '../../utils/colors.dart';
 import '../../utils/common_strings.dart';
+import '../../utils/theme_data.dart';
 
 class GroupPage extends StatelessWidget {
   const GroupPage({Key? key}) : super(key: key);
@@ -18,7 +19,8 @@ class GroupPage extends StatelessWidget {
       appBar: AppBar(
         actions: [
           IconButton(
-            onPressed: () => Navigator.pushNamed(context, Routes.createGroup),
+            onPressed: () =>
+                NavigationService().navigateToScreen(Routes.createGroup),
             icon: const Icon(
               Icons.group_add_outlined,
               color: CommonColors.blackColor,
@@ -32,7 +34,7 @@ class GroupPage extends StatelessWidget {
         children: [
           SingleChildScrollView(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const SizedBox(
                   height: 5,
@@ -78,7 +80,7 @@ class GroupPage extends StatelessWidget {
                   ),
                   buttonName: CommonStrings.makenewGroup,
                   onPress: () =>
-                      Navigator.pushNamed(context, Routes.createGroup),
+                      NavigationService().navigateToScreen(Routes.createGroup),
                 ),
                 const SizedBox(
                   height: 20,
@@ -89,7 +91,8 @@ class GroupPage extends StatelessWidget {
                     color: CommonColors.tealColor,
                   ),
                   buttonName: CommonStrings.showGroupInfo,
-                  onPress: () => Navigator.pushNamed(context, Routes.groupInfo),
+                  onPress: () =>
+                      NavigationService().navigateToScreen(Routes.groupInfo),
                 ),
                 const SizedBox(
                   height: 30,
@@ -100,7 +103,8 @@ class GroupPage extends StatelessWidget {
           Align(
             alignment: Alignment.bottomRight,
             child: GestureDetector(
-              onTap: () => Navigator.pushNamed(context, Routes.addExpense),
+              onTap: () =>
+                  NavigationService().navigateToScreen(Routes.addExpense),
               child: const BottomButton(),
             ),
           ),

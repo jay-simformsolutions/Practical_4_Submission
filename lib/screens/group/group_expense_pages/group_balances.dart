@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../common_methods/group_balance_expansion_tile.dart';
-import '../../../common_methods/theme_data.dart';
 import '../../../utils/colors.dart';
 import '../../../utils/common_strings.dart';
+import '../../../utils/theme_data.dart';
 
 class GroupBalance extends StatelessWidget {
   const GroupBalance({Key? key}) : super(key: key);

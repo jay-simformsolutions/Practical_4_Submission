@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 import '../utils/colors.dart';
-import 'theme_data.dart';
+import '../utils/theme_data.dart';
 
 class ListOfCategory extends StatelessWidget {
   final String? iconName;

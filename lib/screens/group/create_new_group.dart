@@ -1,108 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 
-import '../../common_methods/theme_data.dart';
-import '../../routes/navigation_functions.dart';
-import '../../routes/routes.dart';
+import '../../extensions/extensions.dart';
+import '../../routes/navigator_service.dart';
+import '../../store/group_store/create_new_group_store.dart';
 import '../../utils/colors.dart';
 import '../../utils/common_strings.dart';
+import '../../utils/theme_data.dart';
 
-class CreateGroup extends StatefulWidget {
+class CreateGroup extends StatelessWidget {
   const CreateGroup({Key? key}) : super(key: key);
 
   @override
-  State<CreateGroup> createState() => _CreateGroupState();
-}
-
-class _CreateGroupState extends State<CreateGroup> {
-  TextEditingController textEditingController = TextEditingController();
-
-  void completeOrShowDialogue() {
-    if (textEditingController.text.isEmpty) {
-      showWarning();
-    } else {
-      Navigator.pushNamed(context, Routes.groupInfo);
-    }
-  }
-
-  void showWarning() {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: const Text(CommonStrings.errorString),
-          content: Text(
-            CommonStrings.enterGroupNameAlertDialog,
-            style: themeData.textTheme.bodySmall!.copyWith(
-              color: CommonColors.blackColor,
-            ),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => context.popFunction(),
-              child: const Text(CommonStrings.okString),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  final List _choiceChipsList = ['Trip', 'Home', 'Couple', 'Other'];
-  final List _choiceChipIcon = [
-    const Icon(Icons.flight_takeoff_outlined),
-    const Icon(Icons.home),
-    const Icon(Icons.favorite_border),
-    const Icon(Icons.note_alt_rounded)
-  ];
-  int _selectedIndex = 0;
-
-  List<Widget> choiceChips() {
-    List<Widget> chips = [];
-    for (int i = 0; i < _choiceChipsList.length; i++) {
-      Widget item = Padding(
-        padding: const EdgeInsets.fromLTRB(0, 0, 13, 0),
-        child: ChoiceChip(
-          labelPadding: const EdgeInsets.all(7),
-          avatar: _choiceChipIcon[i],
-          elevation: 5,
-          shape: RoundedRectangleBorder(
-            borderRadius: const BorderRadius.all(
-              Radius.circular(30),
-            ),
-            side: BorderSide(
-              color: _selectedIndex == i
-                  ? CommonColors.tealColor
-                  : CommonColors.whiteColor,
-            ),
-          ),
-          label: Text(
-            _choiceChipsList[i],
-            style: themeData.textTheme.bodySmall!.copyWith(
-              color: CommonColors.blackColor,
-            ),
-          ),
-          labelStyle: const TextStyle(
-            color: CommonColors.whiteColor,
-          ),
-          backgroundColor: CommonColors.whiteColor,
-          selected: _selectedIndex == i,
-          selectedColor: CommonColors.tealColor.shade200,
-          onSelected: (value) {
-            setState(
-              () {
-                _selectedIndex = i;
-              },
-            );
-          },
-        ),
-      );
-      chips.add(item);
-    }
-    return chips;
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final readStore = context.readProvider<CreateNewGroupStore>();
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
@@ -117,12 +29,12 @@ class _CreateGroupState extends State<CreateGroup> {
             Icons.cancel_outlined,
             color: CommonColors.blackColor,
           ),
-          onPressed: context.popFunction,
+          onPressed: NavigationService().goBack,
         ),
         backgroundColor: CommonColors.whiteColor,
         actions: [
           IconButton(
-            onPressed: completeOrShowDialogue,
+            onPressed: readStore.completeOrShowDialogue,
             icon: const Icon(
               Icons.done,
               color: CommonColors.blackColor,
@@ -164,7 +76,7 @@ class _CreateGroupState extends State<CreateGroup> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: TextField(
-                        controller: textEditingController,
+                        controller: readStore.groupNameEditingController,
                         cursorHeight: 20,
                         style: const TextStyle(
                           fontSize: 15,
@@ -203,10 +115,14 @@ class _CreateGroupState extends State<CreateGroup> {
               scrollDirection: Axis.horizontal,
               child: Padding(
                 padding: const EdgeInsets.all(6.0),
-                child: Wrap(
-                  spacing: 5,
-                  direction: Axis.horizontal,
-                  children: choiceChips(),
+                child: Observer(
+                  builder: (_) {
+                    return Wrap(
+                      spacing: 5,
+                      direction: Axis.horizontal,
+                      children: readStore.choiceChips(),
+                    );
+                  },
                 ),
               ),
             ),

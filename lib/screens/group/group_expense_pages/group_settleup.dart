@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../common_methods/group_settleup.dart';
-import '../../../common_methods/theme_data.dart';
 import '../../../utils/colors.dart';
 import '../../../utils/common_strings.dart';
+import '../../../utils/theme_data.dart';
 
 class GroupSettleUp extends StatelessWidget {
   const GroupSettleUp({Key? key}) : super(key: key);

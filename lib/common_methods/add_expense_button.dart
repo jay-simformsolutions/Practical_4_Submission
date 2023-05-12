@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../utils/colors.dart';
 import '../utils/common_strings.dart';
-import 'theme_data.dart';
+import '../utils/theme_data.dart';
 
 class BottomButton extends StatelessWidget {
   const BottomButton({Key? key}) : super(key: key);
