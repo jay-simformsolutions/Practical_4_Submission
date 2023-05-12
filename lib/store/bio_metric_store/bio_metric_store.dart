@@ -21,7 +21,8 @@ abstract class _BioMetricStore with Store, WidgetsBindingObserver {
     _checkBiometric().then(
       (value) => value
           ? _authenticate()
-          : NavigationService().navigateToScreen(Routes.bottomNavigationPage),
+          : NavigationService.instance
+              .navigateToScreen(Routes.bottomNavigationPage),
     );
   }
 
@@ -35,7 +36,7 @@ abstract class _BioMetricStore with Store, WidgetsBindingObserver {
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (AppLifecycleState.resumed == state) {
       debugPrint('State is $state');
-      NavigationService().navigateToScreen('/');
+      NavigationService.instance.navigateToScreen('/');
     }
   }
 
@@ -67,7 +68,7 @@ abstract class _BioMetricStore with Store, WidgetsBindingObserver {
       showSnackBar(
         const Text(CommonStrings.enableBioMetric),
       );
-      NavigationService().navigateToScreen(Routes.bottomNavigationPage);
+      NavigationService.instance.navigateToScreen(Routes.bottomNavigationPage);
     }
 
     debugPrint('Authorized String is $authorized');
@@ -76,20 +77,21 @@ abstract class _BioMetricStore with Store, WidgetsBindingObserver {
         : CommonStrings.failedAuthenticate;
 
     if (authorized == CommonStrings.successAuthenticate) {
-      NavigationService().navigateToScreen(Routes.bottomNavigationPage);
+      NavigationService.instance.navigateToScreen(Routes.bottomNavigationPage);
     }
   }
 
   void showSnackBar(Widget content) {
     SnackBar snackBar = SnackBar(content: content);
-    ScaffoldMessenger.of(NavigationService().context).showSnackBar(snackBar);
+    ScaffoldMessenger.of(NavigationService.instance.context)
+        .showSnackBar(snackBar);
   }
 
   Future<bool> showExitPopup() async {
     return await showDialog(
           barrierDismissible: false,
           barrierColor: Colors.white,
-          context: NavigationService().context,
+          context: NavigationService.instance.context,
           builder: (_) => AlertDialog(
             title: Text(
               CommonStrings.titleOfAuthenticate,
@@ -116,7 +118,7 @@ abstract class _BioMetricStore with Store, WidgetsBindingObserver {
                 width: 150,
                 child: ElevatedButton(
                   onPressed: () {
-                    NavigationService().goBack();
+                    NavigationService.instance.goBack();
                     _checkBiometric();
                     _authenticate();
                   },

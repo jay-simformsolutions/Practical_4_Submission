@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:splitwise/store/friend_store/add_new_contact_store.dart';
+import 'package:splitwise/store/friend_store/contact_service_store.dart';
+import 'package:splitwise/store/group_store/add_expense_store.dart';
 
 import '../extensions/extensions.dart';
 import '../screens/bio_metric_page.dart';
@@ -104,11 +107,13 @@ class RouteGenerator {
         );
       case Routes.addFriend:
         return MaterialPageRoute(
-          builder: (_) => const AddNewFriend(),
+          builder: (_) =>
+              const AddNewFriend().withProvider(ContactServiceStore()),
         );
       case Routes.addNewContact:
         return MaterialPageRoute(
-          builder: (_) => const AddNewContactPage(),
+          builder: (_) =>
+              const AddNewContactPage().withProvider(AddNewContactStore()),
         );
       case Routes.friendInfo:
         return MaterialPageRoute(
@@ -116,7 +121,7 @@ class RouteGenerator {
         );
       case Routes.addExpense:
         return MaterialPageRoute(
-          builder: (_) => const AddExpense(),
+          builder: (_) => const AddExpense().withProvider(AddExpenseStore()),
         );
 
       default:

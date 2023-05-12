@@ -19,7 +19,7 @@ class GroupExpenseWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final readStore = context.readProvider<GroupExpenseStore>();
+    final store = context.readProvider<GroupExpenseStore>();
 
     return Scaffold(
       backgroundColor: CommonColors.darkGrey,
@@ -37,7 +37,7 @@ class GroupExpenseWidget extends StatelessWidget {
             ),
             leading: IconButton(
               icon: const Icon(Icons.arrow_back),
-              onPressed: NavigationService().goBack,
+              onPressed: NavigationService.instance.goBack,
             ),
             flexibleSpace: FlexibleSpaceBar(
               background: Image.network(
@@ -74,7 +74,7 @@ class GroupExpenseWidget extends StatelessWidget {
                         return Wrap(
                           spacing: 5,
                           direction: Axis.horizontal,
-                          children: readStore.choiceChips(),
+                          children: store.choiceChips(),
                         );
                       },
                     ),
@@ -86,11 +86,11 @@ class GroupExpenseWidget extends StatelessWidget {
                       padding: const EdgeInsets.all(8),
                       shrinkWrap: true,
                       primary: false,
-                      itemCount: readStore.groupExpense.length,
+                      itemCount: store.groupExpense.length,
                       itemBuilder: (_, index) {
-                        DateTime dateTime = DateTime.parse(
-                            readStore.groupExpense[index]['Date']);
-                        if (readStore.groupExpense[index]['Category'] ==
+                        DateTime dateTime =
+                            DateTime.parse(store.groupExpense[index]['Date']);
+                        if (store.groupExpense[index]['Category'] ==
                             'Payment') {
                           return SizedBox(
                             height: 60,
@@ -135,8 +135,7 @@ class GroupExpenseWidget extends StatelessWidget {
                                       width: 15,
                                     ),
                                     Text(
-                                      readStore.groupExpense[index]
-                                          ['Description'],
+                                      store.groupExpense[index]['Description'],
                                       style: themeData.textTheme.bodySmall!
                                           .copyWith(
                                         color: CommonColors.tealColor,
@@ -191,7 +190,7 @@ class GroupExpenseWidget extends StatelessWidget {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            readStore.groupExpense[index]
+                                            store.groupExpense[index]
                                                 ['Description'],
                                             overflow: TextOverflow.ellipsis,
                                             softWrap: false,
@@ -208,11 +207,11 @@ class GroupExpenseWidget extends StatelessWidget {
                                             height: 5,
                                           ),
                                           Text(
-                                            readStore.groupExpense[index]
+                                            store.groupExpense[index]
                                                         ['Sahil Totala'] ==
                                                     0
                                                 ? 'You are not involved'
-                                                : 'You paid ₹ ${readStore.groupExpense[index]['Cost']}',
+                                                : 'You paid ₹ ${store.groupExpense[index]['Cost']}',
                                             style: themeData
                                                 .textTheme.bodySmall!
                                                 .copyWith(
@@ -228,11 +227,11 @@ class GroupExpenseWidget extends StatelessWidget {
                                             CrossAxisAlignment.end,
                                         children: [
                                           Text(
-                                            readStore.groupExpense[index]
+                                            store.groupExpense[index]
                                                         ['Sahil Totala'] >
                                                     0
                                                 ? 'you lent'
-                                                : readStore.groupExpense[index]
+                                                : store.groupExpense[index]
                                                             ['Sahil Totala'] <
                                                         0
                                                     ? 'you borrowed'
@@ -240,13 +239,11 @@ class GroupExpenseWidget extends StatelessWidget {
                                             style: themeData
                                                 .textTheme.bodySmall!
                                                 .copyWith(
-                                              color: readStore.groupExpense[
-                                                              index]
+                                              color: store.groupExpense[index]
                                                           ['Sahil Totala'] >
                                                       0
                                                   ? CommonColors.tealColor
-                                                  : readStore.groupExpense[
-                                                                  index]
+                                                  : store.groupExpense[index]
                                                               ['Sahil Totala'] <
                                                           0
                                                       ? Colors.orangeAccent
@@ -256,25 +253,24 @@ class GroupExpenseWidget extends StatelessWidget {
                                             ),
                                           ),
                                           Text(
-                                            readStore.groupExpense[index]
+                                            store.groupExpense[index]
                                                         ['Sahil Totala'] >
                                                     0
-                                                ? '₹ ${readStore.groupExpense[index]['Sahil Totala']}'
+                                                ? '₹ ${store.groupExpense[index]['Sahil Totala']}'
                                                     .toString()
-                                                : readStore.groupExpense[index]
+                                                : store.groupExpense[index]
                                                             ['Sahil Totala'] <
                                                         0
-                                                    ? '₹ ${readStore.groupExpense[index]['Sahil Totala'].toString().substring(1)}'
+                                                    ? '₹ ${store.groupExpense[index]['Sahil Totala'].toString().substring(1)}'
                                                     : '',
                                             style: themeData
                                                 .textTheme.bodySmall!
                                                 .copyWith(
-                                              color:
-                                                  readStore.groupExpense[index]
-                                                              ['Sahil Totala'] >
-                                                          0
-                                                      ? CommonColors.tealColor
-                                                      : Colors.orangeAccent,
+                                              color: store.groupExpense[index]
+                                                          ['Sahil Totala'] >
+                                                      0
+                                                  ? CommonColors.tealColor
+                                                  : Colors.orangeAccent,
                                               fontSize: 11,
                                             ),
                                           ),

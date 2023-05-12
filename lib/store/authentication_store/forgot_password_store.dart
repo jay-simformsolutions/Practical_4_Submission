@@ -14,7 +14,7 @@ abstract class _ForgotPasswordStore with Store {
 
   Future<dynamic> showAlertDialog() async {
     return showDialog(
-      context: NavigationService().context,
+      context: NavigationService.instance.context,
       builder: (context) {
         return AlertDialog(
           title: Text(
@@ -34,13 +34,13 @@ abstract class _ForgotPasswordStore with Store {
                       CommonColors.lightGreyColor,
                     ),
                   ),
-              onPressed: NavigationService().goBack,
+              onPressed: NavigationService.instance.goBack,
               child: const Text(
                 CommonStrings.okString,
               ),
             ),
             ElevatedButton(
-              onPressed: NavigationService().goBack,
+              onPressed: NavigationService.instance.goBack,
               child: const Text(
                 CommonStrings.cancelString,
               ),

@@ -60,7 +60,7 @@ abstract class _ChoiceChipListStore with Store {
           onSelected: (value) {
             selectedIndex = i;
             if (selectedIndex != 0) {
-              NavigationService()
+              NavigationService.instance
                   .navigateToScreen(choiceChipPages[selectedIndex - 1]);
             }
           },

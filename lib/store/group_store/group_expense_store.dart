@@ -78,7 +78,7 @@ abstract class _GroupExpenseStore with Store {
           onSelected: (value) {
             selectedIndex = i;
             if (selectedIndex != 0) {
-              NavigationService()
+              NavigationService.instance
                   .navigateToScreen(choiceChipPages[selectedIndex - 1]);
             }
           },

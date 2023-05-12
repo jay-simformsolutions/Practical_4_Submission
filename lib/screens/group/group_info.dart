@@ -15,7 +15,7 @@ class GroupPageInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final readStore = context.readProvider<GroupInfoStore>();
+    final store = context.readProvider<GroupInfoStore>();
 
     return Scaffold(
       backgroundColor: CommonColors.whiteColor,
@@ -29,7 +29,7 @@ class GroupPageInfo extends StatelessWidget {
           ),
           IconButton(
             onPressed: () =>
-                NavigationService().navigateToScreen(Routes.createGroup),
+                NavigationService.instance.navigateToScreen(Routes.createGroup),
             icon: const Icon(Icons.group_add_outlined),
             color: CommonColors.blackColor,
           ),
@@ -38,7 +38,7 @@ class GroupPageInfo extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios_new_outlined),
           color: CommonColors.blackColor,
-          onPressed: NavigationService().goBack,
+          onPressed: NavigationService.instance.goBack,
         ),
       ),
       body: Padding(
@@ -68,27 +68,26 @@ class GroupPageInfo extends StatelessWidget {
             ),
             Observer(
               builder: (_) {
-                return readStore.groups.isEmpty
+                return store.groups.isEmpty
                     ? const CircularProgressIndicator()
                     : ListView.builder(
                         physics: const NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
-                        itemCount: readStore.groups.length,
+                        itemCount: store.groups.length,
                         itemBuilder: (_, index) {
                           return Card(
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 InkWell(
-                                  onTap: () =>
-                                      NavigationService().navigateToScreen(
+                                  onTap: () => NavigationService.instance
+                                      .navigateToScreen(
                                     Routes.groupExpense,
                                     arguments: {
                                       'index': index,
-                                      'groupImage': readStore.groups[index]
+                                      'groupImage': store.groups[index]
                                           ['coverphoto'],
-                                      'groupName': readStore.groups[index]
-                                          ['name'],
+                                      'groupName': store.groups[index]['name'],
                                     },
                                   ),
                                   child: Row(
@@ -97,15 +96,14 @@ class GroupPageInfo extends StatelessWidget {
                                         padding: const EdgeInsets.fromLTRB(
                                             5, 5, 0, 0),
                                         child: CircleAvatar(
-                                          backgroundImage: readStore
-                                              .groups[index]['coverphoto'],
+                                          backgroundImage: store.groups[index]
+                                              ['coverphoto'],
                                           radius: 35,
                                         ),
                                       ),
                                       const Spacer(),
                                       Text(
-                                        readStore.groups[index]['name']
-                                            .toString(),
+                                        store.groups[index]['name'].toString(),
                                         style: themeData.textTheme.bodySmall!
                                             .copyWith(
                                           color: CommonColors.blackColor,

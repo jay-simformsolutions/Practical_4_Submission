@@ -46,7 +46,7 @@ class CategoryList extends StatelessWidget {
               ListView.builder(
                 itemBuilder: (_, index) {
                   return InkWell(
-                    onTap: () => NavigationService()
+                    onTap: () => NavigationService.instance
                         .goBack(EntertainmentList.entertainmentList[index]),
                     child: ListOfCategory(
                       color: CommonColors.entertainmentListColor,
@@ -74,7 +74,7 @@ class CategoryList extends StatelessWidget {
               ListView.builder(
                 itemBuilder: (_, index) {
                   return InkWell(
-                    onTap: () => NavigationService()
+                    onTap: () => NavigationService.instance
                         .goBack(FoodAndDrinkList.foodAndDrinkList[index]),
                     child: ListOfCategory(
                       color: CommonColors.foodAndDrinkListColor,
@@ -102,8 +102,8 @@ class CategoryList extends StatelessWidget {
               ListView.builder(
                 itemBuilder: (_, index) {
                   return InkWell(
-                    onTap: () =>
-                        NavigationService().goBack(HomeList.homeList[index]),
+                    onTap: () => NavigationService.instance
+                        .goBack(HomeList.homeList[index]),
                     child: ListOfCategory(
                       color: CommonColors.homeListColor,
                       iconName: HomeList.homeList[index].iconName.toString(),
@@ -127,8 +127,8 @@ class CategoryList extends StatelessWidget {
               ListView.builder(
                 itemBuilder: (_, index) {
                   return InkWell(
-                    onTap: () =>
-                        NavigationService().goBack(LifeList.lifeList[index]),
+                    onTap: () => NavigationService.instance
+                        .goBack(LifeList.lifeList[index]),
                     child: ListOfCategory(
                       color: CommonColors.lifeListColor,
                       iconName: LifeList.lifeList[index].iconName.toString(),
@@ -152,7 +152,7 @@ class CategoryList extends StatelessWidget {
               ListView.builder(
                 itemBuilder: (_, index) {
                   return InkWell(
-                    onTap: () => NavigationService()
+                    onTap: () => NavigationService.instance
                         .goBack(UncategorizedList.uncategorizedList[index]),
                     child: ListOfCategory(
                       color: CommonColors.lightGreyColor,
@@ -180,7 +180,7 @@ class CategoryList extends StatelessWidget {
               ListView.builder(
                 itemBuilder: (_, index) {
                   return InkWell(
-                    onTap: () => NavigationService()
+                    onTap: () => NavigationService.instance
                         .goBack(UtilitiesList.utilitiesList[index]),
                     child: ListOfCategory(
                       color: CommonColors.utilitiesListColor,

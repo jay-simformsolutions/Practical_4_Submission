@@ -79,13 +79,13 @@ abstract class _CreateNewGroupStore with Store implements DisposeController {
     if (groupNameEditingController.text.isEmpty) {
       showWarning();
     } else {
-      NavigationService().goBack();
+      NavigationService.instance.goBack();
     }
   }
 
   void showWarning() {
     showDialog(
-      context: NavigationService().context,
+      context: NavigationService.instance.context,
       builder: (context) {
         return AlertDialog(
           title: const Text(CommonStrings.errorString),

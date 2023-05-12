@@ -20,7 +20,7 @@ class GroupPage extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () =>
-                NavigationService().navigateToScreen(Routes.createGroup),
+                NavigationService.instance.navigateToScreen(Routes.createGroup),
             icon: const Icon(
               Icons.group_add_outlined,
               color: CommonColors.blackColor,
@@ -79,8 +79,8 @@ class GroupPage extends StatelessWidget {
                     color: CommonColors.tealColor,
                   ),
                   buttonName: CommonStrings.makenewGroup,
-                  onPress: () =>
-                      NavigationService().navigateToScreen(Routes.createGroup),
+                  onPress: () => NavigationService.instance
+                      .navigateToScreen(Routes.createGroup),
                 ),
                 const SizedBox(
                   height: 20,
@@ -91,8 +91,8 @@ class GroupPage extends StatelessWidget {
                     color: CommonColors.tealColor,
                   ),
                   buttonName: CommonStrings.showGroupInfo,
-                  onPress: () =>
-                      NavigationService().navigateToScreen(Routes.groupInfo),
+                  onPress: () => NavigationService.instance
+                      .navigateToScreen(Routes.groupInfo),
                 ),
                 const SizedBox(
                   height: 30,
@@ -103,8 +103,8 @@ class GroupPage extends StatelessWidget {
           Align(
             alignment: Alignment.bottomRight,
             child: GestureDetector(
-              onTap: () =>
-                  NavigationService().navigateToScreen(Routes.addExpense),
+              onTap: () => NavigationService.instance
+                  .navigateToScreen(Routes.addExpense),
               child: const BottomButton(),
             ),
           ),

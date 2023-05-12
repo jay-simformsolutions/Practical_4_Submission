@@ -1,34 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:splitwise/routes/navigator_service.dart';
 
 import '../../common_methods/add_expense_button.dart';
 import '../../common_methods/elevated_button_onboard.dart';
-import '../../common_methods/theme_data.dart';
-import '../../routes/navigator_service.dart';
 import '../../routes/routes.dart';
+import '../../store/friend_store/contact_service_store.dart';
 import '../../utils/assets.dart';
 import '../../utils/colors.dart';
 import '../../utils/common_strings.dart';
+import '../../utils/theme_data.dart';
 
 class FriendsPage extends StatelessWidget {
   const FriendsPage({Key? key}) : super(key: key);
 
-  void popScreen() {
-    NavigationService().goBack();
-  }
-
-  void navigateToScreen(String screen) {
-    NavigationService().navigateToScreen(screen);
-  }
-
   @override
   Widget build(BuildContext context) {
+    final store = context.read<ContactServiceStore>();
     return Scaffold(
       backgroundColor: CommonColors.whiteColor,
       appBar: AppBar(
         backgroundColor: CommonColors.whiteColor,
         actions: [
           IconButton(
-            onPressed: () => navigateToScreen(Routes.addFriend),
+            onPressed: () => store.navigateToScreen(Routes.addFriend),
             icon: const Icon(
               Icons.person_add_alt,
               color: CommonColors.blackColor,
@@ -89,7 +84,7 @@ class FriendsPage extends StatelessWidget {
                     color: CommonColors.tealColor,
                   ),
                   buttonName: CommonStrings.addMoreFriends,
-                  onPress: () => navigateToScreen(Routes.addFriend),
+                  onPress: () => store.navigateToScreen(Routes.addFriend),
                 ),
                 const SizedBox(
                   height: 20,
@@ -100,7 +95,7 @@ class FriendsPage extends StatelessWidget {
                     color: CommonColors.tealColor,
                   ),
                   buttonName: CommonStrings.showFriendInfo,
-                  onPress: () => navigateToScreen(Routes.friendInfo),
+                  onPress: () {},
                 ),
                 const SizedBox(
                   height: 30,
@@ -108,9 +103,13 @@ class FriendsPage extends StatelessWidget {
               ],
             ),
           ),
-          const Align(
+          Align(
             alignment: Alignment.bottomRight,
-            child: BottomButton(),
+            child: GestureDetector(
+              onTap: () => NavigationService.instance
+                  .navigateToScreen(Routes.addExpense),
+              child: const BottomButton(),
+            ),
           ),
         ],
       ),

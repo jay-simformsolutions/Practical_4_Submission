@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:splitwise/extensions/extensions.dart';
 
-import '../../common_methods/theme_data.dart';
-import '../../routes/navigator_service.dart';
+import '../../store/friend_store/add_new_contact_store.dart';
 import '../../utils/colors.dart';
 import '../../utils/common_strings.dart';
+import '../../utils/theme_data.dart';
 
-class AddNewContactPage extends StatefulWidget {
+class AddNewContactPage extends StatelessWidget {
   final String? text;
   final String? phoneNumber;
 
@@ -13,19 +14,9 @@ class AddNewContactPage extends StatefulWidget {
       : super(key: key);
 
   @override
-  State<AddNewContactPage> createState() => _AddNewContactPageState();
-}
-
-class _AddNewContactPageState extends State<AddNewContactPage> {
-  TextEditingController textEditingController = TextEditingController();
-  TextEditingController phoneNumberController = TextEditingController();
-
-  void popScreen() {
-    NavigationService().goBack();
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final store = context.readProvider<AddNewContactStore>();
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: CommonColors.whiteColor,
@@ -40,7 +31,7 @@ class _AddNewContactPageState extends State<AddNewContactPage> {
           ),
         ),
         leading: IconButton(
-          onPressed: popScreen,
+          onPressed: store.popScreen,
           icon: const Icon(
             Icons.arrow_back,
             color: CommonColors.blackColor,
@@ -48,7 +39,7 @@ class _AddNewContactPageState extends State<AddNewContactPage> {
         ),
         actions: [
           IconButton(
-            onPressed: popScreen,
+            onPressed: store.popScreen,
             icon: const Icon(
               Icons.done,
               color: CommonColors.blackColor,
@@ -61,7 +52,7 @@ class _AddNewContactPageState extends State<AddNewContactPage> {
         child: Column(
           children: [
             TextFormField(
-              controller: textEditingController,
+              controller: store.textEditingController,
               cursorHeight: 20,
               style: const TextStyle(
                 fontSize: 15,
@@ -86,7 +77,7 @@ class _AddNewContactPageState extends State<AddNewContactPage> {
               height: 10,
             ),
             TextFormField(
-              controller: phoneNumberController,
+              controller: store.phoneNumberController,
               cursorHeight: 20,
               style: const TextStyle(
                 fontSize: 15,
