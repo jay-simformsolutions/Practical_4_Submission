@@ -11,22 +11,22 @@ class BottomNavigationBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final readStore = context.readProvider<BottomNavigationStore>();
+    final store = context.readProvider<BottomNavigationStore>();
 
     return WillPopScope(
-      onWillPop: readStore.showExitPopup,
+      onWillPop: store.showExitPopup,
       child: Scaffold(
         backgroundColor: Colors.black,
         body: Observer(
           builder: (_) {
-            return readStore.screens[readStore.pageIndex];
+            return store.screens[store.pageIndex];
           },
         ),
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: CommonColors.tealColor,
           unselectedItemColor: CommonColors.greyColor,
-          currentIndex: readStore.pageIndex,
-          onTap: readStore.onItemTapped,
+          currentIndex: store.pageIndex,
+          onTap: store.onItemTapped,
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.group),
