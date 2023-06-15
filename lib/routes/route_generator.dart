@@ -4,6 +4,7 @@ import 'package:splitwise/model/group_info_model.dart';
 import 'package:splitwise/store/friend_store/add_new_contact_store.dart';
 import 'package:splitwise/store/friend_store/contact_service_store.dart';
 import 'package:splitwise/store/group_store/add_expense_store.dart';
+import 'package:splitwise/store/splash_screen_store.dart';
 
 import '../extensions/extensions.dart';
 import '../screens/bio_metric_page.dart';
@@ -22,6 +23,7 @@ import '../screens/group/group_expense.dart';
 import '../screens/group/group_info.dart';
 import '../screens/sign_in.dart';
 import '../screens/sign_up.dart';
+import '../splash_screen.dart';
 import '../store/authentication_store/forgot_password_store.dart';
 import '../store/authentication_store/sign_in_store.dart';
 import '../store/authentication_store/sign_up_store.dart';
@@ -39,7 +41,13 @@ class RouteGenerator {
     final args = settings.arguments;
 
     switch (settings.name) {
-      case '/':
+      case Routes.splashScreen:
+        return MaterialPageRoute(
+          builder: (_) => const SplashScreen().withProvider(
+            SplashScreenStore(),
+          ),
+        );
+      case Routes.bioMetric:
         return MaterialPageRoute(
           builder: (_) => const BioMetricPage().withProvider(
             BioMetricStore(),

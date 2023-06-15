@@ -60,6 +60,20 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        dev {
+            resValue 'string', 'app_name', 'Splitwise dev'
+            applicationId 'com.splitwisesimform.splitwise.dev'
+        }
+        prod {
+            resValue 'string', 'app_name', 'Splitwise prod'
+            applicationId 'com.splitwisesimform.splitwise.prod'
+        }
+    }
+
 }
 
 flutter {
