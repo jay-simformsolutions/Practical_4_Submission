@@ -1,151 +1,19 @@
-import 'package:currency_picker/currency_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:splitwise/model/model_category_list.dart';
-import 'package:splitwise/routes/routes.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 
-import '../../../common_methods/theme_data.dart';
-import '../../../routes/navigation_functions.dart';
+import '../../../extensions/extensions.dart';
+import '../../../store/group_store/add_expense_store.dart';
 import '../../../utils/colors.dart';
 import '../../../utils/common_strings.dart';
+import '../../../utils/theme_data.dart';
 
-class AddExpense extends StatefulWidget {
+class AddExpense extends StatelessWidget {
   const AddExpense({Key? key}) : super(key: key);
 
   @override
-  State<AddExpense> createState() => _AddExpenseState();
-}
-
-class _AddExpenseState extends State<AddExpense> {
-  TextEditingController descriptionController = TextEditingController();
-  TextEditingController amountController = TextEditingController();
-  Currency? currentSymbol;
-
-  String? iconName;
-  IconData? iconData;
-  Color? newColor;
-
-  void checkTextFormForValidation() {
-    if (descriptionController.text.isEmpty && amountController.text.isEmpty) {
-      showWarningForEnterValue();
-    } else if (amountController.text.isEmpty) {
-      showWarningForAmount();
-    } else if (descriptionController.text.isEmpty) {
-      showWarningForDescription();
-    } else {
-      context.popFunction();
-    }
-  }
-
-  void getCategory() async {
-    CategoryListModel value = await Navigator.of(context)
-        .pushNamed(Routes.categories) as CategoryListModel;
-    setState(() {
-      iconName = value.iconName;
-      iconData = value.iconData;
-      newColor = value.color;
-    });
-  }
-
-  void showListOfCurrency() {
-    showCurrencyPicker(
-      context: context,
-      showFlag: true,
-      showCurrencyName: true,
-      showCurrencyCode: true,
-      onSelect: (Currency currency) {
-        setState(() {
-          currentSymbol = currency;
-        });
-      },
-    );
-  }
-
-  void showWarningForDescription() {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: Text(
-            CommonStrings.canNotSaveExpense,
-            style: themeData.textTheme.titleMedium!.copyWith(
-              color: CommonColors.blackColor,
-            ),
-          ),
-          content: Text(
-            CommonStrings.warningDescription,
-            style: themeData.textTheme.bodySmall!.copyWith(
-              color: CommonColors.blackColor,
-            ),
-          ),
-          actions: [
-            TextButton(
-              onPressed: context.popFunction,
-              child: const Text(CommonStrings.okString),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void showWarningForAmount() {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: Text(
-            CommonStrings.canNotSaveExpense,
-            style: themeData.textTheme.titleMedium!.copyWith(
-              color: CommonColors.blackColor,
-            ),
-          ),
-          content: Text(
-            CommonStrings.warningAmount,
-            style: themeData.textTheme.bodySmall!.copyWith(
-              color: CommonColors.blackColor,
-            ),
-          ),
-          actions: [
-            TextButton(
-              onPressed: context.popFunction,
-              child: const Text(CommonStrings.okString),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void showWarningForEnterValue() {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: Text(
-            CommonStrings.canNotSaveExpense,
-            style: themeData.textTheme.titleMedium!.copyWith(
-              color: CommonColors.blackColor,
-            ),
-          ),
-          content: Text(
-            '${CommonStrings.warningDescription} \n ${CommonStrings.warningAmount}',
-            style: themeData.textTheme.bodySmall!.copyWith(
-              color: CommonColors.blackColor,
-            ),
-          ),
-          actions: [
-            TextButton(
-              onPressed: context.popFunction,
-              child: const Text(CommonStrings.okString),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final readStore = context.readProvider<AddExpenseStore>();
+
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -163,7 +31,7 @@ class _AddExpenseState extends State<AddExpense> {
         backgroundColor: CommonColors.whiteColor,
         actions: [
           IconButton(
-            onPressed: checkTextFormForValidation,
+            onPressed: readStore.checkTextFormForValidation,
             icon: const Icon(
               Icons.done_outlined,
             ),
@@ -222,23 +90,27 @@ class _AddExpenseState extends State<AddExpense> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                GestureDetector(
-                  onTap: getCategory,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      color: iconData == null
-                          ? CommonColors.greyColor.shade200
-                          : newColor,
-                    ),
-                    height: 50,
-                    width: 50,
-                    child: Icon(
-                      iconData ?? Icons.note_alt_rounded,
-                      color: CommonColors.whiteColor,
-                      size: 40,
-                    ),
-                  ),
+                Observer(
+                  builder: (_) {
+                    return GestureDetector(
+                      onTap: readStore.getCategory,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                          color: readStore.iconData == null
+                              ? CommonColors.greyColor.shade200
+                              : readStore.newColor,
+                        ),
+                        height: 50,
+                        width: 50,
+                        child: Icon(
+                          readStore.iconData ?? Icons.note_alt_rounded,
+                          color: CommonColors.whiteColor,
+                          size: 40,
+                        ),
+                      ),
+                    );
+                  },
                 ),
                 const SizedBox(
                   width: 5,
@@ -246,7 +118,7 @@ class _AddExpenseState extends State<AddExpense> {
                 SizedBox(
                   width: 250,
                   child: TextField(
-                    controller: descriptionController,
+                    controller: readStore.descriptionController,
                     cursorHeight: 20,
                     style: const TextStyle(
                       fontSize: 15,
@@ -278,27 +150,31 @@ class _AddExpenseState extends State<AddExpense> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                GestureDetector(
-                  onTap: showListOfCurrency,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      color: CommonColors.greyColor.shade200,
-                    ),
-                    height: 50,
-                    width: 50,
-                    child: Center(
-                      child: currentSymbol == null
-                          ? const Icon(Icons.currency_rupee_sharp)
-                          : Text(
-                              currentSymbol!.symbol,
-                              style: const TextStyle(
-                                fontSize: 20,
-                                color: CommonColors.blackColor,
-                              ),
-                            ),
-                    ),
-                  ),
+                Observer(
+                  builder: (_) {
+                    return GestureDetector(
+                      onTap: readStore.showListOfCurrency,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                          color: CommonColors.greyColor.shade200,
+                        ),
+                        height: 50,
+                        width: 50,
+                        child: Center(
+                          child: readStore.currentSymbol == null
+                              ? const Icon(Icons.currency_rupee_sharp)
+                              : Text(
+                                  readStore.currentSymbol!.symbol,
+                                  style: const TextStyle(
+                                    fontSize: 20,
+                                    color: CommonColors.blackColor,
+                                  ),
+                                ),
+                        ),
+                      ),
+                    );
+                  },
                 ),
                 const SizedBox(
                   width: 5,
@@ -307,7 +183,7 @@ class _AddExpenseState extends State<AddExpense> {
                   width: 250,
                   child: TextField(
                     keyboardType: TextInputType.number,
-                    controller: amountController,
+                    controller: readStore.amountController,
                     cursorHeight: 20,
                     style: const TextStyle(
                       fontSize: 15,
@@ -361,7 +237,7 @@ class _AddExpenseState extends State<AddExpense> {
                       BoxShadow(
                         blurStyle: BlurStyle.outer,
                         spreadRadius: 1,
-                      )
+                      ),
                     ],
                   ),
                   child: Center(
@@ -418,12 +294,5 @@ class _AddExpenseState extends State<AddExpense> {
         ],
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    descriptionController.dispose();
-    amountController.dispose();
-    super.dispose();
   }
 }

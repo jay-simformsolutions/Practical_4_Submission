@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:splitwise/extensions/extensions.dart';
-import 'package:splitwise/store/bottom_navigation_store.dart';
+import 'package:provider/provider.dart';
 
-import '../screens/activity/activity_page.dart';
+import '../extensions/extensions.dart';
 import '../screens/bio_metric_page.dart';
 import '../screens/bottom_navigation.dart';
 import '../screens/forgot_password.dart';
 import '../screens/friends/add_new_contact.dart';
 import '../screens/friends/add_new_friend.dart';
 import '../screens/friends/friends_info.dart';
-import '../screens/friends/friends_page.dart';
 import '../screens/group/Group_Expense_Pages/group_balances.dart';
 import '../screens/group/Group_Expense_Pages/group_settleup.dart';
 import '../screens/group/Group_Expense_Pages/group_total_balance.dart';
@@ -18,14 +16,17 @@ import '../screens/group/add_expense/categories.dart';
 import '../screens/group/create_new_group.dart';
 import '../screens/group/group_expense.dart';
 import '../screens/group/group_info.dart';
-import '../screens/group/group_page.dart';
-import '../screens/profile/profile_page.dart';
 import '../screens/sign_in.dart';
 import '../screens/sign_up.dart';
 import '../store/authentication_store/forgot_password_store.dart';
 import '../store/authentication_store/sign_in_store.dart';
 import '../store/authentication_store/sign_up_store.dart';
 import '../store/bio_metric_store/bio_metric_store.dart';
+import '../store/bottom_navigation_store.dart';
+import '../store/group_store/choice_chip_store.dart';
+import '../store/group_store/create_new_group_store.dart';
+import '../store/group_store/group_expense_store.dart';
+import '../store/group_store/group_info_store.dart';
 import '../utils/common_strings.dart';
 import 'routes.dart';
 
@@ -57,29 +58,23 @@ class RouteGenerator {
         return MaterialPageRoute(
           builder: (_) => ForgotPassword().withProvider(ForgotPasswordStore()),
         );
-      case Routes.groupPage:
-        return MaterialPageRoute(
-          builder: (_) => const GroupPage(),
-        );
-      case Routes.friendsPage:
-        return MaterialPageRoute(
-          builder: (_) => const FriendsPage(),
-        );
-      case Routes.activityPage:
-        return MaterialPageRoute(
-          builder: (_) => const ActivityPage(),
-        );
-      case Routes.profilePage:
-        return MaterialPageRoute(
-          builder: (_) => const ProfilePage(),
-        );
       case Routes.createGroup:
         return MaterialPageRoute(
-          builder: (_) => const CreateGroup(),
+          builder: (_) =>
+              const CreateGroup().withProvider(CreateNewGroupStore()),
         );
       case Routes.groupInfo:
         return MaterialPageRoute(
-          builder: (_) => const GroupPageInfo(),
+          builder: (_) => const GroupPageInfo().withMultiProvider(
+            [
+              Provider(
+                create: (_) => GroupInfoStore(),
+              ),
+              Provider(
+                create: (_) => CreateNewGroupStore(),
+              ),
+            ],
+          ),
         );
       case Routes.groupSettleUp:
         return MaterialPageRoute(
@@ -95,7 +90,13 @@ class RouteGenerator {
         );
       case Routes.groupExpense:
         return MaterialPageRoute(
-          builder: (_) => GroupExpenseWidget(groupInfo: args as Map),
+          builder: (_) =>
+              GroupExpenseWidget(groupInfo: args as Map).withMultiProvider([
+            Provider(
+              create: (_) => ChoiceChipListStore(),
+            ),
+            Provider(create: (_) => GroupExpenseStore()),
+          ]),
         );
       case Routes.categories:
         return MaterialPageRoute(
@@ -125,7 +126,7 @@ class RouteGenerator {
 
   static Route<dynamic> _errorPage() {
     return MaterialPageRoute(
-      builder: (context) {
+      builder: (_) {
         return Scaffold(
           appBar: AppBar(
             title: const Text(CommonStrings.errorString),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:splitwise/common_methods/theme_data.dart';
 
 import '../utils/colors.dart';
+import '../utils/theme_data.dart';
 
 class ExpansionTileWidget extends StatelessWidget {
   final String? imageURL;

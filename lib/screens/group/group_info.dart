@@ -1,45 +1,22 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 
-import '../../common_methods/theme_data.dart';
-import '../../routes/navigation_functions.dart';
+import '../../extensions/extensions.dart';
+import '../../routes/navigator_service.dart';
 import '../../routes/routes.dart';
+import '../../store/group_store/group_info_store.dart';
 import '../../utils/colors.dart';
 import '../../utils/common_strings.dart';
+import '../../utils/theme_data.dart';
 
-class GroupPageInfo extends StatefulWidget {
+class GroupPageInfo extends StatelessWidget {
   final String? groupName;
   const GroupPageInfo({Key? key, this.groupName}) : super(key: key);
 
   @override
-  State<GroupPageInfo> createState() => _GroupPageInfoState();
-}
-
-class _GroupPageInfoState extends State<GroupPageInfo> {
-  @override
-  void initState() {
-    getGroupDetails();
-    super.initState();
-  }
-
-  List<dynamic> _groups = [];
-
-  Future<List> getGroupDetails() async {
-    final String response =
-        await rootBundle.loadString(CommonStrings.loadGroupJson);
-    final data = await json.decode(response);
-    setState(
-      () {
-        _groups = data['groups'];
-      },
-    );
-    return _groups;
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final readStore = context.readProvider<GroupInfoStore>();
+
     return Scaffold(
       backgroundColor: CommonColors.whiteColor,
       appBar: AppBar(
@@ -51,7 +28,8 @@ class _GroupPageInfoState extends State<GroupPageInfo> {
             color: CommonColors.blackColor,
           ),
           IconButton(
-            onPressed: () => Navigator.pushNamed(context, Routes.createGroup),
+            onPressed: () =>
+                NavigationService().navigateToScreen(Routes.createGroup),
             icon: const Icon(Icons.group_add_outlined),
             color: CommonColors.blackColor,
           ),
@@ -60,7 +38,7 @@ class _GroupPageInfoState extends State<GroupPageInfo> {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios_new_outlined),
           color: CommonColors.blackColor,
-          onPressed: () => context.popFunction(),
+          onPressed: NavigationService().goBack,
         ),
       ),
       body: Padding(
@@ -88,59 +66,66 @@ class _GroupPageInfoState extends State<GroupPageInfo> {
             const SizedBox(
               height: 20,
             ),
-            _groups.isEmpty
-                ? const CircularProgressIndicator()
-                : ListView.builder(
-                    physics: const NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    itemCount: _groups.length,
-                    itemBuilder: (context, index) {
-                      return Card(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            InkWell(
-                              onTap: () => Navigator.of(context).pushNamed(
-                                Routes.groupExpense,
-                                arguments: {
-                                  'index': index,
-                                  'groupImage': _groups[index]['coverphoto'],
-                                  'groupName': _groups[index]['name'],
-                                },
-                              ),
-                              child: Row(
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(5, 5, 0, 0),
-                                    child: CircleAvatar(
-                                      backgroundImage: NetworkImage(
-                                        _groups[index]['group_image']!,
+            Observer(
+              builder: (_) {
+                return readStore.groups.isEmpty
+                    ? const CircularProgressIndicator()
+                    : ListView.builder(
+                        physics: const NeverScrollableScrollPhysics(),
+                        shrinkWrap: true,
+                        itemCount: readStore.groups.length,
+                        itemBuilder: (_, index) {
+                          return Card(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                InkWell(
+                                  onTap: () =>
+                                      NavigationService().navigateToScreen(
+                                    Routes.groupExpense,
+                                    arguments: {
+                                      'index': index,
+                                      'groupImage': readStore.groups[index]
+                                          ['coverphoto'],
+                                      'groupName': readStore.groups[index]
+                                          ['name'],
+                                    },
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            5, 5, 0, 0),
+                                        child: CircleAvatar(
+                                          backgroundImage: readStore
+                                              .groups[index]['coverphoto'],
+                                          radius: 35,
+                                        ),
                                       ),
-                                      radius: 35,
-                                    ),
+                                      const Spacer(),
+                                      Text(
+                                        readStore.groups[index]['name']
+                                            .toString(),
+                                        style: themeData.textTheme.bodySmall!
+                                            .copyWith(
+                                          color: CommonColors.blackColor,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      const Spacer(),
+                                    ],
                                   ),
-                                  const Spacer(),
-                                  Text(
-                                    _groups[index]['name']!,
-                                    style:
-                                        themeData.textTheme.bodySmall!.copyWith(
-                                      color: CommonColors.blackColor,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                  const Spacer(),
-                                ],
-                              ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                              ],
                             ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                          ],
-                        ),
+                          );
+                        },
                       );
-                    },
-                  ),
+              },
+            ),
           ],
         ),
       ),

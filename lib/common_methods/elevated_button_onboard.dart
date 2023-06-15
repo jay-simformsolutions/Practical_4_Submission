@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../utils/colors.dart';
-import 'theme_data.dart';
+import '../utils/theme_data.dart';
 
 class ElevatedButtonOnBoard extends StatelessWidget {
   final String? buttonName;
