@@ -227,4 +227,14 @@ class CommonStrings {
   static const utilitiesTvPhone = 'TV/Phone/Internet';
   static const utilitiesTrash = 'Trash';
   static const utilitiesClean = 'Cleaning';
+
+  // API Service Common Strings
+  static const baseUrl = 'https://6489ccf95fa58521cab0465e.mockapi.io/api/v1/';
+  static const someThingWrong = 'Something Went Wrong';
+  static const error402 = '402Error';
+  static const error401 = 'Invalid API key: You must be granted a valid key.';
+  static const error404 = 'The resource you requested could not be found.';
+
+  /// Exception Strings
+  static const noInternet = 'Oops!! No Internet available';
 }

@@ -1,9 +1,7 @@
-import 'dart:convert';
-
-import 'package:flutter/services.dart';
+import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
-
-import '../../utils/common_strings.dart';
+import 'package:splitwise/model/group_info.dart';
+import 'package:splitwise/services/repository.dart';
 
 part 'group_info_store.g.dart';
 
@@ -14,16 +12,14 @@ abstract class _GroupInfoStore with Store {
     getGroupDetails();
   }
 
-  @observable
-  List<dynamic> groups = [];
+  ObservableList<GroupInfoModel> groups = ObservableList.of([]);
 
-  Future<List> getGroupDetails() async {
-    final String response =
-        await rootBundle.loadString(CommonStrings.loadGroupJson);
-    final data = await json.decode(response);
-    groups = data['groups'];
-    //debugPrint('Group is $groups');
-
-    return groups;
+  Future<void> getGroupDetails() async {
+    final response = await Repository.instance.getMovieData();
+    if (response.response!.isNotEmpty) {
+      groups.addAll(response.response!);
+    } else {
+      debugPrint('Exception Occur');
+    }
   }
 }
