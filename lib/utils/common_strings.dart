@@ -22,6 +22,8 @@ class CommonStrings {
   static const confirmedPasswordNotMatched = 'Password is not Matched';
   static const confirmEmailString = 'Check Your Email and Reset your password';
   static const okString = 'Ok';
+  static const noString = 'No';
+  static const yesString = 'Yes';
   static const errorString = 'Error';
   static const cancelString = 'Cancel';
   static const whoopsString = 'Whoops!';
@@ -67,6 +69,10 @@ class CommonStrings {
   static const failedAuthenticate = 'Failed to authenticate';
   static const successAuthenticate = 'Autherized success';
   static const scanYourFinger = 'Scan your finger print to authenticate';
+  static const enableBioMetric = 'Please Enable Bio-Metric';
+
+  //Exit Dialog Common Strings
+  static const exitAppTitle = 'Are You Sure You Want Exit App';
 
   //Group Page Common Strings
   static const groupNotification = 'Splitwise groups you create or are';

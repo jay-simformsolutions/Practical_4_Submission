@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:splitwise/extensions/extensions.dart';
+import 'package:splitwise/store/bottom_navigation_store.dart';
 
 import '../screens/activity/activity_page.dart';
+import '../screens/bio_metric_page.dart';
 import '../screens/bottom_navigation.dart';
 import '../screens/forgot_password.dart';
 import '../screens/friends/add_new_contact.dart';
@@ -23,6 +25,7 @@ import '../screens/sign_up.dart';
 import '../store/authentication_store/forgot_password_store.dart';
 import '../store/authentication_store/sign_in_store.dart';
 import '../store/authentication_store/sign_up_store.dart';
+import '../store/bio_metric_store/bio_metric_store.dart';
 import '../utils/common_strings.dart';
 import 'routes.dart';
 
@@ -33,7 +36,14 @@ class RouteGenerator {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(
-          builder: (_) => const BottomNavigationBarWidget(),
+          builder: (_) => const BioMetricPage().withProvider(
+            BioMetricStore(),
+          ),
+        );
+      case Routes.bottomNavigationPage:
+        return MaterialPageRoute(
+          builder: (context) => const BottomNavigationBarWidget()
+              .withProvider(BottomNavigationStore()),
         );
       case Routes.signupPage:
         return MaterialPageRoute(
