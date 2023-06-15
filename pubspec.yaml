@@ -24,6 +24,11 @@ dependencies:
   intl: ^0.18.0
   #For Authentication
   local_auth: ^2.1.6
+  mobx: ^2.2.0
+  flutter_mobx: ^2.0.6+5
+  build_runner: ^2.3.3
+  provider: ^6.0.5
+  mobx_codegen: ^2.3.0
 
 
 dev_dependencies:

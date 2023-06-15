@@ -1,45 +1,38 @@
 import 'package:flutter/material.dart';
+import 'package:splitwise/extensions/extensions.dart';
 
 import '../common_methods/rich_text_widget.dart';
 import '../common_methods/sized_box_widget.dart';
 import '../common_methods/text_formfield_widget.dart';
-import '../routes/navigation_functions.dart';
+import '../routes/navigator_service.dart';
 import '../routes/routes.dart';
+import '../store/authentication_store/sign_up_store.dart';
 import '../utils/colors.dart';
 import '../utils/common_strings.dart';
+import '../utils/theme_data.dart';
 
-class SignUp extends StatefulWidget {
-  const SignUp({Key? key}) : super(key: key);
-
-  @override
-  State<SignUp> createState() => _SignUpState();
-}
-
-class _SignUpState extends State<SignUp> {
-  final _formKey = GlobalKey<FormState>();
-
-  void _clickForSignUp() {
-    if (_formKey.currentState!.validate()) {
-      Navigator.pop(context);
-      Navigator.pushNamed(context, Routes.loginPage);
-    }
-  }
+class SignUp extends StatelessWidget {
+  SignUp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final readStore = context.readProvider<SignUpStore>();
+    final theme = themeData.textTheme;
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Form(
-          key: _formKey,
+          key: readStore.formKey,
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(15, 70, 0, 0),
+            padding: const EdgeInsets.fromLTRB(16, 70, 0, 0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Row(
                   children: [
                     FloatingActionButton.small(
-                      onPressed: () => context.pushAndRemove(Routes.homePage),
+                      onPressed: () =>
+                          NavigationService().navigateToScreen(Routes.homePage),
                       backgroundColor: CommonColors.lightGreyColor,
                       child: const Icon(Icons.arrow_back_ios_new),
                     ),
@@ -53,13 +46,13 @@ class _SignUpState extends State<SignUp> {
                   children: [
                     Text(
                       CommonStrings.registerString,
-                      style: Theme.of(context).textTheme.bodyMedium,
+                      style: theme.bodyMedium,
                     ),
                   ],
                 ),
                 Text(
                   CommonStrings.createAccountString,
-                  style: Theme.of(context).textTheme.titleSmall,
+                  style: theme.titleSmall,
                 ),
                 const SizedBox(
                   height: 20,
@@ -104,13 +97,13 @@ class _SignUpState extends State<SignUp> {
                   height: 50,
                 ),
                 ElevatedButton(
-                  onPressed: _clickForSignUp,
-                  style: Theme.of(context).elevatedButtonTheme.style,
+                  onPressed: readStore.clickForSignUp,
+                  style: themeData.elevatedButtonTheme.style,
                   child: Text(
                     CommonStrings.signupString,
-                    style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                          color: CommonColors.whiteColor,
-                        ),
+                    style: theme.titleMedium!.copyWith(
+                      color: CommonColors.whiteColor,
+                    ),
                   ),
                 ),
                 Row(
@@ -118,15 +111,16 @@ class _SignUpState extends State<SignUp> {
                   children: [
                     Text(
                       CommonStrings.doHaveAccountString,
-                      style: Theme.of(context).textTheme.bodySmall,
+                      style: theme.bodySmall,
                     ),
                     GestureDetector(
-                      onTap: () => context.pushAndRemove(Routes.loginPage),
+                      onTap: () => NavigationService()
+                          .navigateToScreen(Routes.loginPage),
                       child: Text(
                         CommonStrings.loginString,
-                        style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                              color: CommonColors.lightGreenColor,
-                            ),
+                        style: theme.bodySmall?.copyWith(
+                          color: CommonColors.lightGreenColor,
+                        ),
                       ),
                     ),
                   ],
