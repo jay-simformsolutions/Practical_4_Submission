@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../common_methods/list_tile.dart';
-import '../../common_methods/theme_data.dart';
 import '../../utils/assets.dart';
 import '../../utils/colors.dart';
 import '../../utils/common_strings.dart';
+import '../../utils/theme_data.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);

@@ -1,122 +1,31 @@
-import 'package:app_settings/app_settings.dart';
-import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
-import 'package:permission_handler/permission_handler.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 
-import '../../common_methods/theme_data.dart';
-import '../../routes/navigator_service.dart';
-import '../../routes/routes.dart';
+import '../../Routes/Routes.dart';
+import '../../extensions/extensions.dart';
+import '../../store/friend_store/contact_service_store.dart';
 import '../../utils/colors.dart';
 import '../../utils/common_strings.dart';
+import '../../utils/theme_data.dart';
 
-class AddNewFriend extends StatefulWidget {
+class AddNewFriend extends StatelessWidget {
   const AddNewFriend({Key? key}) : super(key: key);
 
   @override
-  State<AddNewFriend> createState() => _AddNewFriendState();
-}
-
-class _AddNewFriendState extends State<AddNewFriend> {
-  List<Contact> contacts = [];
-  bool isLoading = true;
-
-  void popScreen() {
-    NavigationService().goBack();
-  }
-
-  void navigateToScreen(String screen) {
-    NavigationService().navigateToScreen(screen);
-  }
-
-  @override
-  void initState() {
-    getContactPermission();
-    super.initState();
-  }
-
-  void showDontAskPermissionDialog() {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: const Align(
-            alignment: AlignmentDirectional.topStart,
-            child: Text(CommonStrings.whoopsString),
-          ),
-          content: Text(
-            CommonStrings.showWarning,
-            style: themeData.textTheme.bodySmall!.copyWith(
-              fontWeight: FontWeight.w300,
-            ),
-          ),
-          actions: [
-            GestureDetector(
-              onTap: popScreen,
-              child: Text(
-                CommonStrings.cancelString,
-                style: themeData.textTheme.bodySmall,
-              ),
-            ),
-            const SizedBox(
-              width: 10,
-            ),
-            GestureDetector(
-              onTap: () {
-                Navigator.pop(context);
-                AppSettings.openAppSettings(callback: getContactPermission);
-              },
-              child: Text(
-                CommonStrings.settingString,
-                style: themeData.textTheme.bodySmall,
-              ),
-            ),
-            const SizedBox(
-              width: 10,
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void getContactPermission() async {
-    if (await Permission.contacts.isGranted) {
-      setState(() {
-        fetchContacts();
-      });
-    } else {
-      if (await Permission.contacts.request().isGranted) {
-        fetchContacts();
-      } else if (await Permission.contacts.isDenied) {
-        showDontAskPermissionDialog();
-        setState(() {
-          isLoading = false;
-        });
-      }
-    }
-  }
-
-  void fetchContacts() async {
-    contacts = await ContactsService.getContacts();
-
-    setState(() {
-      isLoading = false;
-    });
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final store = context.readProvider<ContactServiceStore>();
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.white,
+      backgroundColor: CommonColors.darkGrey,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: CommonColors.darkGrey,
         title: TextFormField(
           decoration: InputDecoration(
             border: InputBorder.none,
             hintText: CommonStrings.textFormFieldOfAddNameEmail,
             hintStyle: themeData.textTheme.bodySmall!.copyWith(
-              color: CommonColors.blackColor,
+              color: CommonColors.whiteColor,
               fontSize: 18,
               fontWeight: FontWeight.w300,
             ),
@@ -126,9 +35,9 @@ class _AddNewFriendState extends State<AddNewFriend> {
         leading: IconButton(
           icon: const Icon(
             Icons.arrow_back,
-            color: CommonColors.blackColor,
+            color: CommonColors.whiteColor,
           ),
-          onPressed: popScreen,
+          onPressed: store.popScreen,
         ),
       ),
       body: Padding(
@@ -137,8 +46,62 @@ class _AddNewFriendState extends State<AddNewFriend> {
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Observer(
+              builder: (_) {
+                if (store.selectedName.isNotEmpty) {
+                  return SizedBox(
+                    height: 80,
+                    child: Align(
+                      alignment: Alignment.topLeft,
+                      child: Observer(
+                        builder: (_) {
+                          return ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            shrinkWrap: true,
+                            itemCount: store.selectedName.length,
+                            itemBuilder: (_, index) {
+                              return SizedBox(
+                                height: 70,
+                                width: 70,
+                                child: Padding(
+                                  padding:
+                                      const EdgeInsets.only(left: 15, top: 10),
+                                  child: Stack(
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundColor: CommonColors.tealColor,
+                                        child: Text(store.selectedName[index]
+                                            .displayName![0]),
+                                      ),
+                                      Positioned(
+                                        left: 25,
+                                        child: GestureDetector(
+                                          onTap: () =>
+                                              store.removeFromFriendList(index),
+                                          child: const Icon(
+                                            Icons.cancel,
+                                            size: 18,
+                                            color: CommonColors.whiteColor,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
+                          );
+                        },
+                      ),
+                    ),
+                  );
+                } else {
+                  return const SizedBox();
+                }
+              },
+            ),
             InkWell(
-              onTap: () => navigateToScreen(Routes.addNewContact),
+              onTap: () => store.navigateToScreen(Routes.addNewContact),
               child: Row(
                 children: [
                   CircleAvatar(
@@ -160,7 +123,7 @@ class _AddNewFriendState extends State<AddNewFriend> {
                     child: Text(
                       CommonStrings.addNewContacts,
                       style: themeData.textTheme.bodySmall!.copyWith(
-                        color: CommonColors.blackColor,
+                        color: CommonColors.whiteColor,
                         fontWeight: FontWeight.w500,
                         fontSize: 14,
                       ),
@@ -175,76 +138,171 @@ class _AddNewFriendState extends State<AddNewFriend> {
             Text(
               CommonStrings.addNewContactFromList,
               style: themeData.textTheme.bodySmall!.copyWith(
-                color: CommonColors.blackColor,
+                color: CommonColors.whiteColor,
               ),
             ),
-            SizedBox(
-              height: 698,
-              child: isLoading
-                  ? const Center(
-                      child: CircularProgressIndicator(),
-                    )
-                  : contacts.isEmpty
-                      ? Center(
-                          child: Text(
-                            CommonStrings.noAnyContacts,
-                            style: themeData.textTheme.titleMedium!.copyWith(
-                              color: CommonColors.blackColor,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
+            Observer(
+              builder: (_) {
+                return SizedBox(
+                  height: 300,
+                  child: store.isLoading == true
+                      ? const Center(
+                          child: CircularProgressIndicator(),
                         )
-                      : ListView.builder(
-                          shrinkWrap: true,
-                          physics: const AlwaysScrollableScrollPhysics(),
-                          itemCount: contacts.length,
-                          itemBuilder: (context, index) {
-                            return ListTile(
-                              leading: const CircleAvatar(
-                                radius: 18,
-                                child: Icon(Icons.phone),
-                              ),
-                              title: Text(
-                                contacts[index].givenName!,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
+                      : store.contacts.isEmpty
+                          ? Center(
+                              child: Text(
+                                CommonStrings.noAnyContacts,
                                 style:
                                     themeData.textTheme.titleMedium!.copyWith(
-                                  color: CommonColors.darkGrey,
+                                  color: CommonColors.whiteColor,
                                   fontWeight: FontWeight.w500,
-                                  fontSize: 16,
                                 ),
                               ),
-                              subtitle: Text(
-                                contacts[index].phones![0].value!,
-                                style: themeData.textTheme.bodySmall!.copyWith(
-                                  color: CommonColors.lightGreyColor,
+                            )
+                          : Observer(
+                              builder: (_) {
+                                return ListView.builder(
+                                  shrinkWrap: true,
+                                  physics:
+                                      const AlwaysScrollableScrollPhysics(),
+                                  itemCount: store.contacts.length,
+                                  itemBuilder: (_, index) {
+                                    return GestureDetector(
+                                      onTap: () => store.addToFriendList(index),
+                                      child: ListTile(
+                                        leading: const CircleAvatar(
+                                          radius: 18,
+                                          child: Icon(Icons.phone),
+                                        ),
+                                        title: Text(
+                                          store.contacts[index].givenName!,
+                                          maxLines: 1,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: themeData
+                                              .textTheme.titleMedium!
+                                              .copyWith(
+                                            color: CommonColors.tealColor,
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 16,
+                                          ),
+                                        ),
+                                        subtitle: Text(
+                                          store.contacts[index].phones![0]
+                                              .value!,
+                                          style: themeData.textTheme.bodySmall!
+                                              .copyWith(
+                                            color: CommonColors.lightGreyColor,
+                                          ),
+                                        ),
+                                        trailing: Observer(
+                                          builder: (_) {
+                                            return store.selectedName.contains(
+                                              store.contacts[index],
+                                            )
+                                                ? const Icon(
+                                                    Icons.done,
+                                                    color:
+                                                        CommonColors.whiteColor,
+                                                  )
+                                                : const SizedBox();
+                                          },
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                );
+                              },
+                            ),
+                );
+              },
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Text(
+              'Your Favourite List is Here',
+              style: themeData.textTheme.bodySmall!.copyWith(
+                color: CommonColors.whiteColor,
+                fontSize: 20,
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Expanded(
+              child: Observer(
+                builder: (_) {
+                  return SizedBox(
+                    height: 300,
+                    child: store.isLoading == true
+                        ? const Center(
+                            child: CircularProgressIndicator(),
+                          )
+                        : store.favouriteFriendList.isEmpty
+                            ? Center(
+                                child: Text(
+                                  CommonStrings.noAnyContacts,
+                                  style:
+                                      themeData.textTheme.titleMedium!.copyWith(
+                                    color: CommonColors.whiteColor,
+                                    fontWeight: FontWeight.w500,
+                                  ),
                                 ),
+                              )
+                            : Observer(
+                                builder: (_) {
+                                  return ListView.builder(
+                                    shrinkWrap: true,
+                                    physics:
+                                        const AlwaysScrollableScrollPhysics(),
+                                    itemCount: store.favouriteFriendList.length,
+                                    itemBuilder: (_, index) {
+                                      return ListTile(
+                                        leading: const CircleAvatar(
+                                          radius: 18,
+                                          child: Icon(Icons.phone),
+                                        ),
+                                        title: Text(
+                                          store.favouriteFriendList
+                                              .elementAt(index)
+                                              .givenName!,
+                                          maxLines: 1,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: themeData
+                                              .textTheme.titleMedium!
+                                              .copyWith(
+                                            color: CommonColors.tealColor,
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 16,
+                                          ),
+                                        ),
+                                        subtitle: Text(
+                                          store.favouriteFriendList
+                                              .elementAt(index)
+                                              .phones![0]
+                                              .value!,
+                                          style: themeData.textTheme.bodySmall!
+                                              .copyWith(
+                                            color: CommonColors.lightGreyColor,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
                               ),
-                            );
-                          },
-                        ),
+                  );
+                },
+              ),
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          SnackBar snackBar = SnackBar(
-            behavior: SnackBarBehavior.floating,
-            backgroundColor: CommonColors.whiteColor,
-            content: Text(
-              CommonStrings.atLeastOnePersonRequire,
-              style: themeData.textTheme.bodySmall!.copyWith(
-                color: CommonColors.blackColor,
-                fontWeight: FontWeight.w300,
-              ),
-              textAlign: TextAlign.center,
-            ),
-            duration: const Duration(seconds: 2),
-          );
-          ScaffoldMessenger.of(context).showSnackBar(snackBar);
-        },
+        onPressed: () => store.selectedName.isNotEmpty
+            ? store.showConfirmFriendDialogToAddInList()
+            : store.showSnackBar(),
         backgroundColor: Colors.deepOrangeAccent,
         child: const Icon(
           Icons.arrow_forward,

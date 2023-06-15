@@ -13,8 +13,8 @@ abstract class _SignUpStore with Store {
 
   void clickForSignUp() {
     if (formKey.currentState!.validate()) {
-      NavigationService().goBack();
-      NavigationService().navigateToScreen(Routes.loginPage);
+      NavigationService.instance.goBack();
+      NavigationService.instance.navigateToScreen(Routes.loginPage);
     }
   }
 }

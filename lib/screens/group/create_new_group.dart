@@ -13,7 +13,7 @@ class CreateGroup extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final readStore = context.readProvider<CreateNewGroupStore>();
+    final store = context.readProvider<CreateNewGroupStore>();
 
     return Scaffold(
       resizeToAvoidBottomInset: false,
@@ -29,12 +29,12 @@ class CreateGroup extends StatelessWidget {
             Icons.cancel_outlined,
             color: CommonColors.blackColor,
           ),
-          onPressed: NavigationService().goBack,
+          onPressed: NavigationService.instance.goBack,
         ),
         backgroundColor: CommonColors.whiteColor,
         actions: [
           IconButton(
-            onPressed: readStore.completeOrShowDialogue,
+            onPressed: store.completeOrShowDialogue,
             icon: const Icon(
               Icons.done,
               color: CommonColors.blackColor,
@@ -76,7 +76,7 @@ class CreateGroup extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: TextField(
-                        controller: readStore.groupNameEditingController,
+                        controller: store.groupNameEditingController,
                         cursorHeight: 20,
                         style: const TextStyle(
                           fontSize: 15,
@@ -120,7 +120,7 @@ class CreateGroup extends StatelessWidget {
                     return Wrap(
                       spacing: 5,
                       direction: Axis.horizontal,
-                      children: readStore.choiceChips(),
+                      children: store.choiceChips(),
                     );
                   },
                 ),

@@ -12,7 +12,7 @@ class AddExpense extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final readStore = context.readProvider<AddExpenseStore>();
+    final store = context.readProvider<AddExpenseStore>();
 
     return Scaffold(
       appBar: AppBar(
@@ -31,7 +31,7 @@ class AddExpense extends StatelessWidget {
         backgroundColor: CommonColors.whiteColor,
         actions: [
           IconButton(
-            onPressed: readStore.checkTextFormForValidation,
+            onPressed: store.checkTextFormForValidation,
             icon: const Icon(
               Icons.done_outlined,
             ),
@@ -93,18 +93,18 @@ class AddExpense extends StatelessWidget {
                 Observer(
                   builder: (_) {
                     return GestureDetector(
-                      onTap: readStore.getCategory,
+                      onTap: store.getCategory,
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
-                          color: readStore.iconData == null
+                          color: store.iconData == null
                               ? CommonColors.greyColor.shade200
-                              : readStore.newColor,
+                              : store.newColor,
                         ),
                         height: 50,
                         width: 50,
                         child: Icon(
-                          readStore.iconData ?? Icons.note_alt_rounded,
+                          store.iconData ?? Icons.note_alt_rounded,
                           color: CommonColors.whiteColor,
                           size: 40,
                         ),
@@ -118,7 +118,7 @@ class AddExpense extends StatelessWidget {
                 SizedBox(
                   width: 250,
                   child: TextField(
-                    controller: readStore.descriptionController,
+                    controller: store.descriptionController,
                     cursorHeight: 20,
                     style: const TextStyle(
                       fontSize: 15,
@@ -153,7 +153,7 @@ class AddExpense extends StatelessWidget {
                 Observer(
                   builder: (_) {
                     return GestureDetector(
-                      onTap: readStore.showListOfCurrency,
+                      onTap: store.showListOfCurrency,
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
@@ -162,10 +162,10 @@ class AddExpense extends StatelessWidget {
                         height: 50,
                         width: 50,
                         child: Center(
-                          child: readStore.currentSymbol == null
+                          child: store.currentSymbol == null
                               ? const Icon(Icons.currency_rupee_sharp)
                               : Text(
-                                  readStore.currentSymbol!.symbol,
+                                  store.currentSymbol!.symbol,
                                   style: const TextStyle(
                                     fontSize: 20,
                                     color: CommonColors.blackColor,
@@ -183,7 +183,7 @@ class AddExpense extends StatelessWidget {
                   width: 250,
                   child: TextField(
                     keyboardType: TextInputType.number,
-                    controller: readStore.amountController,
+                    controller: store.amountController,
                     cursorHeight: 20,
                     style: const TextStyle(
                       fontSize: 15,

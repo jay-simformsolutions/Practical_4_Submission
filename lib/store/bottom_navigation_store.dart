@@ -2,6 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
+import 'package:splitwise/extensions/extensions.dart';
+import 'package:splitwise/store/friend_store/contact_service_store.dart';
 
 import '../routes/navigator_service.dart';
 import '../screens/activity/activity_page.dart';
@@ -22,7 +24,7 @@ abstract class _BottomNavigationStore with Store {
 
   late final List<Widget> screens = [
     const GroupPage(),
-    const FriendsPage(),
+    const FriendsPage().withProvider(ContactServiceStore()),
     const ActivityPage(),
     const ProfilePage(),
   ];
@@ -33,7 +35,7 @@ abstract class _BottomNavigationStore with Store {
 
   Future<bool> showExitPopup() async {
     return await showDialog(
-          context: NavigationService().context,
+          context: NavigationService.instance.context,
           builder: (_) => AlertDialog(
             content: const Text(CommonStrings.exitAppTitle),
             actions: [
@@ -45,7 +47,7 @@ abstract class _BottomNavigationStore with Store {
                       style: TextButton.styleFrom(
                         backgroundColor: CommonColors.tealColor,
                       ),
-                      onPressed: NavigationService().goBack,
+                      onPressed: NavigationService.instance.goBack,
                       child: Text(
                         CommonStrings.noString,
                         style: TextStyle(color: CommonColors.whiteColor),

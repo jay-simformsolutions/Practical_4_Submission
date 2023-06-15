@@ -16,13 +16,13 @@ class SignUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final readStore = context.readProvider<SignUpStore>();
+    final store = context.readProvider<SignUpStore>();
     final theme = themeData.textTheme;
 
     return Scaffold(
       body: SingleChildScrollView(
         child: Form(
-          key: readStore.formKey,
+          key: store.formKey,
           child: Padding(
             padding: const EdgeInsets.fromLTRB(16, 70, 0, 0),
             child: Column(
@@ -31,8 +31,8 @@ class SignUp extends StatelessWidget {
                 Row(
                   children: [
                     FloatingActionButton.small(
-                      onPressed: () =>
-                          NavigationService().navigateToScreen(Routes.homePage),
+                      onPressed: () => NavigationService.instance
+                          .navigateToScreen(Routes.homePage),
                       backgroundColor: CommonColors.lightGreyColor,
                       child: const Icon(Icons.arrow_back_ios_new),
                     ),
@@ -97,7 +97,7 @@ class SignUp extends StatelessWidget {
                   height: 50,
                 ),
                 ElevatedButton(
-                  onPressed: readStore.clickForSignUp,
+                  onPressed: store.clickForSignUp,
                   style: themeData.elevatedButtonTheme.style,
                   child: Text(
                     CommonStrings.signupString,
@@ -114,7 +114,7 @@ class SignUp extends StatelessWidget {
                       style: theme.bodySmall,
                     ),
                     GestureDetector(
-                      onTap: () => NavigationService()
+                      onTap: () => NavigationService.instance
                           .navigateToScreen(Routes.loginPage),
                       child: Text(
                         CommonStrings.loginString,

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 class NavigationService {
-  static final NavigationService _instance = NavigationService._internal();
+  static final NavigationService instance = NavigationService._internal();
   NavigationService._internal();
-  factory NavigationService() => _instance;
 
   late final NavigatorState currentState = navigationKey.currentState!;
 

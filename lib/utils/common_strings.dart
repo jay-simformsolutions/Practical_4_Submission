@@ -117,7 +117,10 @@ class CommonStrings {
   static const addNewContacts = 'Add a new contact to Splitwise';
   static const addNewContactFromList = 'Add New Contact from Your Contact List';
   static const atLeastOnePersonRequire = 'At least one person is require';
-  static const noAnyContacts = "There is no contacts in your contact list";
+  static const noAnyContacts = 'There is no contacts in your contact list';
+
+  static const confirmMessageToAddInList =
+      'Are You Sure You Want Add in Your List';
 
   // Add New Contact Page Common String
   static const nothingSend =

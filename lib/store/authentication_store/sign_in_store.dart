@@ -14,13 +14,13 @@ abstract class _SignInStore with Store {
   final formKey = GlobalKey<FormState>();
 
   pushAndRemoveSignUp() {
-    NavigationService().popToFirst();
+    NavigationService.instance.popToFirst();
   }
 
   void clickForSignIn() {
     if (formKey.currentState!.validate()) {
-      NavigationService().goBack();
-      NavigationService().navigateToScreen(Routes.loginPage);
+      NavigationService.instance.goBack();
+      NavigationService.instance.navigateToScreen(Routes.loginPage);
     }
   }
 

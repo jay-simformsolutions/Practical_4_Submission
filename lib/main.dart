@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: themeData,
-      navigatorKey: NavigationService().navigationKey,
+      navigatorKey: NavigationService.instance.navigationKey,
       onGenerateRoute: RouteGenerator.generateRoute,
     );
   }

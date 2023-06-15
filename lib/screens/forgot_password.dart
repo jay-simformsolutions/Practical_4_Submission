@@ -15,7 +15,7 @@ class ForgotPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final readForgotPasswordStore = context.readProvider<ForgotPasswordStore>();
+    final store = context.readProvider<ForgotPasswordStore>();
 
     final size = MediaQuery.of(context).size;
 
@@ -39,7 +39,7 @@ class ForgotPassword extends StatelessWidget {
                 top: 100,
                 left: 25,
                 child: FloatingActionButton.small(
-                  onPressed: NavigationService().goBack,
+                  onPressed: NavigationService.instance.goBack,
                   backgroundColor: CommonColors.whiteColor,
                   child: const Icon(
                     Icons.arrow_back_ios_new,
@@ -64,7 +64,7 @@ class ForgotPassword extends StatelessWidget {
               ),
               Center(
                 child: Form(
-                  key: readForgotPasswordStore.formKey,
+                  key: store.formKey,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -77,8 +77,7 @@ class ForgotPassword extends StatelessWidget {
                         height: 15,
                       ),
                       ElevatedButton(
-                        onPressed:
-                            readForgotPasswordStore.conditionToShowAlertDialog,
+                        onPressed: store.conditionToShowAlertDialog,
                         style: themeData.elevatedButtonTheme.style?.copyWith(
                           backgroundColor: MaterialStateProperty.all<Color>(
                             CommonColors.lightGreenColor,

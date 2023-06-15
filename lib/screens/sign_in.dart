@@ -18,13 +18,13 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final readStore = context.readProvider<SignInStore>();
+    final store = context.readProvider<SignInStore>();
 
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
       body: Form(
-        key: readStore.formKey,
+        key: store.formKey,
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -46,7 +46,7 @@ class LoginPage extends StatelessWidget {
                     top: 100,
                     left: 25,
                     child: FloatingActionButton.small(
-                      onPressed: () => NavigationService()
+                      onPressed: () => NavigationService.instance
                           .navigateToScreen(Routes.signupPage),
                       backgroundColor: CommonColors.whiteColor,
                       child: const Icon(
@@ -93,8 +93,8 @@ class LoginPage extends StatelessWidget {
                         shape: const CircleBorder(),
                         checkColor: Colors.black,
                         activeColor: Colors.grey,
-                        value: readStore.changeState,
-                        onChanged: readStore.changedValue,
+                        value: store.changeState,
+                        onChanged: store.changedValue,
                       );
                     }),
                     const SizedBox(
@@ -106,7 +106,7 @@ class LoginPage extends StatelessWidget {
                     ),
                     const Spacer(),
                     GestureDetector(
-                      onTap: () => NavigationService()
+                      onTap: () => NavigationService.instance
                           .navigateToScreen(Routes.forgotPassword),
                       child: Text(
                         CommonStrings.forgotPasswordString,
@@ -123,7 +123,7 @@ class LoginPage extends StatelessWidget {
                 height: 80,
               ),
               ElevatedButton(
-                onPressed: readStore.clickForSignIn,
+                onPressed: store.clickForSignIn,
                 style: themeData.elevatedButtonTheme.style?.copyWith(
                   backgroundColor: MaterialStateProperty.all<Color>(
                       CommonColors.lightGreyColor),
@@ -145,7 +145,7 @@ class LoginPage extends StatelessWidget {
                     style: themeData.textTheme.bodySmall,
                   ),
                   GestureDetector(
-                    onTap: readStore.pushAndRemoveSignUp,
+                    onTap: store.pushAndRemoveSignUp,
                     child: Text(
                       CommonStrings.signupString,
                       style: themeData.textTheme.bodySmall?.copyWith(

@@ -34,7 +34,8 @@ abstract class _AddExpenseStore with Store implements DisposeController {
 
   void getCategory() async {
     CategoryListModel value = await Navigator.pushNamed(
-        NavigationService().context, Routes.categories) as CategoryListModel;
+            NavigationService.instance.context, Routes.categories)
+        as CategoryListModel;
 
     iconName = value.iconName;
     iconData = value.iconData;
@@ -43,7 +44,7 @@ abstract class _AddExpenseStore with Store implements DisposeController {
 
   void showListOfCurrency() {
     showCurrencyPicker(
-      context: NavigationService().context,
+      context: NavigationService.instance.context,
       showFlag: true,
       showCurrencyName: true,
       showCurrencyCode: true,
@@ -61,13 +62,13 @@ abstract class _AddExpenseStore with Store implements DisposeController {
     } else if (descriptionController.text.isEmpty) {
       showWarningForDescription();
     } else {
-      NavigationService().goBack();
+      NavigationService.instance.goBack();
     }
   }
 
   void showWarningForDescription() {
     showDialog(
-      context: NavigationService().context,
+      context: NavigationService.instance.context,
       builder: (parentContext) {
         return AlertDialog(
           title: Text(
@@ -95,7 +96,7 @@ abstract class _AddExpenseStore with Store implements DisposeController {
 
   void showWarningForAmount() {
     showDialog(
-      context: NavigationService().context,
+      context: NavigationService.instance.context,
       builder: (parentContext) {
         return AlertDialog(
           title: Text(
@@ -123,7 +124,7 @@ abstract class _AddExpenseStore with Store implements DisposeController {
 
   void showWarningForEnterValue() {
     showDialog(
-      context: NavigationService().context,
+      context: NavigationService.instance.context,
       builder: (parentContext) {
         return AlertDialog(
           title: Text(
