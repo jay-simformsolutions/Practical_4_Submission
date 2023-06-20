@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:intl/intl.dart';
+import 'package:splitwise/model/group_info.dart';
 
 import '../../extensions/extensions.dart';
 import '../../routes/navigator_service.dart';
@@ -10,12 +11,12 @@ import '../../utils/common_strings.dart';
 import '../../utils/theme_data.dart';
 
 class GroupExpenseWidget extends StatelessWidget {
-  final Map groupInfo;
-
   const GroupExpenseWidget({
     Key? key,
     required this.groupInfo,
   }) : super(key: key);
+
+  final GroupInfoModel groupInfo;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,7 @@ class GroupExpenseWidget extends StatelessWidget {
             pinned: true,
             expandedHeight: 150,
             title: Text(
-              groupInfo['groupName'],
+              groupInfo.name!,
               style: themeData.textTheme.bodySmall!
                   .copyWith(fontSize: 20, color: CommonColors.whiteColor),
             ),
@@ -41,7 +42,7 @@ class GroupExpenseWidget extends StatelessWidget {
             ),
             flexibleSpace: FlexibleSpaceBar(
               background: Image.network(
-                groupInfo['groupImage'],
+                groupInfo.groupImage!,
                 fit: BoxFit.cover,
               ),
             ),

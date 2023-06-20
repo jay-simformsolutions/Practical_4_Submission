@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:splitwise/model/group_info.dart';
 import 'package:splitwise/store/friend_store/add_new_contact_store.dart';
 import 'package:splitwise/store/friend_store/contact_service_store.dart';
 import 'package:splitwise/store/group_store/add_expense_store.dart';
@@ -93,13 +94,17 @@ class RouteGenerator {
         );
       case Routes.groupExpense:
         return MaterialPageRoute(
-          builder: (_) =>
-              GroupExpenseWidget(groupInfo: args as Map).withMultiProvider([
-            Provider(
-              create: (_) => ChoiceChipListStore(),
-            ),
-            Provider(create: (_) => GroupExpenseStore()),
-          ]),
+          builder: (_) => GroupExpenseWidget(groupInfo: args as GroupInfoModel)
+              .withMultiProvider(
+            [
+              Provider(
+                create: (_) => ChoiceChipListStore(),
+              ),
+              Provider(
+                create: (_) => GroupExpenseStore(),
+              ),
+            ],
+          ),
         );
       case Routes.categories:
         return MaterialPageRoute(

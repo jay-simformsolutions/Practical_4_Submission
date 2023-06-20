@@ -83,12 +83,7 @@ class GroupPageInfo extends StatelessWidget {
                                   onTap: () => NavigationService.instance
                                       .navigateToScreen(
                                     Routes.groupExpense,
-                                    arguments: {
-                                      'index': index,
-                                      'groupImage': store.groups[index]
-                                          ['coverphoto'],
-                                      'groupName': store.groups[index]['name'],
-                                    },
+                                    arguments: store.groups[index],
                                   ),
                                   child: Row(
                                     children: [
@@ -96,14 +91,14 @@ class GroupPageInfo extends StatelessWidget {
                                         padding: const EdgeInsets.fromLTRB(
                                             5, 5, 0, 0),
                                         child: CircleAvatar(
-                                          backgroundImage: store.groups[index]
-                                              ['coverphoto'],
+                                          backgroundImage: NetworkImage(
+                                              store.groups[index].groupImage!),
                                           radius: 35,
                                         ),
                                       ),
                                       const Spacer(),
                                       Text(
-                                        store.groups[index]['name'].toString(),
+                                        store.groups[index].name!,
                                         style: themeData.textTheme.bodySmall!
                                             .copyWith(
                                           color: CommonColors.blackColor,
