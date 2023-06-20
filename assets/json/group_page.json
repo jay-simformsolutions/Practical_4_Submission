@@ -3,135 +3,22 @@
     {
       "id": 0,
       "name": "Non-group expenses",
-
       "group_image": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/avatar-ruby2-house-200px.png",
-      "coverphoto": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-ruby-1000px.png",
-      "created_at": "2023-02-14T05:28:26Z",
-      "updated_at": "2023-02-17T06:22:25Z",
-      "members": [
-        {
-          "id": 64776079,
-          "first_name": "tijoc51351",
-          "last_name": null,
-          "picture": {
-            "small": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-50px.png",
-            "medium": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-100px.png",
-            "large": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-200px.png"
-          },
-          "custom_picture": false,
-          "email": "tijoc51351@aosod.com",
-          "registration_status": "confirmed",
-          "balance": [
-            {
-              "amount": "25.0",
-              "currency_code": "USD"
-            }
-          ]
-        }
-      ],
-      "simplify_by_default": false,
-      "original_debts": [
-        {
-          "from": 11063129,
-          "to": 64776079,
-          "amount": "25.0",
-          "currency_code": "USD"
-        }
-      ],
-      "simplified_debts": [
-        {
-          "from": 11063129,
-          "to": 64776079,
-          "amount": "25.0",
-          "currency_code": "USD"
-        }
-      ],
-      "avatar": {
-        "small": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-50px.png",
-        "medium": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-100px.png",
-        "large": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-200px.png",
-        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-500px.png",
-        "xxlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-1000px.png",
-        "original": null
-      },
-      "tall_avatar": {
-        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_tall_avatars/avatar-nongroup-288px.png",
-        "large": "https://s3.amazonaws.com/splitwise/uploads/group/default_tall_avatars/avatar-nongroup-192px.png"
-      },
-      "custom_avatar": false,
-      "cover_photo": {
-        "xxlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-1000px.png",
-        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-500px.png"
-      }
+      "cover_photo": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-ruby-1000px.png",
+      "created_at": "2023-02-14T05:28:26Z"
     },
     {
-      "id": 0,
+      "id": 1,
       "name": "Flutter Group",
-      "coverphoto": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-1000px.png",
+      "cover_photo": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-1000px.png",
       "group_image": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-50px.png",
       "created_at": "2023-02-14T05:28:26Z",
-      "updated_at": "2023-02-17T06:22:25Z",
-      "members": [
-        {
-          "id": 64776079,
-          "first_name": "tijoc51351",
-          "last_name": null,
-          "picture": {
-            "small": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-50px.png",
-            "medium": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-100px.png",
-            "large": "https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue22-200px.png"
-          },
-          "custom_picture": false,
-          "email": "tijoc51351@aosod.com",
-          "registration_status": "confirmed",
-          "balance": [
-            {
-              "amount": "25.0",
-              "currency_code": "USD"
-            }
-          ]
-        }
-      ],
-      "simplify_by_default": false,
-      "original_debts": [
-        {
-          "from": 11063129,
-          "to": 64776079,
-          "amount": "25.0",
-          "currency_code": "USD"
-        }
-      ],
-      "simplified_debts": [
-        {
-          "from": 11063129,
-          "to": 64776079,
-          "amount": "25.0",
-          "currency_code": "USD"
-        }
-      ],
-      "avatar": {
-        "small": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-50px.png",
-        "medium": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-100px.png",
-        "large": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-200px.png",
-        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-500px.png",
-        "xxlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-1000px.png",
-        "original": null
-      },
-      "tall_avatar": {
-        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_tall_avatars/avatar-nongroup-288px.png",
-        "large": "https://s3.amazonaws.com/splitwise/uploads/group/default_tall_avatars/avatar-nongroup-192px.png"
-      },
-      "custom_avatar": false,
-      "cover_photo": {
-        "xxlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-1000px.png",
-        "xlarge": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-500px.png"
-      }
     },
 
     {
-      "id": 0,
+      "id": 2,
       "name": "School Friends",
-      "coverphoto": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-1000px.png",
+      "cover_photo": "https://s3.amazonaws.com/splitwise/uploads/group/default_cover_photos/coverphoto-nongroup-1000px.png",
       "group_image": "https://s3.amazonaws.com/splitwise/uploads/group/default_avatars/v2021/avatar-nongroup-50px.png",
       "created_at": "2023-02-14T05:28:26Z",
       "updated_at": "2023-02-17T06:22:25Z",

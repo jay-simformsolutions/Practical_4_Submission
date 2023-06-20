@@ -10,11 +10,11 @@ class BottomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(0, 0, 5, 20),
+      padding: const EdgeInsets.fromLTRB(15, 0, 5, 20),
       child: Align(
         alignment: Alignment.bottomRight,
         child: Container(
-          width: 150,
+          width: 170,
           height: 40,
           decoration: BoxDecoration(
             color: CommonColors.tealColor,
@@ -30,7 +30,7 @@ class BottomButton extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const Expanded(
-                flex: 4,
+                flex: 3,
                 child: Icon(
                   Icons.event_note,
                   color: CommonColors.whiteColor,

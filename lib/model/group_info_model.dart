@@ -1,10 +1,11 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'group_info.g.dart';
+part 'group_info_model.g.dart';
 
 @JsonSerializable()
 class GroupInfoModel {
   GroupInfoModel({
+    this.id,
     required this.name,
     required this.groupImage,
     required this.createdAt,
@@ -14,6 +15,7 @@ class GroupInfoModel {
     return _$GroupInfoModelFromJson(json);
   }
 
+  final String? id;
   final String? name;
   @JsonKey(name: 'cover_photo')
   final String? groupImage;

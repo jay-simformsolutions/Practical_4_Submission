@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:splitwise/common_methods/Group/group_info_widget.dart';
+import 'package:splitwise/common_methods/error_widget.dart';
+import 'package:splitwise/common_methods/manage_network_state.dart';
+import 'package:splitwise/shimmer/shimmer_group_info.dart';
 
 import '../../extensions/extensions.dart';
 import '../../routes/navigator_service.dart';
@@ -11,6 +15,7 @@ import '../../utils/theme_data.dart';
 
 class GroupPageInfo extends StatelessWidget {
   final String? groupName;
+
   const GroupPageInfo({Key? key, this.groupName}) : super(key: key);
 
   @override
@@ -68,55 +73,15 @@ class GroupPageInfo extends StatelessWidget {
             ),
             Observer(
               builder: (_) {
-                return store.groups.isEmpty
-                    ? const CircularProgressIndicator()
-                    : ListView.builder(
-                        physics: const NeverScrollableScrollPhysics(),
-                        shrinkWrap: true,
-                        itemCount: store.groups.length,
-                        itemBuilder: (_, index) {
-                          return Card(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                InkWell(
-                                  onTap: () => NavigationService.instance
-                                      .navigateToScreen(
-                                    Routes.groupExpense,
-                                    arguments: store.groups[index],
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                            5, 5, 0, 0),
-                                        child: CircleAvatar(
-                                          backgroundImage: NetworkImage(
-                                              store.groups[index].groupImage!),
-                                          radius: 35,
-                                        ),
-                                      ),
-                                      const Spacer(),
-                                      Text(
-                                        store.groups[index].name!,
-                                        style: themeData.textTheme.bodySmall!
-                                            .copyWith(
-                                          color: CommonColors.blackColor,
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                      ),
-                                      const Spacer(),
-                                    ],
-                                  ),
-                                ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                              ],
-                            ),
-                          );
-                        },
-                      );
+                return ManageNetworkState(
+                  state: store.networkState,
+                  shimmerWidget: GroupInfoShimmer(),
+                  errorWidget: NetworkErrorWidget(
+                    function: store.getGroupDetails,
+                    text: store.errorMessage,
+                  ),
+                  successWidget: ListOfGroups(),
+                );
               },
             ),
           ],

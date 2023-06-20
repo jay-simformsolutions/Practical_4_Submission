@@ -36,7 +36,7 @@ ThemeData themeData = ThemeData(
     //For the Below of the Button in Both Screen
     bodySmall: TextStyle(
       fontFamily: 'NotoSerif',
-      fontSize: 15,
+      fontSize: 17,
       fontWeight: FontWeight.w500,
       color: CommonColors.blackColor,
     ),

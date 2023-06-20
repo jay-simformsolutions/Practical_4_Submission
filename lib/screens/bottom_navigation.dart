@@ -6,7 +6,7 @@ import '../store/bottom_navigation_store.dart';
 import '../utils/colors.dart';
 import '../utils/common_strings.dart';
 
-class BottomNavigationBarWidget extends StatelessWidget {
+class BottomNavigationBarWidget extends StatelessObserverWidget {
   const BottomNavigationBarWidget({Key? key}) : super(key: key);
 
   @override
@@ -17,14 +17,11 @@ class BottomNavigationBarWidget extends StatelessWidget {
       onWillPop: store.showExitPopup,
       child: Scaffold(
         backgroundColor: Colors.black,
-        body: Observer(
-          builder: (_) {
-            return store.screens[store.pageIndex];
-          },
-        ),
+        body: store.screens[store.pageIndex],
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: CommonColors.tealColor,
           unselectedItemColor: CommonColors.greyColor,
+          type: BottomNavigationBarType.shifting,
           currentIndex: store.pageIndex,
           onTap: store.onItemTapped,
           items: const [

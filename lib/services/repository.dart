@@ -2,7 +2,8 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:splitwise/model/group_info.dart';
+import 'package:splitwise/model/group_expense_model.dart';
+import 'package:splitwise/model/group_info_model.dart';
 import 'package:splitwise/services/status_code.dart';
 import 'package:splitwise/utils/common_strings.dart';
 
@@ -21,6 +22,16 @@ class Repository {
     return loadData(client.getGroupInfo());
   }
 
+  /// Get Group Expense Data
+  Future<ResponseOrError<List<GroupExpenseModel>>> getGroupExpenseData() async {
+    return loadData(client.getGroupExpense());
+  }
+
+  Future<ResponseOrError<void>> deleteGroup(String id) async {
+    return loadData(client.deleteGroup(id));
+  }
+
+  /// Post Data of New Group
   Future<void> addNewGroup(GroupInfoModel groupInfoModel) async {
     try {
       await client.addNewGroup(groupInfoModel);
@@ -40,15 +51,38 @@ class Repository {
 //   }
 // }
 
+Future<bool> checkInternetConnectivity() async {
+  try {
+    var internetResponse = await InternetAddress.lookup('www.google.com');
+    if (internetResponse.isNotEmpty &&
+        internetResponse[0].rawAddress.isNotEmpty) {
+      debugPrint(internetResponse[0].rawAddress.toString());
+      return true;
+    } else {
+      internetResponse = [];
+    }
+  } catch (e) {
+    if (e is SocketException) {
+      debugPrint('No Internet Connectivity');
+    }
+  }
+  return false;
+}
+
 final client = RestClient(SingletonDio.instance.dio);
 
 Future<ResponseOrError<T>> loadData<T>(Future<T> function) async {
-  try {
-    final response = await function;
-    return ResponseOrError.success(response: response);
-  } catch (e, s) {
-    debugPrintStack(stackTrace: s);
-    return catchError(e, s);
+  if (await checkInternetConnectivity()) {
+    try {
+      final response = await function;
+      return ResponseOrError.success(response: response);
+    } catch (e, s) {
+      debugPrintStack(stackTrace: s);
+      debugPrint('Exception is $e');
+      return catchError(e, s);
+    }
+  } else {
+    return ResponseOrError.failure(errorInfo: CommonStrings.noInternet);
   }
 }
 

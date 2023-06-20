@@ -1,5 +1,8 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:splitwise/model/group_info_model.dart';
 
 import '../../extensions/extensions.dart';
 import '../../routes/navigator_service.dart';
@@ -34,7 +37,13 @@ class CreateGroup extends StatelessWidget {
         backgroundColor: CommonColors.whiteColor,
         actions: [
           IconButton(
-            onPressed: store.completeOrShowDialogue,
+            onPressed: () => store.addNewGroupData(
+              GroupInfoModel(
+                  name: store.groupNameEditingController.text,
+                  groupImage: store
+                      .iconString[Random().nextInt(store.iconString.length)],
+                  createdAt: DateTime.now().timeZoneName),
+            ),
             icon: const Icon(
               Icons.done,
               color: CommonColors.blackColor,
