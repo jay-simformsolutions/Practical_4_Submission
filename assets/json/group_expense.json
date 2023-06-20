@@ -1,9 +1,9 @@
 [
   {
-    "Date": "2022-12-02",
-    "Description": "Manan H. paid MrPerfect 5.",
-    "Category": "Payment",
-    "Cost": 195.33,
+    "date": "2022-12-02",
+    "description": "Manan H. paid MrPerfect 5.",
+    "category": "Payment",
+    "cost": 195.33,
     "Currency": "INR",
     "MrPerfect 555": -195.33,
     "Manan Hathi": 195.33,
@@ -12,10 +12,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-12-02",
-    "Description": "Manan H. paid Sahil T.",
-    "Category": "Payment",
-    "Cost": 442.76,
+    "date": "2022-12-02",
+    "description": "Manan H. paid Sahil T.",
+    "category": "Payment",
+    "cost": 442.76,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 442.76,
@@ -24,10 +24,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-12-02",
-    "Description": "Manthan B. paid Manan H.",
-    "Category": "Payment",
-    "Cost": 0.91,
+    "date": "2022-12-02",
+    "description": "Manthan B. paid Manan H.",
+    "category": "Payment",
+    "cost": 0.91,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -0.91,
@@ -36,10 +36,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-12-02",
-    "Description": "Manthan B. paid Sahil T.",
-    "Category": "Payment",
-    "Cost": 171.32,
+    "date": "2022-12-02",
+    "description": "Manthan B. paid Sahil T.",
+    "category": "Payment",
+    "cost": 171.32,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -48,10 +48,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-12-02",
-    "Description": "MrPerfect 5. paid Manthan B.",
-    "Category": "Payment",
-    "Cost": 156.66,
+    "date": "2022-12-02",
+    "description": "MrPerfect 5. paid Manthan B.",
+    "category": "Payment",
+    "cost": 156.66,
     "Currency": "INR",
     "MrPerfect 555": 156.66,
     "Manan Hathi": 0,
@@ -60,10 +60,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-12-02",
-    "Description": "MrPerfect 5. paid Sahil T.",
-    "Category": "Payment",
-    "Cost": 207.91,
+    "date": "2022-12-02",
+    "description": "MrPerfect 5. paid Sahil T.",
+    "category": "Payment",
+    "cost": 207.91,
     "Currency": "INR",
     "MrPerfect 555": 207.91,
     "Manan Hathi": 0,
@@ -72,10 +72,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-12-01",
-    "Description": "Last dinner",
-    "Category": "General",
-    "Cost": 484,
+    "date": "2022-12-01",
+    "description": "Last dinner",
+    "category": "General",
+    "cost": 484,
     "Currency": "INR",
     "MrPerfect 555": -121,
     "Manan Hathi": -121,
@@ -84,10 +84,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-30",
-    "Description": "Taxi BT",
-    "Category": "Taxi",
-    "Cost": 300,
+    "date": "2022-11-30",
+    "description": "Taxi BT",
+    "category": "Taxi",
+    "cost": 300,
     "Currency": "INR",
     "MrPerfect 555": 240,
     "Manan Hathi": -60,
@@ -96,10 +96,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-30",
-    "Description": "Lunch BTvala",
-    "Category": "Dining out",
-    "Cost": 100,
+    "date": "2022-11-30",
+    "description": "Lunch BTvala",
+    "category": "Dining out",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": 80,
     "Manan Hathi": -20,
@@ -108,10 +108,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-30",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 145,
+    "date": "2022-11-30",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 145,
     "Currency": "INR",
     "MrPerfect 555": 110,
     "Manan Hathi": -35,
@@ -120,10 +120,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-30",
-    "Description": "Pizza 🍕  at la pinoz",
-    "Category": "Dining out",
-    "Cost": 1122,
+    "date": "2022-11-30",
+    "description": "Pizza 🍕  at la pinoz",
+    "category": "Dining out",
+    "cost": 1122,
     "Currency": "INR",
     "MrPerfect 555": -280.5,
     "Manan Hathi": -280.5,
@@ -132,10 +132,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-29",
-    "Description": "Gujrat last",
-    "Category": "General",
-    "Cost": 360,
+    "date": "2022-11-29",
+    "description": "Gujrat last",
+    "category": "General",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -144,10 +144,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-29",
-    "Description": "Drinks with maggi",
-    "Category": "Groceries",
-    "Cost": 50,
+    "date": "2022-11-29",
+    "description": "Drinks with maggi",
+    "category": "Groceries",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": -20,
     "Manan Hathi": 0,
@@ -156,10 +156,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-29",
-    "Description": "Cha",
-    "Category": "General",
-    "Cost": 120,
+    "date": "2022-11-29",
+    "description": "Cha",
+    "category": "General",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": -40,
     "Manan Hathi": -35,
@@ -168,10 +168,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-28",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 320,
+    "date": "2022-11-28",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 320,
     "Currency": "INR",
     "MrPerfect 555": -70,
     "Manan Hathi": 230,
@@ -180,10 +180,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-28",
-    "Description": "Lunch bda",
-    "Category": "Dining out",
-    "Cost": 170,
+    "date": "2022-11-28",
+    "description": "Lunch bda",
+    "category": "Dining out",
+    "cost": 170,
     "Currency": "INR",
     "MrPerfect 555": -50,
     "Manan Hathi": -20,
@@ -192,10 +192,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-28",
-    "Description": "To college in rickshaw BDA",
-    "Category": "General",
-    "Cost": 290,
+    "date": "2022-11-28",
+    "description": "To college in rickshaw BDA",
+    "category": "General",
+    "cost": 290,
     "Currency": "INR",
     "MrPerfect 555": -60,
     "Manan Hathi": -60,
@@ -204,10 +204,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-28",
-    "Description": "Parchuran/Naasto/Kurkure",
-    "Category": "General",
-    "Cost": 54,
+    "date": "2022-11-28",
+    "description": "Parchuran/Naasto/Kurkure",
+    "category": "General",
+    "cost": 54,
     "Currency": "INR",
     "MrPerfect 555": -20,
     "Manan Hathi": 40,
@@ -216,10 +216,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-27",
-    "Description": "Chataka pataka & Dew",
-    "Category": "General",
-    "Cost": 60,
+    "date": "2022-11-27",
+    "description": "Chataka pataka & Dew",
+    "category": "General",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -228,10 +228,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-27",
-    "Description": "Ice cream",
-    "Category": "Groceries",
-    "Cost": 140,
+    "date": "2022-11-27",
+    "description": "Ice cream",
+    "category": "Groceries",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": -30,
@@ -240,10 +240,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-27",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-11-27",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -252,10 +252,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-27",
-    "Description": "Dinner Chole",
-    "Category": "Dining out",
-    "Cost": 210,
+    "date": "2022-11-27",
+    "description": "Dinner Chole",
+    "category": "Dining out",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": 160,
     "Manan Hathi": -50,
@@ -264,10 +264,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-27",
-    "Description": "Dinner - Dabeli",
-    "Category": "Dining out",
-    "Cost": 100,
+    "date": "2022-11-27",
+    "description": "Dinner - Dabeli",
+    "category": "Dining out",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": -20,
     "Manan Hathi": 80,
@@ -276,10 +276,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-26",
-    "Description": "Lunch at Gujarat",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-11-26",
+    "description": "Lunch at Gujarat",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -288,10 +288,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-26",
-    "Description": "Tea",
-    "Category": "Dining out",
-    "Cost": 105,
+    "date": "2022-11-26",
+    "description": "Tea",
+    "category": "Dining out",
+    "cost": 105,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": -35,
@@ -300,10 +300,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-25",
-    "Description": "Dinner part 2",
-    "Category": "Dining out",
-    "Cost": 150,
+    "date": "2022-11-25",
+    "description": "Dinner part 2",
+    "category": "Dining out",
+    "cost": 150,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 100,
@@ -312,10 +312,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-25",
-    "Description": "Pani puri",
-    "Category": "Dining out",
-    "Cost": 40,
+    "date": "2022-11-25",
+    "description": "Pani puri",
+    "category": "Dining out",
+    "cost": 40,
     "Currency": "INR",
     "MrPerfect 555": -13.33,
     "Manan Hathi": -13.34,
@@ -324,10 +324,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-25",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 240,
+    "date": "2022-11-25",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": -60,
     "Manan Hathi": 180,
@@ -336,10 +336,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-25",
-    "Description": "Taxi",
-    "Category": "Taxi",
-    "Cost": 240,
+    "date": "2022-11-25",
+    "description": "Taxi",
+    "category": "Taxi",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": 160,
     "Manan Hathi": -60,
@@ -348,10 +348,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-25",
-    "Description": "Snacks",
-    "Category": "Food and drink - Other",
-    "Cost": 25,
+    "date": "2022-11-25",
+    "description": "Snacks",
+    "category": "Food and drink - Other",
+    "cost": 25,
     "Currency": "INR",
     "MrPerfect 555": -15,
     "Manan Hathi": 15,
@@ -360,10 +360,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-25",
-    "Description": "IoT ka Lunch",
-    "Category": "Dining out",
-    "Cost": 120,
+    "date": "2022-11-25",
+    "description": "IoT ka Lunch",
+    "category": "Dining out",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": 100,
     "Manan Hathi": -20,
@@ -372,10 +372,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-25",
-    "Description": "Manan ka recharge",
-    "Category": "TV/Phone/Internet",
-    "Cost": 149,
+    "date": "2022-11-25",
+    "description": "Manan ka recharge",
+    "category": "TV/Phone/Internet",
+    "cost": 149,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -149,
@@ -384,10 +384,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-24",
-    "Description": "Green kurkure",
-    "Category": "General",
-    "Cost": 60,
+    "date": "2022-11-24",
+    "description": "Green kurkure",
+    "category": "General",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": -20,
     "Manan Hathi": 0,
@@ -396,10 +396,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-24",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 210,
+    "date": "2022-11-24",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": 160,
     "Manan Hathi": -55,
@@ -408,10 +408,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-24",
-    "Description": "Drinks",
-    "Category": "Liquor",
-    "Cost": 60,
+    "date": "2022-11-24",
+    "description": "Drinks",
+    "category": "Liquor",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": -10,
     "Manan Hathi": 50,
@@ -420,10 +420,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-24",
-    "Description": "Schezwan Maggi",
-    "Category": "Groceries",
-    "Cost": 280,
+    "date": "2022-11-24",
+    "description": "Schezwan Maggi",
+    "category": "Groceries",
+    "cost": 280,
     "Currency": "INR",
     "MrPerfect 555": -70,
     "Manan Hathi": -70,
@@ -432,10 +432,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-24",
-    "Description": "Nasta morning",
-    "Category": "General",
-    "Cost": 100,
+    "date": "2022-11-24",
+    "description": "Nasta morning",
+    "category": "General",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": 65,
     "Manan Hathi": -30,
@@ -444,10 +444,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-23",
-    "Description": "Rixa",
-    "Category": "General",
-    "Cost": 240,
+    "date": "2022-11-23",
+    "description": "Rixa",
+    "category": "General",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": 180,
     "Manan Hathi": -60,
@@ -456,10 +456,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-23",
-    "Description": "Nasta",
-    "Category": "General",
-    "Cost": 40,
+    "date": "2022-11-23",
+    "description": "Nasta",
+    "category": "General",
+    "cost": 40,
     "Currency": "INR",
     "MrPerfect 555": -20,
     "Manan Hathi": 0,
@@ -468,10 +468,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-23",
-    "Description": "Lunch Cloud vala",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-11-23",
+    "description": "Lunch Cloud vala",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": -40,
     "Manan Hathi": -20,
@@ -480,10 +480,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-23",
-    "Description": "Naasta morning",
-    "Category": "General",
-    "Cost": 145,
+    "date": "2022-11-23",
+    "description": "Naasta morning",
+    "category": "General",
+    "cost": 145,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": 110,
@@ -492,10 +492,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-23",
-    "Description": "Wafer and buttermilk",
-    "Category": "Groceries",
-    "Cost": 34,
+    "date": "2022-11-23",
+    "description": "Wafer and buttermilk",
+    "category": "Groceries",
+    "cost": 34,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -14,
@@ -504,10 +504,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-22",
-    "Description": "Drinks",
-    "Category": "Liquor",
-    "Cost": 40,
+    "date": "2022-11-22",
+    "description": "Drinks",
+    "category": "Liquor",
+    "cost": 40,
     "Currency": "INR",
     "MrPerfect 555": -10,
     "Manan Hathi": 0,
@@ -516,10 +516,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-22",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 390,
+    "date": "2022-11-22",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 390,
     "Currency": "INR",
     "MrPerfect 555": -100,
     "Manan Hathi": 290,
@@ -528,10 +528,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-22",
-    "Description": "Drinks-Dinner",
-    "Category": "Liquor",
-    "Cost": 37,
+    "date": "2022-11-22",
+    "description": "Drinks-Dinner",
+    "category": "Liquor",
+    "cost": 37,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 20,
@@ -540,10 +540,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-22",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 450,
+    "date": "2022-11-22",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 450,
     "Currency": "INR",
     "MrPerfect 555": -180,
     "Manan Hathi": -90,
@@ -552,10 +552,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-22",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 125,
+    "date": "2022-11-22",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 125,
     "Currency": "INR",
     "MrPerfect 555": 82.5,
     "Manan Hathi": -35,
@@ -564,10 +564,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-22",
-    "Description": "Laundry",
-    "Category": "Services",
-    "Cost": 96,
+    "date": "2022-11-22",
+    "description": "Laundry",
+    "category": "Services",
+    "cost": 96,
     "Currency": "INR",
     "MrPerfect 555": 80,
     "Manan Hathi": -64,
@@ -576,10 +576,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-21",
-    "Description": "Rikhsha dlp ki",
-    "Category": "General",
-    "Cost": 240,
+    "date": "2022-11-21",
+    "description": "Rikhsha dlp ki",
+    "category": "General",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": -60,
     "Manan Hathi": -60,
@@ -588,10 +588,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-21",
-    "Description": "Lunch kapil dev",
-    "Category": "Dining out",
-    "Cost": 220,
+    "date": "2022-11-21",
+    "description": "Lunch kapil dev",
+    "category": "Dining out",
+    "cost": 220,
     "Currency": "INR",
     "MrPerfect 555": -60,
     "Manan Hathi": -40,
@@ -600,10 +600,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-21",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 225,
+    "date": "2022-11-21",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 225,
     "Currency": "INR",
     "MrPerfect 555": -50,
     "Manan Hathi": 170,
@@ -612,10 +612,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-20",
-    "Description": "Drink",
-    "Category": "Liquor",
-    "Cost": 64,
+    "date": "2022-11-20",
+    "description": "Drink",
+    "category": "Liquor",
+    "cost": 64,
     "Currency": "INR",
     "MrPerfect 555": -10,
     "Manan Hathi": -14,
@@ -624,10 +624,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-20",
-    "Description": "Chole dinner 19/11",
-    "Category": "Dining out",
-    "Cost": 100,
+    "date": "2022-11-20",
+    "description": "Chole dinner 19/11",
+    "category": "Dining out",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": -50,
     "Manan Hathi": 50,
@@ -636,10 +636,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-20",
-    "Description": "Drink",
-    "Category": "Liquor",
-    "Cost": 24,
+    "date": "2022-11-20",
+    "description": "Drink",
+    "category": "Liquor",
+    "cost": 24,
     "Currency": "INR",
     "MrPerfect 555": -10,
     "Manan Hathi": 10,
@@ -648,10 +648,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-20",
-    "Description": "LUNCH",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-11-20",
+    "description": "LUNCH",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": 270,
     "Manan Hathi": -90,
@@ -660,10 +660,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-20",
-    "Description": "Dinner bhature",
-    "Category": "Dining out",
-    "Cost": 200,
+    "date": "2022-11-20",
+    "description": "Dinner bhature",
+    "category": "Dining out",
+    "cost": 200,
     "Currency": "INR",
     "MrPerfect 555": -50,
     "Manan Hathi": -50,
@@ -672,10 +672,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-20",
-    "Description": "Coconut",
-    "Category": "Groceries",
-    "Cost": 50,
+    "date": "2022-11-20",
+    "description": "Coconut",
+    "category": "Groceries",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": -12.5,
     "Manan Hathi": -12.5,
@@ -684,10 +684,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-20",
-    "Description": "Cha",
-    "Category": "General",
-    "Cost": 110,
+    "date": "2022-11-20",
+    "description": "Cha",
+    "category": "General",
+    "cost": 110,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": -35,
@@ -696,10 +696,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-19",
-    "Description": "Naasta",
-    "Category": "Food and drink - Other",
-    "Cost": 39,
+    "date": "2022-11-19",
+    "description": "Naasta",
+    "category": "Food and drink - Other",
+    "cost": 39,
     "Currency": "INR",
     "MrPerfect 555": -25,
     "Manan Hathi": 25,
@@ -708,10 +708,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-19",
-    "Description": "Lunch @ Gujarat",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-11-19",
+    "description": "Lunch @ Gujarat",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -720,10 +720,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-19",
-    "Description": "Stationary",
-    "Category": "General",
-    "Cost": 150,
+    "date": "2022-11-19",
+    "description": "Stationary",
+    "category": "General",
+    "cost": 150,
     "Currency": "INR",
     "MrPerfect 555": 130,
     "Manan Hathi": -85,
@@ -732,10 +732,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-19",
-    "Description": "Maggi",
-    "Category": "Groceries",
-    "Cost": 140,
+    "date": "2022-11-19",
+    "description": "Maggi",
+    "category": "Groceries",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": -70,
     "Manan Hathi": 0,
@@ -744,10 +744,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-19",
-    "Description": "Cha",
-    "Category": "General",
-    "Cost": 85,
+    "date": "2022-11-19",
+    "description": "Cha",
+    "category": "General",
+    "cost": 85,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": -15,
@@ -756,10 +756,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-18",
-    "Description": "Rixa - Evening - from College to Vadtal",
-    "Category": "Transportation - Other",
-    "Cost": 40,
+    "date": "2022-11-18",
+    "description": "Rixa - Evening - from College to Vadtal",
+    "category": "Transportation - Other",
+    "cost": 40,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 20,
@@ -768,10 +768,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-18",
-    "Description": "Rixa - Morning",
-    "Category": "Transportation - Other",
-    "Cost": 66.66,
+    "date": "2022-11-18",
+    "description": "Rixa - Morning",
+    "category": "Transportation - Other",
+    "cost": 66.66,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 33.33,
@@ -780,10 +780,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-18",
-    "Description": "Snacks",
-    "Category": "Dining out",
-    "Cost": 90,
+    "date": "2022-11-18",
+    "description": "Snacks",
+    "category": "Dining out",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": -25,
     "Manan Hathi": 45,
@@ -792,10 +792,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-18",
-    "Description": "Dal bati",
-    "Category": "General",
-    "Cost": 180,
+    "date": "2022-11-18",
+    "description": "Dal bati",
+    "category": "General",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": 120,
     "Manan Hathi": -60,
@@ -804,10 +804,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-18",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 95,
+    "date": "2022-11-18",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 95,
     "Currency": "INR",
     "MrPerfect 555": 60,
     "Manan Hathi": -30,
@@ -816,10 +816,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-17",
-    "Description": "Parchuran",
-    "Category": "General",
-    "Cost": 67,
+    "date": "2022-11-17",
+    "description": "Parchuran",
+    "category": "General",
+    "cost": 67,
     "Currency": "INR",
     "MrPerfect 555": -10,
     "Manan Hathi": 50,
@@ -828,10 +828,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-17",
-    "Description": "Sandwich",
-    "Category": "Dining out",
-    "Cost": 120,
+    "date": "2022-11-17",
+    "description": "Sandwich",
+    "category": "Dining out",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": 60,
     "Manan Hathi": -60,
@@ -840,10 +840,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-17",
-    "Description": "Mortin",
-    "Category": "General",
-    "Cost": 89,
+    "date": "2022-11-17",
+    "description": "Mortin",
+    "category": "General",
+    "cost": 89,
     "Currency": "INR",
     "MrPerfect 555": -22.25,
     "Manan Hathi": 66.75,
@@ -852,10 +852,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-17",
-    "Description": "Gpay",
-    "Category": "General",
-    "Cost": 2,
+    "date": "2022-11-17",
+    "description": "Gpay",
+    "category": "General",
+    "cost": 2,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 2,
@@ -864,10 +864,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-17",
-    "Description": "Lunch @ Gujarat 17/11/22",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-11-17",
+    "description": "Lunch @ Gujarat 17/11/22",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": 90,
@@ -876,10 +876,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-17",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 60,
+    "date": "2022-11-17",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 30,
     "Manan Hathi": -30,
@@ -888,10 +888,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-16",
-    "Description": "Lunch at gujrat",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-11-16",
+    "description": "Lunch at gujrat",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": 0,
@@ -900,10 +900,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-16",
-    "Description": "Laundry - Sahil's Clothes",
-    "Category": "Services",
-    "Cost": 32,
+    "date": "2022-11-16",
+    "description": "Laundry - Sahil's Clothes",
+    "category": "Services",
+    "cost": 32,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 32,
@@ -912,10 +912,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-16",
-    "Description": "Dinner -Daalbaati",
-    "Category": "Dining out",
-    "Cost": 120,
+    "date": "2022-11-16",
+    "description": "Dinner -Daalbaati",
+    "category": "Dining out",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": -60,
     "Manan Hathi": 60,
@@ -924,10 +924,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-15",
-    "Description": "Dinner - Gajanand 15/11/22",
-    "Category": "Dining out",
-    "Cost": 320,
+    "date": "2022-11-15",
+    "description": "Dinner - Gajanand 15/11/22",
+    "category": "Dining out",
+    "cost": 320,
     "Currency": "INR",
     "MrPerfect 555": -80,
     "Manan Hathi": 240,
@@ -936,10 +936,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-15",
-    "Description": "Drinks 🌚",
-    "Category": "Liquor",
-    "Cost": 50,
+    "date": "2022-11-15",
+    "description": "Drinks 🌚",
+    "category": "Liquor",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": -10,
     "Manan Hathi": 0,
@@ -948,10 +948,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-15",
-    "Description": "Lunch kapildev",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-11-15",
+    "description": "Lunch kapildev",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": -60,
     "Manan Hathi": 0,
@@ -960,10 +960,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-15",
-    "Description": "Travel at noon",
-    "Category": "Transportation - Other",
-    "Cost": 90,
+    "date": "2022-11-15",
+    "description": "Travel at noon",
+    "category": "Transportation - Other",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": 60,
     "Manan Hathi": 0,
@@ -972,10 +972,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-15",
-    "Description": "Taxi morning",
-    "Category": "Taxi",
-    "Cost": 120,
+    "date": "2022-11-15",
+    "description": "Taxi morning",
+    "category": "Taxi",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": 90,
     "Manan Hathi": -30,
@@ -984,10 +984,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-15",
-    "Description": "Cha",
-    "Category": "General",
-    "Cost": 90,
+    "date": "2022-11-15",
+    "description": "Cha",
+    "category": "General",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": -30,
@@ -996,10 +996,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-14",
-    "Description": "Dinner at gayatri",
-    "Category": "Dining out",
-    "Cost": 215,
+    "date": "2022-11-14",
+    "description": "Dinner at gayatri",
+    "category": "Dining out",
+    "cost": 215,
     "Currency": "INR",
     "MrPerfect 555": -55,
     "Manan Hathi": -55,
@@ -1008,10 +1008,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-14",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-11-14",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 70,
     "Manan Hathi": 0,
@@ -1020,10 +1020,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-14",
-    "Description": "Travel rixa",
-    "Category": "Transportation - Other",
-    "Cost": 300,
+    "date": "2022-11-14",
+    "description": "Travel rixa",
+    "category": "Transportation - Other",
+    "cost": 300,
     "Currency": "INR",
     "MrPerfect 555": 240,
     "Manan Hathi": -60,
@@ -1032,10 +1032,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-13",
-    "Description": "Sahil T. paid MrPerfect 5.",
-    "Category": "Payment",
-    "Cost": 50,
+    "date": "2022-11-13",
+    "description": "Sahil T. paid MrPerfect 5.",
+    "category": "Payment",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": -50,
     "Manan Hathi": 0,
@@ -1044,10 +1044,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-13",
-    "Description": "MrPerfect 5. paid Manthan B.",
-    "Category": "Payment",
-    "Cost": 50,
+    "date": "2022-11-13",
+    "description": "MrPerfect 5. paid Manthan B.",
+    "category": "Payment",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": 50,
     "Manan Hathi": 0,
@@ -1056,10 +1056,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-13",
-    "Description": "Dosa",
-    "Category": "Dining out",
-    "Cost": 554,
+    "date": "2022-11-13",
+    "description": "Dosa",
+    "category": "Dining out",
+    "cost": 554,
     "Currency": "INR",
     "MrPerfect 555": -138.5,
     "Manan Hathi": -138.5,
@@ -1068,10 +1068,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-13",
-    "Description": "Dinner at patel",
-    "Category": "Groceries",
-    "Cost": 250,
+    "date": "2022-11-13",
+    "description": "Dinner at patel",
+    "category": "Groceries",
+    "cost": 250,
     "Currency": "INR",
     "MrPerfect 555": -85,
     "Manan Hathi": -55,
@@ -1080,10 +1080,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-13",
-    "Description": "Lunch @ Kapildev 13/11/22",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-11-13",
+    "description": "Lunch @ Kapildev 13/11/22",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 100,
@@ -1092,10 +1092,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-13",
-    "Description": "Taxi",
-    "Category": "Taxi",
-    "Cost": 80,
+    "date": "2022-11-13",
+    "description": "Taxi",
+    "category": "Taxi",
+    "cost": 80,
     "Currency": "INR",
     "MrPerfect 555": 60,
     "Manan Hathi": -20,
@@ -1104,10 +1104,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-13",
-    "Description": "Paper colour copy",
-    "Category": "Household supplies",
-    "Cost": 10,
+    "date": "2022-11-13",
+    "description": "Paper colour copy",
+    "category": "Household supplies",
+    "cost": 10,
     "Currency": "INR",
     "MrPerfect 555": -10,
     "Manan Hathi": 10,
@@ -1116,10 +1116,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-13",
-    "Description": "Tea",
-    "Category": "General",
-    "Cost": 24,
+    "date": "2022-11-13",
+    "description": "Tea",
+    "category": "General",
+    "cost": 24,
     "Currency": "INR",
     "MrPerfect 555": 14,
     "Manan Hathi": -14,
@@ -1128,10 +1128,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-13",
-    "Description": "Breakfast - khaman",
-    "Category": "Dining out",
-    "Cost": 150,
+    "date": "2022-11-13",
+    "description": "Breakfast - khaman",
+    "category": "Dining out",
+    "cost": 150,
     "Currency": "INR",
     "MrPerfect 555": 120,
     "Manan Hathi": -60,
@@ -1140,10 +1140,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-12",
-    "Description": "Chai",
-    "Category": "Dining out",
-    "Cost": 85,
+    "date": "2022-11-12",
+    "description": "Chai",
+    "category": "Dining out",
+    "cost": 85,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": -30,
@@ -1152,10 +1152,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-12",
-    "Description": "Riksha subah ke",
-    "Category": "General",
-    "Cost": 120,
+    "date": "2022-11-12",
+    "description": "Riksha subah ke",
+    "category": "General",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": -30,
@@ -1164,10 +1164,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-12",
-    "Description": "Mango",
-    "Category": "General",
-    "Cost": 35,
+    "date": "2022-11-12",
+    "description": "Mango",
+    "category": "General",
+    "cost": 35,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": 0,
@@ -1176,10 +1176,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-12",
-    "Description": "Travel",
-    "Category": "Transportation - Other",
-    "Cost": 90,
+    "date": "2022-11-12",
+    "description": "Travel",
+    "category": "Transportation - Other",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": -30,
@@ -1188,10 +1188,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-11",
-    "Description": "Chinese",
-    "Category": "Dining out",
-    "Cost": 315,
+    "date": "2022-11-11",
+    "description": "Chinese",
+    "category": "Dining out",
+    "cost": 315,
     "Currency": "INR",
     "MrPerfect 555": 240,
     "Manan Hathi": -75,
@@ -1200,10 +1200,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-11",
-    "Description": "Lunch @ Kapildev 11/11/22",
-    "Category": "Dining out",
-    "Cost": 130,
+    "date": "2022-11-11",
+    "description": "Lunch @ Kapildev 11/11/22",
+    "category": "Dining out",
+    "cost": 130,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 60,
@@ -1212,10 +1212,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-11",
-    "Description": "Dinner (Pav Bhaji) 10/11/22",
-    "Category": "Dining out",
-    "Cost": 270,
+    "date": "2022-11-11",
+    "description": "Dinner (Pav Bhaji) 10/11/22",
+    "category": "Dining out",
+    "cost": 270,
     "Currency": "INR",
     "MrPerfect 555": -67.5,
     "Manan Hathi": 205,
@@ -1224,10 +1224,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-11",
-    "Description": "Tea",
-    "Category": "Dining out",
-    "Cost": 50,
+    "date": "2022-11-11",
+    "description": "Tea",
+    "category": "Dining out",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -30,
@@ -1236,10 +1236,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-10",
-    "Description": "Evening tea",
-    "Category": "Dining out",
-    "Cost": 64,
+    "date": "2022-11-10",
+    "description": "Evening tea",
+    "category": "Dining out",
+    "cost": 64,
     "Currency": "INR",
     "MrPerfect 555": 39,
     "Manan Hathi": -14,
@@ -1248,10 +1248,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-10",
-    "Description": "Coldrinks(Maaza,Coke) 10/11/22",
-    "Category": "General",
-    "Cost": 30,
+    "date": "2022-11-10",
+    "description": "Coldrinks(Maaza,Coke) 10/11/22",
+    "category": "General",
+    "cost": 30,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 20,
@@ -1260,10 +1260,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-10",
-    "Description": "Kaipldev",
-    "Category": "General",
-    "Cost": 200,
+    "date": "2022-11-10",
+    "description": "Kaipldev",
+    "category": "General",
+    "cost": 200,
     "Currency": "INR",
     "MrPerfect 555": -40,
     "Manan Hathi": -40,
@@ -1272,10 +1272,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-10",
-    "Description": "Manan H. paid Saheel S.",
-    "Category": "Payment",
-    "Cost": 8,
+    "date": "2022-11-10",
+    "description": "Manan H. paid Saheel S.",
+    "category": "Payment",
+    "cost": 8,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 8,
@@ -1284,10 +1284,10 @@
     "Saheel Sapovadia (removed)": -8
   },
   {
-    "Date": "2022-11-10",
-    "Description": "Sahil T. paid Saheel S.",
-    "Category": "Payment",
-    "Cost": 6,
+    "date": "2022-11-10",
+    "description": "Sahil T. paid Saheel S.",
+    "category": "Payment",
+    "cost": 6,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -1296,10 +1296,10 @@
     "Saheel Sapovadia (removed)": -6
   },
   {
-    "Date": "2022-11-10",
-    "Description": "Manthan B. paid Saheel S.",
-    "Category": "Payment",
-    "Cost": 0.75,
+    "date": "2022-11-10",
+    "description": "Manthan B. paid Saheel S.",
+    "category": "Payment",
+    "cost": 0.75,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -1308,10 +1308,10 @@
     "Saheel Sapovadia (removed)": -0.75
   },
   {
-    "Date": "2022-11-10",
-    "Description": "Saheel S. paid Manthan B.",
-    "Category": "Payment",
-    "Cost": 100,
+    "date": "2022-11-10",
+    "description": "Saheel S. paid Manthan B.",
+    "category": "Payment",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -1320,10 +1320,10 @@
     "Saheel Sapovadia (removed)": 100
   },
   {
-    "Date": "2022-11-10",
-    "Description": "Manthan B. paid Sahil T.",
-    "Category": "Payment",
-    "Cost": 45,
+    "date": "2022-11-10",
+    "description": "Manthan B. paid Sahil T.",
+    "category": "Payment",
+    "cost": 45,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -1332,10 +1332,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-10",
-    "Description": "Chai",
-    "Category": "General",
-    "Cost": 50,
+    "date": "2022-11-10",
+    "description": "Chai",
+    "category": "General",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -25,
@@ -1344,10 +1344,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-09",
-    "Description": "Manan ki party dal bati",
-    "Category": "Liquor",
-    "Cost": 200,
+    "date": "2022-11-09",
+    "description": "Manan ki party dal bati",
+    "category": "Liquor",
+    "cost": 200,
     "Currency": "INR",
     "MrPerfect 555": -66.66,
     "Manan Hathi": -66.67,
@@ -1356,10 +1356,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-09",
-    "Description": "MrPerfect 5. paid Manan H.",
-    "Category": "Payment",
-    "Cost": 200,
+    "date": "2022-11-09",
+    "description": "MrPerfect 5. paid Manan H.",
+    "category": "Payment",
+    "cost": 200,
     "Currency": "INR",
     "MrPerfect 555": 200,
     "Manan Hathi": -200,
@@ -1368,10 +1368,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-09",
-    "Description": "Breakfast 9/11/22",
-    "Category": "Dining out",
-    "Cost": 90,
+    "date": "2022-11-09",
+    "description": "Breakfast 9/11/22",
+    "category": "Dining out",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 45,
@@ -1380,10 +1380,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-09",
-    "Description": "Butter Puff @ Kapildev 9/11/22",
-    "Category": "Groceries",
-    "Cost": 40,
+    "date": "2022-11-09",
+    "description": "Butter Puff @ Kapildev 9/11/22",
+    "category": "Groceries",
+    "cost": 40,
     "Currency": "INR",
     "MrPerfect 555": -20,
     "Manan Hathi": 20,
@@ -1392,10 +1392,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-08",
-    "Description": "Gajanan Restaurant Dinner 8/11/22",
-    "Category": "Dining out",
-    "Cost": 320,
+    "date": "2022-11-08",
+    "description": "Gajanan Restaurant Dinner 8/11/22",
+    "category": "Dining out",
+    "cost": 320,
     "Currency": "INR",
     "MrPerfect 555": -80,
     "Manan Hathi": 240,
@@ -1404,10 +1404,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-08",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-11-08",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -1416,10 +1416,10 @@
     "Saheel Sapovadia (removed)": -70
   },
   {
-    "Date": "2022-11-08",
-    "Description": "Rixa",
-    "Category": "General",
-    "Cost": 80,
+    "date": "2022-11-08",
+    "description": "Rixa",
+    "category": "General",
+    "cost": 80,
     "Currency": "INR",
     "MrPerfect 555": 40,
     "Manan Hathi": 0,
@@ -1428,10 +1428,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-08",
-    "Description": "7th lunch",
-    "Category": "Dining out",
-    "Cost": 100,
+    "date": "2022-11-08",
+    "description": "7th lunch",
+    "category": "Dining out",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": -40,
     "Manan Hathi": 0,
@@ -1440,10 +1440,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-08",
-    "Description": "7th tea",
-    "Category": "Dining out",
-    "Cost": 70,
+    "date": "2022-11-08",
+    "description": "7th tea",
+    "category": "Dining out",
+    "cost": 70,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": 0,
@@ -1452,10 +1452,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-08",
-    "Description": "Dinner",
-    "Category": "General",
-    "Cost": 230,
+    "date": "2022-11-08",
+    "description": "Dinner",
+    "category": "General",
+    "cost": 230,
     "Currency": "INR",
     "MrPerfect 555": -55,
     "Manan Hathi": -55,
@@ -1464,10 +1464,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-08",
-    "Description": "Lunch @ Kapildev",
-    "Category": "Dining out",
-    "Cost": 300,
+    "date": "2022-11-08",
+    "description": "Lunch @ Kapildev",
+    "category": "Dining out",
+    "cost": 300,
     "Currency": "INR",
     "MrPerfect 555": -80,
     "Manan Hathi": -70,
@@ -1476,10 +1476,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-05",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-11-05",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": -60,
     "Manan Hathi": 60,
@@ -1488,10 +1488,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-05",
-    "Description": "Puff",
-    "Category": "General",
-    "Cost": 100,
+    "date": "2022-11-05",
+    "description": "Puff",
+    "category": "General",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": -20,
     "Manan Hathi": -40,
@@ -1500,10 +1500,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-05",
-    "Description": "Maaza",
-    "Category": "General",
-    "Cost": 10,
+    "date": "2022-11-05",
+    "description": "Maaza",
+    "category": "General",
+    "cost": 10,
     "Currency": "INR",
     "MrPerfect 555": -10,
     "Manan Hathi": 10,
@@ -1512,10 +1512,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-05",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 320,
+    "date": "2022-11-05",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 320,
     "Currency": "INR",
     "MrPerfect 555": -80,
     "Manan Hathi": 240,
@@ -1524,10 +1524,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-05",
-    "Description": "Aaj ka nasta",
-    "Category": "General",
-    "Cost": 135,
+    "date": "2022-11-05",
+    "description": "Aaj ka nasta",
+    "category": "General",
+    "cost": 135,
     "Currency": "INR",
     "MrPerfect 555": -42.5,
     "Manan Hathi": 85,
@@ -1536,10 +1536,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-04",
-    "Description": "Saheel S. paid MrPerfect 5.",
-    "Category": "Payment",
-    "Cost": 35,
+    "date": "2022-11-04",
+    "description": "Saheel S. paid MrPerfect 5.",
+    "category": "Payment",
+    "cost": 35,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": 0,
@@ -1548,10 +1548,10 @@
     "Saheel Sapovadia (removed)": 35
   },
   {
-    "Date": "2022-11-04",
-    "Description": "Saheel S. paid MrPerfect 5.",
-    "Category": "Payment",
-    "Cost": 210,
+    "date": "2022-11-04",
+    "description": "Saheel S. paid MrPerfect 5.",
+    "category": "Payment",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": -210,
     "Manan Hathi": 0,
@@ -1560,10 +1560,10 @@
     "Saheel Sapovadia (removed)": 210
   },
   {
-    "Date": "2022-11-04",
-    "Description": "Jasoda ben ka khana",
-    "Category": "General",
-    "Cost": 350,
+    "date": "2022-11-04",
+    "description": "Jasoda ben ka khana",
+    "category": "General",
+    "cost": 350,
     "Currency": "INR",
     "MrPerfect 555": 280,
     "Manan Hathi": 0,
@@ -1572,10 +1572,10 @@
     "Saheel Sapovadia (removed)": -210
   },
   {
-    "Date": "2022-11-04",
-    "Description": "Travel",
-    "Category": "Transportation - Other",
-    "Cost": 60,
+    "date": "2022-11-04",
+    "description": "Travel",
+    "category": "Transportation - Other",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 30,
     "Manan Hathi": 0,
@@ -1584,10 +1584,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-04",
-    "Description": "Lunch @ Kapildev 4/11/22",
-    "Category": "Dining out",
-    "Cost": 160,
+    "date": "2022-11-04",
+    "description": "Lunch @ Kapildev 4/11/22",
+    "category": "Dining out",
+    "cost": 160,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 70,
@@ -1596,10 +1596,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-04",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 105,
+    "date": "2022-11-04",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 105,
     "Currency": "INR",
     "MrPerfect 555": 70,
     "Manan Hathi": -35,
@@ -1608,10 +1608,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-04",
-    "Description": "Rixa from Bakrol to College 1/11/22",
-    "Category": "General",
-    "Cost": 100,
+    "date": "2022-11-04",
+    "description": "Rixa from Bakrol to College 1/11/22",
+    "category": "General",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 50,
@@ -1620,10 +1620,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-04",
-    "Description": "Rixa",
-    "Category": "General",
-    "Cost": 120,
+    "date": "2022-11-04",
+    "description": "Rixa",
+    "category": "General",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": 80,
     "Manan Hathi": 0,
@@ -1632,10 +1632,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-03",
-    "Description": "Bunkers",
-    "Category": "General",
-    "Cost": 560,
+    "date": "2022-11-03",
+    "description": "Bunkers",
+    "category": "General",
+    "cost": 560,
     "Currency": "INR",
     "MrPerfect 555": -140,
     "Manan Hathi": -140,
@@ -1644,10 +1644,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-03",
-    "Description": "Rixa 3/11/22",
-    "Category": "General",
-    "Cost": 120,
+    "date": "2022-11-03",
+    "description": "Rixa 3/11/22",
+    "category": "General",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": 70,
@@ -1656,10 +1656,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-03",
-    "Description": "Pizza and Burger",
-    "Category": "Dining out",
-    "Cost": 230,
+    "date": "2022-11-03",
+    "description": "Pizza and Burger",
+    "category": "Dining out",
+    "cost": 230,
     "Currency": "INR",
     "MrPerfect 555": -115,
     "Manan Hathi": 0,
@@ -1668,10 +1668,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-03",
-    "Description": "Nasta",
-    "Category": "General",
-    "Cost": 90,
+    "date": "2022-11-03",
+    "description": "Nasta",
+    "category": "General",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": 60,
@@ -1680,10 +1680,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-03",
-    "Description": "Rixa Travelling 2/11/22",
-    "Category": "General",
-    "Cost": 210,
+    "date": "2022-11-03",
+    "description": "Rixa Travelling 2/11/22",
+    "category": "General",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": -70,
     "Manan Hathi": 140,
@@ -1692,10 +1692,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-03",
-    "Description": "Tea",
-    "Category": "General",
-    "Cost": 90,
+    "date": "2022-11-03",
+    "description": "Tea",
+    "category": "General",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": -34,
     "Manan Hathi": -22,
@@ -1704,10 +1704,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-02",
-    "Description": "Manchurian",
-    "Category": "General",
-    "Cost": 220,
+    "date": "2022-11-02",
+    "description": "Manchurian",
+    "category": "General",
+    "cost": 220,
     "Currency": "INR",
     "MrPerfect 555": -73.33,
     "Manan Hathi": -73.33,
@@ -1716,10 +1716,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-02",
-    "Description": "Coco ice cream",
-    "Category": "Groceries",
-    "Cost": 100,
+    "date": "2022-11-02",
+    "description": "Coco ice cream",
+    "category": "Groceries",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -50,
@@ -1728,10 +1728,10 @@
     "Saheel Sapovadia (removed)": 100
   },
   {
-    "Date": "2022-11-02",
-    "Description": "Sandwich",
-    "Category": "Dining out",
-    "Cost": 160,
+    "date": "2022-11-02",
+    "description": "Sandwich",
+    "category": "Dining out",
+    "cost": 160,
     "Currency": "INR",
     "MrPerfect 555": -80,
     "Manan Hathi": 0,
@@ -1740,10 +1740,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-02",
-    "Description": "Xerox",
-    "Category": "General",
-    "Cost": 140,
+    "date": "2022-11-02",
+    "description": "Xerox",
+    "category": "General",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 140,
     "Manan Hathi": 0,
@@ -1752,10 +1752,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-01",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 320,
+    "date": "2022-11-01",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 320,
     "Currency": "INR",
     "MrPerfect 555": 240,
     "Manan Hathi": -80,
@@ -1764,10 +1764,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-01",
-    "Description": "Riksha",
-    "Category": "General",
-    "Cost": 60,
+    "date": "2022-11-01",
+    "description": "Riksha",
+    "category": "General",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -30,
@@ -1776,10 +1776,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-11-01",
-    "Description": "Masi ka khana",
-    "Category": "General",
-    "Cost": 185,
+    "date": "2022-11-01",
+    "description": "Masi ka khana",
+    "category": "General",
+    "cost": 185,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -70,
@@ -1788,10 +1788,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-10-31",
-    "Description": "Mug pulaav",
-    "Category": "General",
-    "Cost": 140,
+    "date": "2022-10-31",
+    "description": "Mug pulaav",
+    "category": "General",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -70,
@@ -1800,10 +1800,10 @@
     "Saheel Sapovadia (removed)": 140
   },
   {
-    "Date": "2022-10-14",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-10-14",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": 90,
     "Manan Hathi": -90,
@@ -1812,10 +1812,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-10-14",
-    "Description": "Yesterday dinner",
-    "Category": "Dining out",
-    "Cost": 240,
+    "date": "2022-10-14",
+    "description": "Yesterday dinner",
+    "category": "Dining out",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": 160,
     "Manan Hathi": -80,
@@ -1824,10 +1824,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-10-14",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 105,
+    "date": "2022-10-14",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 105,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": 70,
@@ -1836,10 +1836,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-10-13",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 90,
+    "date": "2022-10-13",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": 60,
     "Manan Hathi": -30,
@@ -1848,10 +1848,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-10-13",
-    "Description": "Dinner 12/10/22",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-10-13",
+    "description": "Dinner 12/10/22",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": -60,
     "Manan Hathi": 120,
@@ -1860,10 +1860,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-10-11",
-    "Description": "Cha",
-    "Category": "General",
-    "Cost": 50,
+    "date": "2022-10-11",
+    "description": "Cha",
+    "category": "General",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -25,
@@ -1872,10 +1872,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-10-11",
-    "Description": "Ice cream",
-    "Category": "Groceries",
-    "Cost": 50,
+    "date": "2022-10-11",
+    "description": "Ice cream",
+    "category": "Groceries",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 30,
@@ -1884,10 +1884,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-10-11",
-    "Description": "Burgur",
-    "Category": "General",
-    "Cost": 120,
+    "date": "2022-10-11",
+    "description": "Burgur",
+    "category": "General",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 60,
@@ -1896,10 +1896,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-10-11",
-    "Description": "Tea",
-    "Category": "Dining out",
-    "Cost": 60,
+    "date": "2022-10-11",
+    "description": "Tea",
+    "category": "Dining out",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 30,
@@ -1908,10 +1908,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-30",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 115,
+    "date": "2022-09-30",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 115,
     "Currency": "INR",
     "MrPerfect 555": 57.5,
     "Manan Hathi": 0,
@@ -1920,10 +1920,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-30",
-    "Description": "Rikhsha for dia heart",
-    "Category": "General",
-    "Cost": 100,
+    "date": "2022-09-30",
+    "description": "Rikhsha for dia heart",
+    "category": "General",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": -33.33,
     "Manan Hathi": -33.34,
@@ -1932,10 +1932,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-29",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 315,
+    "date": "2022-09-29",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 315,
     "Currency": "INR",
     "MrPerfect 555": 236.25,
     "Manan Hathi": -78.75,
@@ -1944,10 +1944,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-29",
-    "Description": "Gajanan kal ka",
-    "Category": "General",
-    "Cost": 320,
+    "date": "2022-09-29",
+    "description": "Gajanan kal ka",
+    "category": "General",
+    "cost": 320,
     "Currency": "INR",
     "MrPerfect 555": -80,
     "Manan Hathi": -80,
@@ -1956,10 +1956,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-29",
-    "Description": "Burger",
-    "Category": "Dining out",
-    "Cost": 50,
+    "date": "2022-09-29",
+    "description": "Burger",
+    "category": "Dining out",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -1968,10 +1968,10 @@
     "Saheel Sapovadia (removed)": 50
   },
   {
-    "Date": "2022-09-29",
-    "Description": "Slice 29/9/22",
-    "Category": "General",
-    "Cost": 30,
+    "date": "2022-09-29",
+    "description": "Slice 29/9/22",
+    "category": "General",
+    "cost": 30,
     "Currency": "INR",
     "MrPerfect 555": -15,
     "Manan Hathi": 15,
@@ -1980,10 +1980,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-29",
-    "Description": "Lunch @ Kapildev 29/9/22",
-    "Category": "Dining out",
-    "Cost": 210,
+    "date": "2022-09-29",
+    "description": "Lunch @ Kapildev 29/9/22",
+    "category": "Dining out",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": -70,
     "Manan Hathi": 140,
@@ -1992,10 +1992,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-29",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 70,
+    "date": "2022-09-29",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 70,
     "Currency": "INR",
     "MrPerfect 555": 35,
     "Manan Hathi": -35,
@@ -2004,10 +2004,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-28",
-    "Description": "Files",
-    "Category": "General",
-    "Cost": 88,
+    "date": "2022-09-28",
+    "description": "Files",
+    "category": "General",
+    "cost": 88,
     "Currency": "INR",
     "MrPerfect 555": -88,
     "Manan Hathi": 0,
@@ -2016,10 +2016,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-28",
-    "Description": "Breakfast 28/9/2022",
-    "Category": "Dining out",
-    "Cost": 85,
+    "date": "2022-09-28",
+    "description": "Breakfast 28/9/2022",
+    "category": "Dining out",
+    "cost": 85,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": 60,
@@ -2028,10 +2028,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-26",
-    "Description": "Masi ke chole",
-    "Category": "General",
-    "Cost": 210,
+    "date": "2022-09-26",
+    "description": "Masi ke chole",
+    "category": "General",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -70,
@@ -2040,10 +2040,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-25",
-    "Description": "Lunch with puff and maggi",
-    "Category": "Groceries",
-    "Cost": 290,
+    "date": "2022-09-25",
+    "description": "Lunch with puff and maggi",
+    "category": "Groceries",
+    "cost": 290,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -110,
@@ -2052,10 +2052,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-25",
-    "Description": "Dinner with fruit salad",
-    "Category": "Groceries",
-    "Cost": 330,
+    "date": "2022-09-25",
+    "description": "Dinner with fruit salad",
+    "category": "Groceries",
+    "cost": 330,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -110,
@@ -2064,10 +2064,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-23",
-    "Description": "Cha",
-    "Category": "General",
-    "Cost": 60,
+    "date": "2022-09-23",
+    "description": "Cha",
+    "category": "General",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -30,
@@ -2076,10 +2076,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-23",
-    "Description": "Cream and onion",
-    "Category": "Groceries",
-    "Cost": 20,
+    "date": "2022-09-23",
+    "description": "Cream and onion",
+    "category": "Groceries",
+    "cost": 20,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -10,
@@ -2088,10 +2088,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-23",
-    "Description": "Handvo",
-    "Category": "General",
-    "Cost": 140,
+    "date": "2022-09-23",
+    "description": "Handvo",
+    "category": "General",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -46.67,
@@ -2100,10 +2100,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-22",
-    "Description": "Lunch @ Hot N' Spicy Puff 22/9/22",
-    "Category": "Dining out",
-    "Cost": 195,
+    "date": "2022-09-22",
+    "description": "Lunch @ Hot N' Spicy Puff 22/9/22",
+    "category": "Dining out",
+    "cost": 195,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 130,
@@ -2112,10 +2112,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-22",
-    "Description": "Dinner paubhaji",
-    "Category": "Dining out",
-    "Cost": 250,
+    "date": "2022-09-22",
+    "description": "Dinner paubhaji",
+    "category": "Dining out",
+    "cost": 250,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -85,
@@ -2124,10 +2124,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-22",
-    "Description": "Breakfast 22/9/22",
-    "Category": "Dining out",
-    "Cost": 70,
+    "date": "2022-09-22",
+    "description": "Breakfast 22/9/22",
+    "category": "Dining out",
+    "cost": 70,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 30,
@@ -2136,10 +2136,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-22",
-    "Description": "Dinner 20/9/22",
-    "Category": "Dining out",
-    "Cost": 240,
+    "date": "2022-09-22",
+    "description": "Dinner 20/9/22",
+    "category": "Dining out",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 160,
@@ -2148,10 +2148,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-20",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 240,
+    "date": "2022-09-20",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -80,
@@ -2160,10 +2160,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-14",
-    "Description": "Lunch and dinner",
-    "Category": "Dining out",
-    "Cost": 335,
+    "date": "2022-09-14",
+    "description": "Lunch and dinner",
+    "category": "Dining out",
+    "cost": 335,
     "Currency": "INR",
     "MrPerfect 555": 165,
     "Manan Hathi": -165,
@@ -2172,10 +2172,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-14",
-    "Description": "Movie @ Gold Cinemas",
-    "Category": "Movies",
-    "Cost": 330,
+    "date": "2022-09-14",
+    "description": "Movie @ Gold Cinemas",
+    "category": "Movies",
+    "cost": 330,
     "Currency": "INR",
     "MrPerfect 555": -220,
     "Manan Hathi": 220,
@@ -2184,10 +2184,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-13",
-    "Description": "Dinner + coffee",
-    "Category": "Dining out",
-    "Cost": 200,
+    "date": "2022-09-13",
+    "description": "Dinner + coffee",
+    "category": "Dining out",
+    "cost": 200,
     "Currency": "INR",
     "MrPerfect 555": 100,
     "Manan Hathi": -100,
@@ -2196,10 +2196,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-13",
-    "Description": "Lunch @ Yogi 13/9/22",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-09-13",
+    "description": "Lunch @ Yogi 13/9/22",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": -70,
     "Manan Hathi": 70,
@@ -2208,10 +2208,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-10",
-    "Description": "VITCOS 10/9/22",
-    "Category": "General",
-    "Cost": 30,
+    "date": "2022-09-10",
+    "description": "VITCOS 10/9/22",
+    "category": "General",
+    "cost": 30,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 20,
@@ -2220,10 +2220,10 @@
     "Saheel Sapovadia (removed)": -10
   },
   {
-    "Date": "2022-09-10",
-    "Description": "Lunch @ Kapildev 10/9/22",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-09-10",
+    "description": "Lunch @ Kapildev 10/9/22",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 70,
@@ -2232,10 +2232,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-10",
-    "Description": "Naasto 10/9/22",
-    "Category": "General",
-    "Cost": 90,
+    "date": "2022-09-10",
+    "description": "Naasto 10/9/22",
+    "category": "General",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 60,
@@ -2244,10 +2244,10 @@
     "Saheel Sapovadia (removed)": -30
   },
   {
-    "Date": "2022-09-09",
-    "Description": "Vitcos 9/9/22",
-    "Category": "General",
-    "Cost": 30,
+    "date": "2022-09-09",
+    "description": "Vitcos 9/9/22",
+    "category": "General",
+    "cost": 30,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 20,
@@ -2256,10 +2256,10 @@
     "Saheel Sapovadia (removed)": -10
   },
   {
-    "Date": "2022-09-09",
-    "Description": "College me lunch",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-09-09",
+    "description": "College me lunch",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -90,
@@ -2268,10 +2268,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-09",
-    "Description": "Rikhsha",
-    "Category": "General",
-    "Cost": 60,
+    "date": "2022-09-09",
+    "description": "Rikhsha",
+    "category": "General",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -20,
@@ -2280,10 +2280,10 @@
     "Saheel Sapovadia (removed)": -20
   },
   {
-    "Date": "2022-09-09",
-    "Description": "Chai nasta",
-    "Category": "Dining out",
-    "Cost": 130,
+    "date": "2022-09-09",
+    "description": "Chai nasta",
+    "category": "Dining out",
+    "cost": 130,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": -25,
@@ -2292,10 +2292,10 @@
     "Saheel Sapovadia (removed)": 95
   },
   {
-    "Date": "2022-09-08",
-    "Description": "Rickshaw🛺",
-    "Category": "General",
-    "Cost": 60,
+    "date": "2022-09-08",
+    "description": "Rickshaw🛺",
+    "category": "General",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -30,
@@ -2304,10 +2304,10 @@
     "Saheel Sapovadia (removed)": 60
   },
   {
-    "Date": "2022-09-08",
-    "Description": "Coco",
-    "Category": "General",
-    "Cost": 105,
+    "date": "2022-09-08",
+    "description": "Coco",
+    "category": "General",
+    "cost": 105,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -35,
@@ -2316,10 +2316,10 @@
     "Saheel Sapovadia (removed)": -35
   },
   {
-    "Date": "2022-09-08",
-    "Description": "Masi ka khana",
-    "Category": "General",
-    "Cost": 300,
+    "date": "2022-09-08",
+    "description": "Masi ka khana",
+    "category": "General",
+    "cost": 300,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -80,
@@ -2328,10 +2328,10 @@
     "Saheel Sapovadia (removed)": -80
   },
   {
-    "Date": "2022-09-08",
-    "Description": "Nasto 8/9/22",
-    "Category": "General",
-    "Cost": 90,
+    "date": "2022-09-08",
+    "description": "Nasto 8/9/22",
+    "category": "General",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": -15,
     "Manan Hathi": 75,
@@ -2340,10 +2340,10 @@
     "Saheel Sapovadia (removed)": -35
   },
   {
-    "Date": "2022-09-08",
-    "Description": "Lunch 2 din pahele ka",
-    "Category": "Dining out",
-    "Cost": 70,
+    "date": "2022-09-08",
+    "description": "Lunch 2 din pahele ka",
+    "category": "Dining out",
+    "cost": 70,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": 0,
@@ -2352,10 +2352,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-07",
-    "Description": "Yogi",
-    "Category": "General",
-    "Cost": 120,
+    "date": "2022-09-07",
+    "description": "Yogi",
+    "category": "General",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -60,
@@ -2364,10 +2364,10 @@
     "Saheel Sapovadia (removed)": 120
   },
   {
-    "Date": "2022-09-07",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 335,
+    "date": "2022-09-07",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 335,
     "Currency": "INR",
     "MrPerfect 555": 270,
     "Manan Hathi": -65,
@@ -2376,10 +2376,10 @@
     "Saheel Sapovadia (removed)": -70
   },
   {
-    "Date": "2022-09-07",
-    "Description": "Nasto",
-    "Category": "General",
-    "Cost": 105,
+    "date": "2022-09-07",
+    "description": "Nasto",
+    "category": "General",
+    "cost": 105,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": -15,
@@ -2388,10 +2388,10 @@
     "Saheel Sapovadia (removed)": 75
   },
   {
-    "Date": "2022-09-06",
-    "Description": "Dinner @ Bunkers' 6/9/22",
-    "Category": "Dining out",
-    "Cost": 468,
+    "date": "2022-09-06",
+    "description": "Dinner @ Bunkers' 6/9/22",
+    "category": "Dining out",
+    "cost": 468,
     "Currency": "INR",
     "MrPerfect 555": -117,
     "Manan Hathi": 351,
@@ -2400,10 +2400,10 @@
     "Saheel Sapovadia (removed)": -117
   },
   {
-    "Date": "2022-09-06",
-    "Description": "Puff",
-    "Category": "General",
-    "Cost": 50,
+    "date": "2022-09-06",
+    "description": "Puff",
+    "category": "General",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -25,
@@ -2412,10 +2412,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-06",
-    "Description": "Mancurian,  noodles, soft drinks",
-    "Category": "Liquor",
-    "Cost": 395,
+    "date": "2022-09-06",
+    "description": "Mancurian,  noodles, soft drinks",
+    "category": "Liquor",
+    "cost": 395,
     "Currency": "INR",
     "MrPerfect 555": -79,
     "Manan Hathi": -79,
@@ -2424,10 +2424,10 @@
     "Saheel Sapovadia (removed)": -79
   },
   {
-    "Date": "2022-09-06",
-    "Description": "Icecream 6/9/22",
-    "Category": "General",
-    "Cost": 160,
+    "date": "2022-09-06",
+    "description": "Icecream 6/9/22",
+    "category": "General",
+    "cost": 160,
     "Currency": "INR",
     "MrPerfect 555": -20,
     "Manan Hathi": 140,
@@ -2436,10 +2436,10 @@
     "Saheel Sapovadia (removed)": -40
   },
   {
-    "Date": "2022-09-06",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 120,
+    "date": "2022-09-06",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": 90,
     "Manan Hathi": -30,
@@ -2448,10 +2448,10 @@
     "Saheel Sapovadia (removed)": -30
   },
   {
-    "Date": "2022-09-05",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-09-05",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -35,
@@ -2460,10 +2460,10 @@
     "Saheel Sapovadia (removed)": -35
   },
   {
-    "Date": "2022-09-04",
-    "Description": "Burger @ Dhakkamuki",
-    "Category": "Dining out",
-    "Cost": 397,
+    "date": "2022-09-04",
+    "description": "Burger @ Dhakkamuki",
+    "category": "Dining out",
+    "cost": 397,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -99.25,
@@ -2472,10 +2472,10 @@
     "Saheel Sapovadia (removed)": -99.25
   },
   {
-    "Date": "2022-09-04",
-    "Description": "Kale savare lassi vala",
-    "Category": "Dining out",
-    "Cost": 270,
+    "date": "2022-09-04",
+    "description": "Kale savare lassi vala",
+    "category": "Dining out",
+    "cost": 270,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -90,
@@ -2484,10 +2484,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-04",
-    "Description": "Breakfast 4/9/22",
-    "Category": "Dining out",
-    "Cost": 65,
+    "date": "2022-09-04",
+    "description": "Breakfast 4/9/22",
+    "category": "Dining out",
+    "cost": 65,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 30,
@@ -2496,10 +2496,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-04",
-    "Description": "Dinner @ Naryan",
-    "Category": "Dining out",
-    "Cost": 270,
+    "date": "2022-09-04",
+    "description": "Dinner @ Naryan",
+    "category": "Dining out",
+    "cost": 270,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -90,
@@ -2508,10 +2508,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-03",
-    "Description": "Biscuit",
-    "Category": "General",
-    "Cost": 20,
+    "date": "2022-09-03",
+    "description": "Biscuit",
+    "category": "General",
+    "cost": 20,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 20,
@@ -2520,10 +2520,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-03",
-    "Description": "Manchurian",
-    "Category": "General",
-    "Cost": 317,
+    "date": "2022-09-03",
+    "description": "Manchurian",
+    "category": "General",
+    "cost": 317,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -99,
@@ -2532,10 +2532,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-03",
-    "Description": "2nd dinner",
-    "Category": "Dining out",
-    "Cost": 70,
+    "date": "2022-09-03",
+    "description": "2nd dinner",
+    "category": "Dining out",
+    "cost": 70,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -2544,10 +2544,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-03",
-    "Description": "1st dinner",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-09-03",
+    "description": "1st dinner",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -46.66,
@@ -2556,10 +2556,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-01",
-    "Description": "Manan ka breakfast",
-    "Category": "Dining out",
-    "Cost": 50,
+    "date": "2022-09-01",
+    "description": "Manan ka breakfast",
+    "category": "Dining out",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -20,
@@ -2568,10 +2568,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-01",
-    "Description": "Manan ki party",
-    "Category": "Liquor",
-    "Cost": 20,
+    "date": "2022-09-01",
+    "description": "Manan ki party",
+    "category": "Liquor",
+    "cost": 20,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -20,
@@ -2580,10 +2580,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-01",
-    "Description": "Drink",
-    "Category": "General",
-    "Cost": 40,
+    "date": "2022-09-01",
+    "description": "Drink",
+    "category": "General",
+    "cost": 40,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -20,
@@ -2592,10 +2592,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-01",
-    "Description": "Lunch @ Kapildev 1/9/2022",
-    "Category": "Dining out",
-    "Cost": 210,
+    "date": "2022-09-01",
+    "description": "Lunch @ Kapildev 1/9/2022",
+    "category": "Dining out",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 140,
@@ -2604,10 +2604,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-01",
-    "Description": "Lunch @ Danny's",
-    "Category": "Dining out",
-    "Cost": 160,
+    "date": "2022-09-01",
+    "description": "Lunch @ Danny's",
+    "category": "Dining out",
+    "cost": 160,
     "Currency": "INR",
     "MrPerfect 555": -80,
     "Manan Hathi": 80,
@@ -2616,10 +2616,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-09-01",
-    "Description": "Dinner @30 (last tiffin of 500 rs)",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-09-01",
+    "description": "Dinner @30 (last tiffin of 500 rs)",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 45,
     "Manan Hathi": -35,
@@ -2628,10 +2628,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-31",
-    "Description": "Laundry",
-    "Category": "Services",
-    "Cost": 90,
+    "date": "2022-08-31",
+    "description": "Laundry",
+    "category": "Services",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": 70,
     "Manan Hathi": -70,
@@ -2640,10 +2640,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-31",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-08-31",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -2652,10 +2652,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-31",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 60,
+    "date": "2022-08-31",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 30,
     "Manan Hathi": -30,
@@ -2664,10 +2664,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-30",
-    "Description": "Breakfast 30/08/2022",
-    "Category": "Dining out",
-    "Cost": 90,
+    "date": "2022-08-30",
+    "description": "Breakfast 30/08/2022",
+    "category": "Dining out",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": 60,
@@ -2676,10 +2676,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-30",
-    "Description": "Lunch @ Yogi Canteen 29/08/2022",
-    "Category": "Dining out",
-    "Cost": 210,
+    "date": "2022-08-30",
+    "description": "Lunch @ Yogi Canteen 29/08/2022",
+    "category": "Dining out",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": -70,
     "Manan Hathi": 140,
@@ -2688,10 +2688,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-30",
-    "Description": "Dinner 29 aug",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-08-30",
+    "description": "Dinner 29 aug",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 105,
     "Manan Hathi": -35,
@@ -2700,10 +2700,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-29",
-    "Description": "Tea",
-    "Category": "Dining out",
-    "Cost": 90,
+    "date": "2022-08-29",
+    "description": "Tea",
+    "category": "Dining out",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": -30,
@@ -2712,10 +2712,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-28",
-    "Description": "Tifin Sunday",
-    "Category": "General",
-    "Cost": 280,
+    "date": "2022-08-28",
+    "description": "Tifin Sunday",
+    "category": "General",
+    "cost": 280,
     "Currency": "INR",
     "MrPerfect 555": 210,
     "Manan Hathi": -70,
@@ -2724,10 +2724,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-27",
-    "Description": "Dinner Tiffin 25/8/2022",
-    "Category": "Dining out",
-    "Cost": 210,
+    "date": "2022-08-27",
+    "description": "Dinner Tiffin 25/8/2022",
+    "category": "Dining out",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": -52.5,
     "Manan Hathi": 157.5,
@@ -2736,10 +2736,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-27",
-    "Description": "Dinner @ Bombay Special blah blah 27/8/2022",
-    "Category": "Dining out",
-    "Cost": 200,
+    "date": "2022-08-27",
+    "description": "Dinner @ Bombay Special blah blah 27/8/2022",
+    "category": "Dining out",
+    "cost": 200,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": 145,
@@ -2748,10 +2748,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-27",
-    "Description": "Dabeli vadapau",
-    "Category": "General",
-    "Cost": 80,
+    "date": "2022-08-27",
+    "description": "Dabeli vadapau",
+    "category": "General",
+    "cost": 80,
     "Currency": "INR",
     "MrPerfect 555": 60,
     "Manan Hathi": -20,
@@ -2760,10 +2760,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-27",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 50,
+    "date": "2022-08-27",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": 25,
     "Manan Hathi": -10,
@@ -2772,10 +2772,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-27",
-    "Description": "Breakfast @ 25/8/2022",
-    "Category": "Dining out",
-    "Cost": 60,
+    "date": "2022-08-27",
+    "description": "Breakfast @ 25/8/2022",
+    "category": "Dining out",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": -20,
     "Manan Hathi": 40,
@@ -2784,10 +2784,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-27",
-    "Description": "Aaj ka lunch by masi ka tiffin",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-08-27",
+    "description": "Aaj ka lunch by masi ka tiffin",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": -46.67,
     "Manan Hathi": 0,
@@ -2796,10 +2796,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-27",
-    "Description": "Dinner @gujrat",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-08-27",
+    "description": "Dinner @gujrat",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -2808,10 +2808,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-25",
-    "Description": "Lunch @25",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-08-25",
+    "description": "Lunch @25",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": -6.67,
     "Manan Hathi": 0,
@@ -2820,10 +2820,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-25",
-    "Description": "Lauch 24",
-    "Category": "General",
-    "Cost": 94,
+    "date": "2022-08-25",
+    "description": "Lauch 24",
+    "category": "General",
+    "cost": 94,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -2832,10 +2832,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-25",
-    "Description": "Dinner",
-    "Category": "General",
-    "Cost": 360,
+    "date": "2022-08-25",
+    "description": "Dinner",
+    "category": "General",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -2844,10 +2844,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-24",
-    "Description": "Breakfast aug 24",
-    "Category": "Dining out",
-    "Cost": 90,
+    "date": "2022-08-24",
+    "description": "Breakfast aug 24",
+    "category": "Dining out",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": 60,
     "Manan Hathi": -30,
@@ -2856,10 +2856,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-24",
-    "Description": "Dinner 23 aug",
-    "Category": "Dining out",
-    "Cost": 190,
+    "date": "2022-08-24",
+    "description": "Dinner 23 aug",
+    "category": "Dining out",
+    "cost": 190,
     "Currency": "INR",
     "MrPerfect 555": 135,
     "Manan Hathi": -65,
@@ -2868,10 +2868,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-24",
-    "Description": "Kalka nasta",
-    "Category": "General",
-    "Cost": 75,
+    "date": "2022-08-24",
+    "description": "Kalka nasta",
+    "category": "General",
+    "cost": 75,
     "Currency": "INR",
     "MrPerfect 555": -25,
     "Manan Hathi": -25,
@@ -2880,10 +2880,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-22",
-    "Description": "Ganpati donation",
-    "Category": "General",
-    "Cost": 400,
+    "date": "2022-08-22",
+    "description": "Ganpati donation",
+    "category": "General",
+    "cost": 400,
     "Currency": "INR",
     "MrPerfect 555": -100,
     "Manan Hathi": -100,
@@ -2892,10 +2892,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-22",
-    "Description": "Rixa from Station to Shaheed Chowk 22/8",
-    "Category": "General",
-    "Cost": 40,
+    "date": "2022-08-22",
+    "description": "Rixa from Station to Shaheed Chowk 22/8",
+    "category": "General",
+    "cost": 40,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 20,
@@ -2904,10 +2904,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-22",
-    "Description": "Puff",
-    "Category": "General",
-    "Cost": 50,
+    "date": "2022-08-22",
+    "description": "Puff",
+    "category": "General",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": -25,
     "Manan Hathi": 0,
@@ -2916,10 +2916,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-22",
-    "Description": "Breakfast 22",
-    "Category": "Dining out",
-    "Cost": 60,
+    "date": "2022-08-22",
+    "description": "Breakfast 22",
+    "category": "Dining out",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 30,
     "Manan Hathi": -30,
@@ -2928,10 +2928,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-22",
-    "Description": "Maggie",
-    "Category": "General",
-    "Cost": 80,
+    "date": "2022-08-22",
+    "description": "Maggie",
+    "category": "General",
+    "cost": 80,
     "Currency": "INR",
     "MrPerfect 555": 40,
     "Manan Hathi": 0,
@@ -2940,10 +2940,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-22",
-    "Description": "Dinner @ Gujarat 22/8",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-08-22",
+    "description": "Dinner @ Gujarat 22/8",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": 270,
@@ -2952,10 +2952,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-21",
-    "Description": "dinner 21",
-    "Category": "Dining out",
-    "Cost": 240,
+    "date": "2022-08-21",
+    "description": "dinner 21",
+    "category": "Dining out",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": 160,
     "Manan Hathi": -80,
@@ -2964,10 +2964,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-05",
-    "Description": "Dinner aug 5",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-08-05",
+    "description": "Dinner aug 5",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": 90,
     "Manan Hathi": 0,
@@ -2976,10 +2976,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-05",
-    "Description": "Mag pulao",
-    "Category": "General",
-    "Cost": 140,
+    "date": "2022-08-05",
+    "description": "Mag pulao",
+    "category": "General",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": -70,
     "Manan Hathi": 0,
@@ -2988,10 +2988,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-05",
-    "Description": "Breakfast 5 aug",
-    "Category": "Dining out",
-    "Cost": 90,
+    "date": "2022-08-05",
+    "description": "Breakfast 5 aug",
+    "category": "Dining out",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": 60,
     "Manan Hathi": -30,
@@ -3000,10 +3000,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-05",
-    "Description": "Dinner @ Bunkers",
-    "Category": "Dining out",
-    "Cost": 525,
+    "date": "2022-08-05",
+    "description": "Dinner @ Bunkers",
+    "category": "Dining out",
+    "cost": 525,
     "Currency": "INR",
     "MrPerfect 555": -131.25,
     "Manan Hathi": -131.25,
@@ -3012,10 +3012,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-03",
-    "Description": "Gujrat Op",
-    "Category": "General",
-    "Cost": 360,
+    "date": "2022-08-03",
+    "description": "Gujrat Op",
+    "category": "General",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -3024,10 +3024,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-03",
-    "Description": "Puff",
-    "Category": "General",
-    "Cost": 80,
+    "date": "2022-08-03",
+    "description": "Puff",
+    "category": "General",
+    "cost": 80,
     "Currency": "INR",
     "MrPerfect 555": 40,
     "Manan Hathi": 0,
@@ -3036,10 +3036,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-03",
-    "Description": "Juice",
-    "Category": "Groceries",
-    "Cost": 120,
+    "date": "2022-08-03",
+    "description": "Juice",
+    "category": "Groceries",
+    "cost": 120,
     "Currency": "INR",
     "MrPerfect 555": -60,
     "Manan Hathi": 0,
@@ -3048,10 +3048,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-03",
-    "Description": "Tea",
-    "Category": "General",
-    "Cost": 55,
+    "date": "2022-08-03",
+    "description": "Tea",
+    "category": "General",
+    "cost": 55,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": 0,
@@ -3060,10 +3060,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-02",
-    "Description": "Dinner 2aug",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-08-02",
+    "description": "Dinner 2aug",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": 270,
     "Manan Hathi": -90,
@@ -3072,10 +3072,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-02",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 270,
+    "date": "2022-08-02",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 270,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -3084,10 +3084,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-02",
-    "Description": "Soap",
-    "Category": "General",
-    "Cost": 61,
+    "date": "2022-08-02",
+    "description": "Soap",
+    "category": "General",
+    "cost": 61,
     "Currency": "INR",
     "MrPerfect 555": 35,
     "Manan Hathi": -35,
@@ -3096,10 +3096,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-02",
-    "Description": "Farali and vefar",
-    "Category": "General",
-    "Cost": 90,
+    "date": "2022-08-02",
+    "description": "Farali and vefar",
+    "category": "General",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": 45,
     "Manan Hathi": 0,
@@ -3108,10 +3108,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-02",
-    "Description": "Dinner @ D Pizza Time 31/7/22",
-    "Category": "TV/Phone/Internet",
-    "Cost": 1080,
+    "date": "2022-08-02",
+    "description": "Dinner @ D Pizza Time 31/7/22",
+    "category": "TV/Phone/Internet",
+    "cost": 1080,
     "Currency": "INR",
     "MrPerfect 555": -270,
     "Manan Hathi": 810,
@@ -3120,10 +3120,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-02",
-    "Description": "Tifin 1 aug",
-    "Category": "General",
-    "Cost": 210,
+    "date": "2022-08-02",
+    "description": "Tifin 1 aug",
+    "category": "General",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": 157.5,
     "Manan Hathi": -52.5,
@@ -3132,10 +3132,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-08-01",
-    "Description": "Tea",
-    "Category": "Dining out",
-    "Cost": 30,
+    "date": "2022-08-01",
+    "description": "Tea",
+    "category": "Dining out",
+    "cost": 30,
     "Currency": "INR",
     "MrPerfect 555": -10,
     "Manan Hathi": -10,
@@ -3144,10 +3144,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-31",
-    "Description": "Dinner, sandwiches and all",
-    "Category": "Dining out",
-    "Cost": 210,
+    "date": "2022-07-31",
+    "description": "Dinner, sandwiches and all",
+    "category": "Dining out",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": -52.5,
     "Manan Hathi": -52.5,
@@ -3156,10 +3156,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-30",
-    "Description": "Tea, drink , paket",
-    "Category": "Dining out",
-    "Cost": 70,
+    "date": "2022-07-30",
+    "description": "Tea, drink , paket",
+    "category": "Dining out",
+    "cost": 70,
     "Currency": "INR",
     "MrPerfect 555": 55,
     "Manan Hathi": -15,
@@ -3168,10 +3168,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-30",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-07-30",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 23.33,
     "Manan Hathi": 0,
@@ -3180,10 +3180,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-30",
-    "Description": "Tiffin one",
-    "Category": "Dining out",
-    "Cost": 70,
+    "date": "2022-07-30",
+    "description": "Tiffin one",
+    "category": "Dining out",
+    "cost": 70,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -3192,10 +3192,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-29",
-    "Description": "Lunch 29 July",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-07-29",
+    "description": "Lunch 29 July",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": 90,
     "Manan Hathi": -90,
@@ -3204,10 +3204,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-28",
-    "Description": "Breakfast @ 25/7/22",
-    "Category": "Dining out",
-    "Cost": 45,
+    "date": "2022-07-28",
+    "description": "Breakfast @ 25/7/22",
+    "category": "Dining out",
+    "cost": 45,
     "Currency": "INR",
     "MrPerfect 555": -15,
     "Manan Hathi": 30,
@@ -3216,10 +3216,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-28",
-    "Description": "Dinner @ 27/7/22",
-    "Category": "Dining out",
-    "Cost": 270,
+    "date": "2022-07-28",
+    "description": "Dinner @ 27/7/22",
+    "category": "Dining out",
+    "cost": 270,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": 180,
@@ -3228,10 +3228,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-28",
-    "Description": "Lunch @ 26/7/22",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-07-28",
+    "description": "Lunch @ 26/7/22",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 90,
@@ -3240,10 +3240,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-28",
-    "Description": "Tiffin",
-    "Category": "Dining out",
-    "Cost": 210,
+    "date": "2022-07-28",
+    "description": "Tiffin",
+    "category": "Dining out",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": -42.5,
     "Manan Hathi": -52.5,
@@ -3252,10 +3252,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-28",
-    "Description": "Nasta",
-    "Category": "General",
-    "Cost": 90,
+    "date": "2022-07-28",
+    "description": "Nasta",
+    "category": "General",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": -30,
@@ -3264,10 +3264,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-28",
-    "Description": "Dinners @27 gujrat",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-07-28",
+    "description": "Dinners @27 gujrat",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -3276,10 +3276,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-27",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 240,
+    "date": "2022-07-27",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": -80,
     "Manan Hathi": -80,
@@ -3288,10 +3288,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-27",
-    "Description": "Nasto",
-    "Category": "General",
-    "Cost": 60,
+    "date": "2022-07-27",
+    "description": "Nasto",
+    "category": "General",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 30,
     "Manan Hathi": -30,
@@ -3300,10 +3300,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-26",
-    "Description": "Nasta",
-    "Category": "General",
-    "Cost": 75,
+    "date": "2022-07-26",
+    "description": "Nasta",
+    "category": "General",
+    "cost": 75,
     "Currency": "INR",
     "MrPerfect 555": -25,
     "Manan Hathi": -25,
@@ -3312,10 +3312,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-25",
-    "Description": "Masinu",
-    "Category": "General",
-    "Cost": 216,
+    "date": "2022-07-25",
+    "description": "Masinu",
+    "category": "General",
+    "cost": 216,
     "Currency": "INR",
     "MrPerfect 555": -53,
     "Manan Hathi": -55,
@@ -3324,10 +3324,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-25",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 140,
+    "date": "2022-07-25",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 140,
     "Currency": "INR",
     "MrPerfect 555": 70,
     "Manan Hathi": 0,
@@ -3336,10 +3336,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-24",
-    "Description": "Dinner @ 24",
-    "Category": "Dining out",
-    "Cost": 190,
+    "date": "2022-07-24",
+    "description": "Dinner @ 24",
+    "category": "Dining out",
+    "cost": 190,
     "Currency": "INR",
     "MrPerfect 555": 140,
     "Manan Hathi": -60,
@@ -3348,10 +3348,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-24",
-    "Description": "Lunch @ Narayan",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-07-24",
+    "description": "Lunch @ Narayan",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -3360,10 +3360,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-24",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 90,
+    "date": "2022-07-24",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 90,
     "Currency": "INR",
     "MrPerfect 555": 60,
     "Manan Hathi": -30,
@@ -3372,10 +3372,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-24",
-    "Description": "Dinner @ Bunkers' 23/7/22",
-    "Category": "Dining out",
-    "Cost": 436,
+    "date": "2022-07-24",
+    "description": "Dinner @ Bunkers' 23/7/22",
+    "category": "Dining out",
+    "cost": 436,
     "Currency": "INR",
     "MrPerfect 555": -114,
     "Manan Hathi": 332,
@@ -3384,10 +3384,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-23",
-    "Description": "Chhole (Lunch)",
-    "Category": "Dining out",
-    "Cost": 250,
+    "date": "2022-07-23",
+    "description": "Chhole (Lunch)",
+    "category": "Dining out",
+    "cost": 250,
     "Currency": "INR",
     "MrPerfect 555": -50,
     "Manan Hathi": -80,
@@ -3396,10 +3396,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-23",
-    "Description": "Breakfast @ Hostel Ground Floor  23/7/22",
-    "Category": "Dining out",
-    "Cost": 45,
+    "date": "2022-07-23",
+    "description": "Breakfast @ Hostel Ground Floor  23/7/22",
+    "category": "Dining out",
+    "cost": 45,
     "Currency": "INR",
     "MrPerfect 555": -15,
     "Manan Hathi": 30,
@@ -3408,10 +3408,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-23",
-    "Description": "Dinner @ Gujarat Club 22/7/22",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-07-23",
+    "description": "Dinner @ Gujarat Club 22/7/22",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": 270,
@@ -3420,10 +3420,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-23",
-    "Description": "Puff@22",
-    "Category": "General",
-    "Cost": 80,
+    "date": "2022-07-23",
+    "description": "Puff@22",
+    "category": "General",
+    "cost": 80,
     "Currency": "INR",
     "MrPerfect 555": 40,
     "Manan Hathi": 0,
@@ -3432,10 +3432,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-21",
-    "Description": "Dinner @21 july",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-07-21",
+    "description": "Dinner @21 july",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": 270,
     "Manan Hathi": -90,
@@ -3444,10 +3444,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-21",
-    "Description": "MrPerfect 5. paid Sahil T.",
-    "Category": "Payment",
-    "Cost": 300,
+    "date": "2022-07-21",
+    "description": "MrPerfect 5. paid Sahil T.",
+    "category": "Payment",
+    "cost": 300,
     "Currency": "INR",
     "MrPerfect 555": 300,
     "Manan Hathi": 0,
@@ -3456,10 +3456,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-21",
-    "Description": "Tea",
-    "Category": "Dining out",
-    "Cost": 45,
+    "date": "2022-07-21",
+    "description": "Tea",
+    "category": "Dining out",
+    "cost": 45,
     "Currency": "INR",
     "MrPerfect 555": 30,
     "Manan Hathi": -15,
@@ -3468,10 +3468,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-20",
-    "Description": "Chata",
-    "Category": "General",
-    "Cost": 200,
+    "date": "2022-07-20",
+    "description": "Chata",
+    "category": "General",
+    "cost": 200,
     "Currency": "INR",
     "MrPerfect 555": -200,
     "Manan Hathi": 0,
@@ -3480,10 +3480,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-20",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-07-20",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -3492,10 +3492,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-20",
-    "Description": "Chai",
-    "Category": "Dining out",
-    "Cost": 20,
+    "date": "2022-07-20",
+    "description": "Chai",
+    "category": "Dining out",
+    "cost": 20,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -10,
@@ -3504,10 +3504,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-20",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 210,
+    "date": "2022-07-20",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": -70,
     "Manan Hathi": -70,
@@ -3516,10 +3516,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-20",
-    "Description": "Chai",
-    "Category": "Dining out",
-    "Cost": 60,
+    "date": "2022-07-20",
+    "description": "Chai",
+    "category": "Dining out",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": -15,
     "Manan Hathi": -30,
@@ -3528,10 +3528,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-20",
-    "Description": "Ice cream",
-    "Category": "Groceries",
-    "Cost": 105,
+    "date": "2022-07-20",
+    "description": "Ice cream",
+    "category": "Groceries",
+    "cost": 105,
     "Currency": "INR",
     "MrPerfect 555": -20,
     "Manan Hathi": -25,
@@ -3540,10 +3540,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-20",
-    "Description": "Mag pulao",
-    "Category": "General",
-    "Cost": 180,
+    "date": "2022-07-20",
+    "description": "Mag pulao",
+    "category": "General",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": -60,
     "Manan Hathi": -60,
@@ -3552,10 +3552,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-19",
-    "Description": "Sandwich",
-    "Category": "Dining out",
-    "Cost": 240,
+    "date": "2022-07-19",
+    "description": "Sandwich",
+    "category": "Dining out",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": -80,
     "Manan Hathi": 0,
@@ -3564,10 +3564,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-19",
-    "Description": "Cha nasta",
-    "Category": "General",
-    "Cost": 75,
+    "date": "2022-07-19",
+    "description": "Cha nasta",
+    "category": "General",
+    "cost": 75,
     "Currency": "INR",
     "MrPerfect 555": -25,
     "Manan Hathi": -25,
@@ -3576,10 +3576,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-19",
-    "Description": "Dinner @૧૮",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-07-19",
+    "description": "Dinner @૧૮",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": 270,
     "Manan Hathi": -90,
@@ -3588,10 +3588,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-18",
-    "Description": "Dinner July 17",
-    "Category": "Dining out",
-    "Cost": 200,
+    "date": "2022-07-18",
+    "description": "Dinner July 17",
+    "category": "Dining out",
+    "cost": 200,
     "Currency": "INR",
     "MrPerfect 555": 90,
     "Manan Hathi": 0,
@@ -3600,10 +3600,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-15",
-    "Description": "Puf at amul",
-    "Category": "General",
-    "Cost": 50,
+    "date": "2022-07-15",
+    "description": "Puf at amul",
+    "category": "General",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": -25,
     "Manan Hathi": 0,
@@ -3612,10 +3612,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-15",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-07-15",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -90,
@@ -3624,10 +3624,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-15",
-    "Description": "Ice cream",
-    "Category": "Groceries",
-    "Cost": 95,
+    "date": "2022-07-15",
+    "description": "Ice cream",
+    "category": "Groceries",
+    "cost": 95,
     "Currency": "INR",
     "MrPerfect 555": -35,
     "Manan Hathi": -25,
@@ -3636,10 +3636,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-15",
-    "Description": "Dalbati",
-    "Category": "General",
-    "Cost": 178,
+    "date": "2022-07-15",
+    "description": "Dalbati",
+    "category": "General",
+    "cost": 178,
     "Currency": "INR",
     "MrPerfect 555": -57,
     "Manan Hathi": -64,
@@ -3648,10 +3648,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-13",
-    "Description": "Movie Tickets",
-    "Category": "Movies",
-    "Cost": 300,
+    "date": "2022-07-13",
+    "description": "Movie Tickets",
+    "category": "Movies",
+    "cost": 300,
     "Currency": "INR",
     "MrPerfect 555": -100,
     "Manan Hathi": 200,
@@ -3660,10 +3660,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-13",
-    "Description": "Lunch @ Gujarat 13/7/22",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-07-13",
+    "description": "Lunch @ Gujarat 13/7/22",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": 270,
@@ -3672,10 +3672,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-13",
-    "Description": "Drink",
-    "Category": "Liquor",
-    "Cost": 80,
+    "date": "2022-07-13",
+    "description": "Drink",
+    "category": "Liquor",
+    "cost": 80,
     "Currency": "INR",
     "MrPerfect 555": 60,
     "Manan Hathi": -20,
@@ -3684,10 +3684,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-13",
-    "Description": "Breakfast 13/7/22",
-    "Category": "Dining out",
-    "Cost": 60,
+    "date": "2022-07-13",
+    "description": "Breakfast 13/7/22",
+    "category": "Dining out",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": -30,
     "Manan Hathi": 55,
@@ -3696,10 +3696,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-13",
-    "Description": "Dinner (Manchurian)",
-    "Category": "Dining out",
-    "Cost": 350,
+    "date": "2022-07-13",
+    "description": "Dinner (Manchurian)",
+    "category": "Dining out",
+    "cost": 350,
     "Currency": "INR",
     "MrPerfect 555": -95,
     "Manan Hathi": -80,
@@ -3708,10 +3708,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-12",
-    "Description": "Laundry",
-    "Category": "Services",
-    "Cost": 60,
+    "date": "2022-07-12",
+    "description": "Laundry",
+    "category": "Services",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": -48,
     "Manan Hathi": 48,
@@ -3720,10 +3720,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-12",
-    "Description": "Breakfast 12/07",
-    "Category": "Dining out",
-    "Cost": 75,
+    "date": "2022-07-12",
+    "description": "Breakfast 12/07",
+    "category": "Dining out",
+    "cost": 75,
     "Currency": "INR",
     "MrPerfect 555": 60,
     "Manan Hathi": -30,
@@ -3732,10 +3732,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-11",
-    "Description": "Breakfast 11/7/22",
-    "Category": "Dining out",
-    "Cost": 70,
+    "date": "2022-07-11",
+    "description": "Breakfast 11/7/22",
+    "category": "Dining out",
+    "cost": 70,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 30,
@@ -3744,10 +3744,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-11",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 215,
+    "date": "2022-07-11",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 215,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -3756,10 +3756,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-11",
-    "Description": "Sunday dinner",
-    "Category": "Dining out",
-    "Cost": 240,
+    "date": "2022-07-11",
+    "description": "Sunday dinner",
+    "category": "Dining out",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -70,
@@ -3768,10 +3768,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-11",
-    "Description": "Havmor Icecream after dinner 10/7/22",
-    "Category": "Dining out",
-    "Cost": 80,
+    "date": "2022-07-11",
+    "description": "Havmor Icecream after dinner 10/7/22",
+    "category": "Dining out",
+    "cost": 80,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 60,
@@ -3780,10 +3780,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-10",
-    "Description": "Sunday lunch",
-    "Category": "Dining out",
-    "Cost": 170,
+    "date": "2022-07-10",
+    "description": "Sunday lunch",
+    "category": "Dining out",
+    "cost": 170,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -85,
@@ -3792,10 +3792,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-10",
-    "Description": "Dinner",
-    "Category": "General",
-    "Cost": 270,
+    "date": "2022-07-10",
+    "description": "Dinner",
+    "category": "General",
+    "cost": 270,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -90,
@@ -3804,10 +3804,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-08",
-    "Description": "Dinner 🤗",
-    "Category": "Dining out",
-    "Cost": 270,
+    "date": "2022-07-08",
+    "description": "Dinner 🤗",
+    "category": "Dining out",
+    "cost": 270,
     "Currency": "INR",
     "MrPerfect 555": 180,
     "Manan Hathi": 0,
@@ -3816,10 +3816,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-07",
-    "Description": "Juice",
-    "Category": "Groceries",
-    "Cost": 100,
+    "date": "2022-07-07",
+    "description": "Juice",
+    "category": "Groceries",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": 50,
     "Manan Hathi": -50,
@@ -3828,10 +3828,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-07",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 108,
+    "date": "2022-07-07",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 108,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -3840,10 +3840,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-07",
-    "Description": "Riksha",
-    "Category": "General",
-    "Cost": 60,
+    "date": "2022-07-07",
+    "description": "Riksha",
+    "category": "General",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -3852,10 +3852,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-07",
-    "Description": "Subah ka nasta",
-    "Category": "General",
-    "Cost": 70,
+    "date": "2022-07-07",
+    "description": "Subah ka nasta",
+    "category": "General",
+    "cost": 70,
     "Currency": "INR",
     "MrPerfect 555": -25,
     "Manan Hathi": -20,
@@ -3864,10 +3864,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-06",
-    "Description": "Manthan B. paid Manan H.",
-    "Category": "Payment",
-    "Cost": 100,
+    "date": "2022-07-06",
+    "description": "Manthan B. paid Manan H.",
+    "category": "Payment",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": -100,
@@ -3876,10 +3876,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-06",
-    "Description": "Dinner @ pulav",
-    "Category": "Dining out",
-    "Cost": 240,
+    "date": "2022-07-06",
+    "description": "Dinner @ pulav",
+    "category": "Dining out",
+    "cost": 240,
     "Currency": "INR",
     "MrPerfect 555": -70,
     "Manan Hathi": -40,
@@ -3888,10 +3888,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-06",
-    "Description": "Burger",
-    "Category": "Dining out",
-    "Cost": 150,
+    "date": "2022-07-06",
+    "description": "Burger",
+    "category": "Dining out",
+    "cost": 150,
     "Currency": "INR",
     "MrPerfect 555": 100,
     "Manan Hathi": -50,
@@ -3900,10 +3900,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-06",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 60,
+    "date": "2022-07-06",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 30,
     "Manan Hathi": 0,
@@ -3912,10 +3912,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-05",
-    "Description": "Dinner @ Gujarat Club",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-07-05",
+    "description": "Dinner @ Gujarat Club",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": 270,
@@ -3924,10 +3924,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-05",
-    "Description": "Lunch @ Dhakkamukki",
-    "Category": "Dining out",
-    "Cost": 218,
+    "date": "2022-07-05",
+    "description": "Lunch @ Dhakkamukki",
+    "category": "Dining out",
+    "cost": 218,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 145.33,
@@ -3936,10 +3936,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-05",
-    "Description": "Laundry",
-    "Category": "Services",
-    "Cost": 30,
+    "date": "2022-07-05",
+    "description": "Laundry",
+    "category": "Services",
+    "cost": 30,
     "Currency": "INR",
     "MrPerfect 555": 10,
     "Manan Hathi": 0,
@@ -3948,10 +3948,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-05",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 60,
+    "date": "2022-07-05",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 60,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 25,
@@ -3960,10 +3960,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-04",
-    "Description": "Puff",
-    "Category": "General",
-    "Cost": 50,
+    "date": "2022-07-04",
+    "description": "Puff",
+    "category": "General",
+    "cost": 50,
     "Currency": "INR",
     "MrPerfect 555": -25,
     "Manan Hathi": 25,
@@ -3972,10 +3972,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-04",
-    "Description": "4th dinner",
-    "Category": "Dining out",
-    "Cost": 360,
+    "date": "2022-07-04",
+    "description": "4th dinner",
+    "category": "Dining out",
+    "cost": 360,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": -90,
@@ -3984,10 +3984,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-04",
-    "Description": "4th lunch",
-    "Category": "Dining out",
-    "Cost": 100,
+    "date": "2022-07-04",
+    "description": "4th lunch",
+    "category": "Dining out",
+    "cost": 100,
     "Currency": "INR",
     "MrPerfect 555": -50,
     "Manan Hathi": 0,
@@ -3996,10 +3996,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-04",
-    "Description": "Saturday lunch",
-    "Category": "Dining out",
-    "Cost": 160,
+    "date": "2022-07-04",
+    "description": "Saturday lunch",
+    "category": "Dining out",
+    "cost": 160,
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,
@@ -4008,10 +4008,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-04",
-    "Description": "Lunch",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-07-04",
+    "description": "Lunch",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": -60,
     "Manan Hathi": 0,
@@ -4020,10 +4020,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-04",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 270,
+    "date": "2022-07-04",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 270,
     "Currency": "INR",
     "MrPerfect 555": -90,
     "Manan Hathi": 0,
@@ -4032,10 +4032,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-04",
-    "Description": "Breakfast",
-    "Category": "Dining out",
-    "Cost": 40,
+    "date": "2022-07-04",
+    "description": "Breakfast",
+    "category": "Dining out",
+    "cost": 40,
     "Currency": "INR",
     "MrPerfect 555": -25,
     "Manan Hathi": 25,
@@ -4044,10 +4044,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-03",
-    "Description": "Milk",
-    "Category": "Groceries",
-    "Cost": 20,
+    "date": "2022-07-03",
+    "description": "Milk",
+    "category": "Groceries",
+    "cost": 20,
     "Currency": "INR",
     "MrPerfect 555": 10,
     "Manan Hathi": 0,
@@ -4056,10 +4056,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-03",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 180,
+    "date": "2022-07-03",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 180,
     "Currency": "INR",
     "MrPerfect 555": 90,
     "Manan Hathi": 0,
@@ -4068,10 +4068,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-02",
-    "Description": "Dinner",
-    "Category": "Dining out",
-    "Cost": 270,
+    "date": "2022-07-02",
+    "description": "Dinner",
+    "category": "Dining out",
+    "cost": 270,
     "Currency": "INR",
     "MrPerfect 555": 180,
     "Manan Hathi": -90,
@@ -4080,10 +4080,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-02",
-    "Description": "Rixa",
-    "Category": "Entertainment - Other",
-    "Cost": 250,
+    "date": "2022-07-02",
+    "description": "Rixa",
+    "category": "Entertainment - Other",
+    "cost": 250,
     "Currency": "INR",
     "MrPerfect 555": 166.67,
     "Manan Hathi": -83.33,
@@ -4092,10 +4092,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-07-01",
-    "Description": "1st july nashta",
-    "Category": "General",
-    "Cost": 75,
+    "date": "2022-07-01",
+    "description": "1st july nashta",
+    "category": "General",
+    "cost": 75,
     "Currency": "INR",
     "MrPerfect 555": -25,
     "Manan Hathi": -25,
@@ -4104,10 +4104,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2022-06-29",
-    "Description": "Hostel furniture",
-    "Category": "Hotel",
-    "Cost": 210,
+    "date": "2022-06-29",
+    "description": "Hostel furniture",
+    "category": "Hotel",
+    "cost": 210,
     "Currency": "INR",
     "MrPerfect 555": -52.5,
     "Manan Hathi": 157.5,
@@ -4116,10 +4116,10 @@
     "Saheel Sapovadia (removed)": 0
   },
   {
-    "Date": "2023-02-22",
-    "Description": "Total balance",
-    "Category": "",
-    "Cost": "",
+    "date": "2023-02-22",
+    "description": "Total balance",
+    "category": "",
+    "cost": "",
     "Currency": "INR",
     "MrPerfect 555": 0,
     "Manan Hathi": 0,

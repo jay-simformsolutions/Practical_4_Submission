@@ -91,6 +91,8 @@ class CommonStrings {
 
   // Group_Expense Page Common Strings
   static const allSettleUp = 'You all are settled up in this group';
+  static const userNotInvolved = 'You are not involved';
+  static const notInvolved = 'not involved';
 
   //group settle up Page
   static const groupSettleUp = 'Group Settle Up';
@@ -161,6 +163,7 @@ class CommonStrings {
   static const labelOfAmount = 'Enter Amount for Bill Split';
   static const paidBy = 'Paid by';
   static const you = 'You';
+  static const deleteGroup = 'Are you sure you want delete this group';
   static const split = 'and Split';
   static const equally = 'equally';
   static const canNotSaveExpense = 'Cannot save expense';
@@ -168,10 +171,6 @@ class CommonStrings {
   static const warningAmount = 'You must enter an amount';
 
   static const pageNotFound = 'Page Not Found';
-
-  //Load Json File
-  static const loadGroupJson = 'assets/json/group_page.json';
-  static const loadGroupExpenseJson = 'assets/json/group_expense.json';
 
   // Category List Common Strings
 

@@ -2,7 +2,7 @@ import 'dart:core';
 
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
-import 'package:splitwise/model/group_info.dart';
+import 'package:splitwise/model/group_info_model.dart';
 import 'package:splitwise/services/repository.dart';
 
 import '../../dispose_interface/dispose.dart';
@@ -110,7 +110,7 @@ abstract class _CreateNewGroupStore with Store implements DisposeController {
 
   Future<void> addNewGroupData(GroupInfoModel groupInfoModel) async {
     if (groupNameEditingController.text.isNotEmpty) {
-      client.addNewGroup(groupInfoModel);
+      await client.addNewGroup(groupInfoModel);
     } else {
       debugPrint('Something is Wrong');
     }

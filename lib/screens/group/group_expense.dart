@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:intl/intl.dart';
-import 'package:splitwise/model/group_info.dart';
+import 'package:splitwise/common_methods/Group/group_expense_widget.dart';
+import 'package:splitwise/common_methods/error_widget.dart';
+import 'package:splitwise/common_methods/manage_network_state.dart';
+import 'package:splitwise/model/group_info_model.dart';
+import 'package:splitwise/shimmer/shimmer_group_expense.dart';
 
 import '../../extensions/extensions.dart';
 import '../../routes/navigator_service.dart';
@@ -83,208 +86,14 @@ class GroupExpenseWidget extends StatelessWidget {
                 ),
                 Observer(
                   builder: (_) {
-                    return ListView.builder(
-                      padding: const EdgeInsets.all(8),
-                      shrinkWrap: true,
-                      primary: false,
-                      itemCount: store.groupExpense.length,
-                      itemBuilder: (_, index) {
-                        DateTime dateTime =
-                            DateTime.parse(store.groupExpense[index]['Date']);
-                        if (store.groupExpense[index]['Category'] ==
-                            'Payment') {
-                          return SizedBox(
-                            height: 60,
-                            child: Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Text(
-                                          DateFormat.MMM()
-                                              .format(dateTime)
-                                              .toString(),
-                                          style: themeData.textTheme.bodySmall!
-                                              .copyWith(
-                                            fontSize: 15,
-                                            color: CommonColors.greyColor,
-                                          ),
-                                        ),
-                                        const SizedBox(
-                                          height: 5,
-                                        ),
-                                        Text(
-                                          DateFormat('dd')
-                                              .format(dateTime)
-                                              .toString(),
-                                          style: themeData.textTheme.bodySmall!
-                                              .copyWith(
-                                            color: CommonColors.greyColor,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      width: 10,
-                                    ),
-                                    const Icon(
-                                      Icons.money,
-                                      color: CommonColors.tealColor,
-                                    ),
-                                    const SizedBox(
-                                      width: 15,
-                                    ),
-                                    Text(
-                                      store.groupExpense[index]['Description'],
-                                      style: themeData.textTheme.bodySmall!
-                                          .copyWith(
-                                        color: CommonColors.tealColor,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          );
-                        } else {
-                          return SizedBox(
-                            height: 100,
-                            child: Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Text(
-                                          DateFormat.MMM()
-                                              .format(dateTime)
-                                              .toString(),
-                                          style: themeData.textTheme.bodySmall!
-                                              .copyWith(
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.bold,
-                                            color: CommonColors.tealColor,
-                                          ),
-                                        ),
-                                        const SizedBox(
-                                          height: 10,
-                                        ),
-                                        Text(
-                                          DateFormat('dd')
-                                              .format(dateTime)
-                                              .toString(),
-                                          style: themeData.textTheme.bodySmall!
-                                              .copyWith(
-                                            fontWeight: FontWeight.bold,
-                                            color: CommonColors.tealColor,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      width: 15,
-                                    ),
-                                    Expanded(
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            store.groupExpense[index]
-                                                ['Description'],
-                                            overflow: TextOverflow.ellipsis,
-                                            softWrap: false,
-                                            maxLines: 1,
-                                            style: themeData
-                                                .textTheme.bodySmall!
-                                                .copyWith(
-                                              fontWeight: FontWeight.bold,
-                                              color: CommonColors.whiteColor,
-                                              fontSize: 15,
-                                            ),
-                                          ),
-                                          const SizedBox(
-                                            height: 5,
-                                          ),
-                                          Text(
-                                            store.groupExpense[index]
-                                                        ['Sahil Totala'] ==
-                                                    0
-                                                ? 'You are not involved'
-                                                : 'You paid ₹ ${store.groupExpense[index]['Cost']}',
-                                            style: themeData
-                                                .textTheme.bodySmall!
-                                                .copyWith(
-                                              color: CommonColors.greyColor,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.end,
-                                        children: [
-                                          Text(
-                                            store.groupExpense[index]
-                                                        ['Sahil Totala'] >
-                                                    0
-                                                ? 'you lent'
-                                                : store.groupExpense[index]
-                                                            ['Sahil Totala'] <
-                                                        0
-                                                    ? 'you borrowed'
-                                                    : ' not involved',
-                                            style: themeData
-                                                .textTheme.bodySmall!
-                                                .copyWith(
-                                              color: store.groupExpense[index]
-                                                          ['Sahil Totala'] >
-                                                      0
-                                                  ? CommonColors.tealColor
-                                                  : store.groupExpense[index]
-                                                              ['Sahil Totala'] <
-                                                          0
-                                                      ? Colors.orangeAccent
-                                                      : Colors.grey,
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 13,
-                                            ),
-                                          ),
-                                          Text(
-                                            store.groupExpense[index]
-                                                        ['Sahil Totala'] >
-                                                    0
-                                                ? '₹ ${store.groupExpense[index]['Sahil Totala']}'
-                                                    .toString()
-                                                : store.groupExpense[index]
-                                                            ['Sahil Totala'] <
-                                                        0
-                                                    ? '₹ ${store.groupExpense[index]['Sahil Totala'].toString().substring(1)}'
-                                                    : '',
-                                            style: themeData
-                                                .textTheme.bodySmall!
-                                                .copyWith(
-                                              color: store.groupExpense[index]
-                                                          ['Sahil Totala'] >
-                                                      0
-                                                  ? CommonColors.tealColor
-                                                  : Colors.orangeAccent,
-                                              fontSize: 11,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          );
-                        }
-                      },
+                    return ManageNetworkState(
+                      state: store.networkState,
+                      shimmerWidget: GroupExpenseShimmer(),
+                      successWidget: ListOfGroupExpense(),
+                      errorWidget: NetworkErrorWidget(
+                        text: store.errorMessage,
+                        function: store.getGroupExpenseDetails,
+                      ),
                     );
                   },
                 ),

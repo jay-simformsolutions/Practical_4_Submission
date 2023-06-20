@@ -15,7 +15,7 @@ class ProfilePage extends StatelessWidget {
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(10, 54, 0, 0),
+          padding: const EdgeInsets.fromLTRB(25, 75, 25, 0),
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -47,7 +47,7 @@ class ProfilePage extends StatelessWidget {
                       children: [
                         Text(
                           CommonStrings.name,
-                          style: themeData.textTheme.bodySmall,
+                          style: themeData.textTheme.titleMedium,
                         ),
                         Text(
                           CommonStrings.email,
@@ -83,7 +83,7 @@ class ProfilePage extends StatelessWidget {
                   alignment: Alignment.topLeft,
                   child: Text(
                     CommonStrings.preferences,
-                    style: themeData.textTheme.bodySmall,
+                    style: themeData.textTheme.titleMedium,
                   ),
                 ),
                 const ListTileWidget(
@@ -108,7 +108,7 @@ class ProfilePage extends StatelessWidget {
                   alignment: Alignment.topLeft,
                   child: Text(
                     CommonStrings.feedback,
-                    style: themeData.textTheme.bodySmall,
+                    style: themeData.textTheme.titleMedium,
                   ),
                 ),
                 const ListTileWidget(
@@ -138,7 +138,7 @@ class ProfilePage extends StatelessWidget {
                 ),
                 Text(
                   CommonStrings.copyright,
-                  style: themeData.textTheme.bodySmall!.copyWith(
+                  style: themeData.textTheme.titleMedium!.copyWith(
                     fontSize: 12,
                     color: CommonColors.blackColor,
                   ),
@@ -151,14 +151,14 @@ class ProfilePage extends StatelessWidget {
                   children: [
                     Text(
                       CommonStrings.ps,
-                      style: themeData.textTheme.bodySmall!.copyWith(
+                      style: themeData.textTheme.titleMedium!.copyWith(
                         fontSize: 12,
                         color: CommonColors.blackColor,
                       ),
                     ),
                     Text(
                       CommonStrings.bunnies,
-                      style: themeData.textTheme.bodySmall!.copyWith(
+                      style: themeData.textTheme.titleMedium!.copyWith(
                         fontSize: 10,
                         color: CommonColors.tealColor,
                       ),

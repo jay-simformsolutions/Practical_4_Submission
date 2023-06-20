@@ -1,13 +1,12 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:mobx/mobx.dart';
+import 'package:splitwise/enum/enum.dart';
 import 'package:splitwise/routes/navigator_service.dart';
+import 'package:splitwise/services/repository.dart';
 
 import '../../Routes/Routes.dart';
+import '../../model/group_expense_model.dart';
 import '../../utils/colors.dart';
-import '../../utils/common_strings.dart';
 import '../../utils/theme_data.dart';
 
 part 'group_expense_store.g.dart';
@@ -19,17 +18,29 @@ abstract class _GroupExpenseStore with Store {
     getGroupExpenseDetails();
   }
 
-  @observable
-  List groupExpense = [];
+  ObservableList<GroupExpenseModel> groupExpense = ObservableList.of([]);
 
   @observable
   int selectedIndex = 0;
 
+  @observable
+  NetworkState networkState = NetworkState.initial;
+
+  @observable
+  String? errorMessage;
+
   void getGroupExpenseDetails() async {
-    final String response =
-        await rootBundle.loadString(CommonStrings.loadGroupExpenseJson);
-    final data = await json.decode(response);
-    groupExpense = data;
+    networkState = NetworkState.loading;
+    debugPrint('In loading state');
+    final response = await Repository.instance.getGroupExpenseData();
+    if (response.response != null) {
+      groupExpense.addAll(response.response!);
+      networkState = NetworkState.success;
+      debugPrint('In success state');
+    } else {
+      errorMessage = response.errorInfo;
+      networkState = NetworkState.failure;
+    }
   }
 
   static const List choiceChipPages = [

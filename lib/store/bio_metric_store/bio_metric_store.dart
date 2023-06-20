@@ -32,14 +32,6 @@ abstract class _BioMetricStore with Store, WidgetsBindingObserver {
   @observable
   String authorized = 'Not authorized';
 
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (AppLifecycleState.resumed == state) {
-      debugPrint('State is $state');
-      NavigationService.instance.navigateToScreen('/');
-    }
-  }
-
   LocalAuthentication auth = LocalAuthentication();
 
   ///checking biometrics
@@ -47,6 +39,7 @@ abstract class _BioMetricStore with Store, WidgetsBindingObserver {
   /// if we can use them or not
   Future<bool> _checkBiometric() async {
     _canCheckBiometric = await auth.canCheckBiometrics;
+    debugPrint('Can authenticate is $_canCheckBiometric');
     return _canCheckBiometric;
   }
 
@@ -65,17 +58,15 @@ abstract class _BioMetricStore with Store, WidgetsBindingObserver {
             stickyAuth: false,
           ));
     } on PlatformException catch (_) {
-      showSnackBar(
-        const Text(CommonStrings.enableBioMetric),
-      );
       NavigationService.instance.navigateToScreen(Routes.bottomNavigationPage);
     }
 
-    debugPrint('Authorized String is $authorized');
+    debugPrint('Authenticated is $authenticated');
+
     authorized = authenticated
         ? CommonStrings.successAuthenticate
         : CommonStrings.failedAuthenticate;
-
+    debugPrint('Authorized String is $authorized');
     if (authorized == CommonStrings.successAuthenticate) {
       NavigationService.instance.navigateToScreen(Routes.bottomNavigationPage);
     }
