@@ -16,6 +16,7 @@ class GroupExpenseStore = _GroupExpenseStore with _$GroupExpenseStore;
 abstract class _GroupExpenseStore with Store {
   _GroupExpenseStore() {
     getGroupExpenseDetails();
+    debugPrint('Group Expense state is $networkState');
   }
 
   ObservableList<GroupExpenseModel> groupExpense = ObservableList.of([]);

@@ -56,6 +56,7 @@ class CommonStrings {
 
   //Assets Common Strings
 
+  static const welcomeSplitwise = 'Welcome';
   static const splitwise = 'SplitWise';
   static const groupBottomTitle = 'Group';
   static const friendBottomTitle = 'Friends';

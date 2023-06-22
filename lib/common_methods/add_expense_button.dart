@@ -37,7 +37,7 @@ class BottomButton extends StatelessWidget {
                 ),
               ),
               Expanded(
-                flex: 10,
+                flex: 8,
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 4),
                   child: Text(

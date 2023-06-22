@@ -6,11 +6,13 @@ class Routes {
   static const forgotPassword = './forgotPassword';
 
   //App Routes
+  static const splashScreen = '/splashScreen';
   static const bottomNavigationPage = '/bottomNavigationPage';
   static const groupPage = '/groupPage';
   static const friendsPage = '/friendsPage';
   static const activityPage = '/activityPage';
   static const profilePage = '/profilePage';
+  static const bioMetric = '/bioMetric';
 
   // Group Module Route
   static const createGroup = '/createGroup';
